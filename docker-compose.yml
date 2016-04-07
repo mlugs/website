@@ -1,0 +1,7 @@
+pelican:
+  build: .
+  command: ./develop_server.sh start
+  ports:
+    - "8000:8000"
+  volumes:
+    - ./website:/srv/pelican-website

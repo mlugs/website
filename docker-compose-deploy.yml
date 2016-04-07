@@ -1,0 +1,6 @@
+deploy:
+  build: .
+  command: bash ../deploy.sh
+  working_dir: /srv/pelican-website/website
+  volumes:
+    - .:/srv/pelican-website
