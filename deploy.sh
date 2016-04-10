@@ -3,7 +3,7 @@
 cp travis_ci_mlugs_website ~/.ssh/id_ed25519
 chmod 600 ~/.ssh/id_ed25519
 eval `ssh-agent -s`
-ssh-add
+ssh-add ~/.ssh/id_ed25519
 ssh-add -L
 git config user.name "travis"
 git config user.email "travis"
