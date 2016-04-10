@@ -23,13 +23,11 @@
     <!-- header -->
     <header class="siteheader">
       <!-- site image -->
-      {% if PROFILE_IMAGE_URL %}
-        <div class= "siteimage">
-          <a class="nodec" href={{ PROFILE_IMAGE_URL }}>
-            <img width="200" height="200" src={{ PROFILE_IMAGE_URL }}>
-          </a>
-        </div>
-      {% endif %}
+      <div class= "siteimage">
+	<a class="nodec" href="{{ SITEURL }}/">
+          <img width="200" height="200" src="{{ SITEURL }}/theme/images/logo.png">
+	</a>
+      </div>
 
       <div class = "sitebanner">
         <h1><a class="sitetitle nodec" href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
@@ -54,14 +52,8 @@
             {% if GITHUB_ADDRESS %}
               <li><a class="nodec icon-github" href="{{ GITHUB_ADDRESS }}"></a></li>
             {% endif %}
-            {% if SO_ADDRESS %}
-              <li><a class="nodec icon-stackoverflow" href="{{ SO_ADDRESS }}"></a></li>
-            {% endif %}
             {% if TWITTER_ADDRESS %}
               <li><a class="nodec icon-twitter" href="{{ TWITTER_ADDRESS }}"></a></li>
-            {% endif %}
-            {% if FB_ADDRESS %}
-              <li><a class="nodec icon-facebook" href="{{ FB_ADDRESS }}"></a></li>
             {% endif %}
             {% if FEED_RSS %}
               <li><a class="nodec icon-rss" href="/{{ FEED_RSS }}"></a></li>

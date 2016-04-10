@@ -2,15 +2,17 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'mlugs users'
+AUTHOR = u'machine learning usergroup stuttgart'
 SITENAME = u'MLUGS'
 SITEURL = ''
 
-THEME = "/srv/pelican-website/theme"
+#THEME = "/srv/pelican-website/theme"
+THEME = "theme"
 
 PATH = 'content'
+PAGE_PATHS = ['content/pages']
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Berlin'
 
 DEFAULT_LANG = u'de'
 
@@ -22,11 +24,20 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = 10
+STATIC_PATHS = ['images', ]
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
-USE_FOLDER_AS_CATEGORY = True
-DISPLAY_PAGES_ON_MENU = True
+ARTICLE_URL = "{slug}/"
+ARTICLE_SAVE_AS = "{slug}/index.html"
 
-DIRECT_TEMPLATES = ['index', 'categories', 'archives']
+PAGE_URL = "pages/{slug}/"
+PAGE_SAVE_AS = "pages/{slug}/index.html"
+
+CATEGORY_URL = "category/{slug}"
+CATEGORY_SAVE_AS = "category/{slug}/index.html"
+
+GITHUB_ADDRESS = "https://github.com/mlugs/"
+TWITTER_ADDRESS = "https://twitter.com/mlugs_de/"
+DEFAULT_DATE_FORMAT = '%d. %B %Y'
