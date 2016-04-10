@@ -6,10 +6,10 @@ REPO=$(git config remote.origin.url)
 REPO=${REPO/git:\/\/github.com\//git@github.com:}
 REPO=${REPO/https:\/\/github.com\//git@github.com:}
 
-export SSH_KEY="travis_ci_mlugs_website"
-chmod 600 $SSH_KEY
-eval `ssh-agent -s`
-ssh-add $SSH_KEY
+cp travis_ci_mlugs_website ~/.ssh/id_ed25519
+chmod 600 ~/.ssh/id_ed25519
+#eval `ssh-agent -s`
+#ssh-add
 git config user.name "travis"
 git config user.email "travis"
 
