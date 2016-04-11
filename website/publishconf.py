@@ -17,6 +17,7 @@ FEED_RSS = "feed/all.rss.xml"
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
+PAGE_PATHS = ['content/pages']
 
 # Following items are often useful when publishing
 

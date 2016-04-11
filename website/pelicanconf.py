@@ -10,7 +10,6 @@ SITEURL = ''
 THEME = "theme"
 
 PATH = 'content'
-PAGE_PATHS = ['content/pages']
 
 TIMEZONE = 'Europe/Berlin'
 
