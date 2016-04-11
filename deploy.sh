@@ -1,13 +1,5 @@
 #!/bin/bash
 
-cp travis_ci_mlugs_website ~/.ssh/id_rsa
-chmod 600 ~/.ssh/id_rsa
-#eval `ssh-agent -s`
-#ssh-add
-#ssh-add -L
-git config user.name "travis"
-git config user.email "travis"
-
 cd website
 pelican -ds publishconf.py .
 echo "www.mlugs.de" > output/CNAME

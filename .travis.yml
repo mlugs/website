@@ -9,6 +9,13 @@ before_install:
 install:
   - pip install pelican Markdown ghp-import
 script:
+  - chmod 600 travis_ci_mlugs_website
+  - eval `ssh-agent -s`
+  - md5sum travis_ci_mlugs_website
+  - ssh-add
+  - ssh-add -L
+  - git config user.name "travis"
+  - git config user.email "travis"
   - bash deploy.sh
 notifications:
   email: false
