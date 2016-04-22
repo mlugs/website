@@ -1,6 +1,6 @@
 pelican:
   build: .
-  command: ./develop_server.sh start
+  command: make devserver
   ports:
     - "8000:8000"
   volumes:
