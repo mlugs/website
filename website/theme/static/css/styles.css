@@ -193,7 +193,7 @@ sub {
 /* Images */
 
 .content * img {
-    display: block;
+/*    display: block;*/
     margin: 0 auto 0 auto;
     max-width: 600px;
     height: auto;
