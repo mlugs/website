@@ -5,7 +5,7 @@ Unser zweites Treffen ist am Donnerstag, den 21.6. in der Marienstrasse 23 bei a
 
 ### Themen:
 
-- Frank Gerhardt - TBA
+- Frank Gerhardt - Machine Learning with PySpark
 -  (Vorschläge sind willkommen)
 - 2-3 Lightningtalks (auch hier könnt ihr gerne Vorschläge machen)
 
