@@ -9,8 +9,8 @@ Unser zweites Treffen ist am Donnerstag, den 21.6. in der Marienstrasse 23 bei a
 - (weitere Vorschläge sind willkommen)
 - Lightningtalks:
 
-  * Andreas Madsack - Tensorflow auf dem Raspberry PI
-  * (auch hier könnt ihr gerne Vorschläge machen)
+    + Andreas Madsack - Tensorflow auf dem Raspberry PI
+    + (auch hier könnt ihr gerne Vorschläge machen)
 
 ### Wann:
 
