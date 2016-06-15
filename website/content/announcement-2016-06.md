@@ -6,8 +6,9 @@ Unser zweites Treffen ist am Donnerstag, den 21.6. in der Marienstrasse 23 bei a
 ### Themen:
 
 - Dr. Frank Gerhardt - **Machine Learning with PySpark**. Kurzfassung des [Workshops](http://pydata.org/berlin2016/schedule/presentation/28/) von der [PyData Berlin 2016](http://pydata.org/berlin2016/schedule/). Wer live hands-on mitmachen will, kann sich das [Docker Image holen](https://hub.docker.com/r/gerhardt/pyspark-workshop/).  
--  (weitere Vorschläge sind willkommen)
+- (weitere Vorschläge sind willkommen)
 - Lightningtalks:
+
   * Andreas Madsack - Tensorflow auf dem Raspberry PI
   * (auch hier könnt ihr gerne Vorschläge machen)
 
