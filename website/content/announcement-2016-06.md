@@ -1,7 +1,7 @@
 Title: MLUGS Treffen im Juni 2016
 Date: 2016-05-18 14:00
 
-Unser zweites Treffen ist am Donnerstag, den 21.6. in der Marienstrasse 23 bei aexea.
+Unser zweites Treffen ist am Dienstag, den 21.6. in der Marienstrasse 23 bei aexea.
 
 ### Themen:
 
