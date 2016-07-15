@@ -6,7 +6,8 @@ Unser drittes Treffen ist am Dienstag, den 19.7. in der Marienstrasse 23 bei aex
 ### Themen:
 
 - Wolfgang Kraus / Johannes Heischmann - Diskussion zu Business-Cases für Machine-Learning 
-- Götz Breuer - Business Case in der Zeitungsproduktion bei Freiburger Druck 
+- Götz Bräuer - Business Case in der Zeitungsproduktion bei Freiburger Druck 
+  - Aus der Sicht des Qualitätsmanagemts berichten wir über Condition Monitoring bei Druckmaschinen mit dem Ziel Predictive Maintenance. 
 - (weitere Vorschläge sind willkommen)
 - Lightningtalks:
 
