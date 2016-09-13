@@ -5,7 +5,7 @@ Unser viertes Treffen ist am Dienstag, den 20.9. in der Marienstrasse 23 bei aex
 
 ### Themen:
 
-- Andreas Madsack - TensorFlow.Learn Hans-On (Aus Daten ein einfaches NN mit TensorFlow (und TensorBoard) erstellen)
+- Andreas Madsack - TensorFlow.Learn Hands-On (Aus Daten ein einfaches NN mit TensorFlow (und TensorBoard) erstellen)
 - (Vorschläge sind willkommen)
 - Lightningtalks:
     + Andreas Hornig - Irgendwas mit Raumfahrt/Satelliten/Signalverarbeitung
