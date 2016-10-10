@@ -1,4 +1,4 @@
-Title: MLUGS Treffen im September 2016
+Title: MLUGS Treffen im Oktober 2016
 Date: 2016-10-18 18:30
 
 Unser fünftes Treffen ist am Dienstag, dem 18.10. in der Marienstrasse 23 bei aexea.
