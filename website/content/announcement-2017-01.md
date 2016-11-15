@@ -1,5 +1,5 @@
 Title: MLUGS Treffen im Januar 2017
-Date: 2017-01-17 18:30
+Date: 2016-11-15 22:00
 
 Unser sechstes Treffen ist am Dienstag, dem 17.01. in der Marienstrasse 23 bei aexea.
 
