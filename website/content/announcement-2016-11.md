@@ -1,7 +1,7 @@
 Title: MLUGS Treffen im November 2016
 Date: 2016-11-15 18:30
 
-Unser fünftes Treffen ist am Dienstag, dem 15.11. in der Marienstrasse 23 bei aexea.
+Unser sechstes Treffen ist am Dienstag, dem 15.11. in der Marienstrasse 23 bei aexea.
 
 ### Themen:
 
