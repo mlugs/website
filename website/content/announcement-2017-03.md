@@ -10,6 +10,7 @@ Thema: RNN
 jeder macht/zeigt irgendwas mit RNNs
 
 Inspirationen:
+
 - https://github.com/sherjilozair/char-rnn-tensorflow
 - http://suriyadeepan.github.io/2017-01-07-unfolding-rnn/
 - http://sebastianruder.com/word-embeddings-1/
