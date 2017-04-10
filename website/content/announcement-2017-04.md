@@ -5,7 +5,7 @@ Unser zehntes Treffen ist am Dienstag, dem 18.4. in der Marienstrasse 23 bei aex
 
 ### Themen:
 
-- Uwe Sterr - Timeseries Prediction
+- HowTo Kaggle - Intro in Kaggle
 - Ein Team für Kaggle bilden - Quora Competition
     * vorher anschauen und ausprobieren
     * [https://www.kaggle.com/c/quora-question-pairs](https://www.kaggle.com/c/quora-question-pairs)
