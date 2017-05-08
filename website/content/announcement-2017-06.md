@@ -5,7 +5,7 @@ Unser elftes Treffen ist am Dienstag, dem 20.6. in der Marienstrasse 23 bei aexe
 
 ### Themen:
 
-- Kaggle Quora Workshop recap
+- Uwe Sterr - Timeseries Prediction
 - (gerne weitere Vorschläge)
 
 
