@@ -1,7 +1,7 @@
-Title: MLUGS Treffen im Mai 2017
+Title: MLUGS Treffen im Juni 2017
 Date: 2017-05-03 10:00
 
-Unser elftes Treffen ist am Dienstag, dem 16.5. in der Marienstrasse 23 bei aexea.
+Unser elftes Treffen ist am Dienstag, dem 20.6. in der Marienstrasse 23 bei aexea.
 
 ### Themen:
 
@@ -11,7 +11,7 @@ Unser elftes Treffen ist am Dienstag, dem 16.5. in der Marienstrasse 23 bei aexe
 
 ### Wann:
 
-<p>16. Mai 2017 um 18:30</p>  
+<p>20. Juni 2017 um 18:30</p>  
 
 ### Wo:
 
