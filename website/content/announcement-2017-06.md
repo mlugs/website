@@ -6,7 +6,7 @@ Unser elftes Treffen ist am Dienstag, dem 20.6. in der Marienstrasse 23 bei aexe
 ### Themen:
 
 - Uwe Sterr - Timeseries Prediction
-- (gerne weitere Vorschläge)
+- Sebastian Muszytowski - Optical quality control on texture images
 
 
 ### Wann:
