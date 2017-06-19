@@ -7,6 +7,7 @@ Unser elftes Treffen ist am Dienstag, dem 20.6. in der Marienstrasse 23 bei aexe
 
 - Uwe Sterr - Timeseries Prediction
 - Sebastian Muszytowski - Optical quality control on texture images
+- Nandor Poka, Gerhardt Informatik - Big Data Problem(s) in Biology / Bioinformatics. We are giving a short introduction to bioinformatics and show few typical problems that are either data-, or computation intensive.
 
 
 ### Wann:
