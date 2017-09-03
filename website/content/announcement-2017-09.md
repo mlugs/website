@@ -7,11 +7,11 @@ Unser zwölftes Treffen ist am Dienstag, dem 19.9. in der Marienstrasse 23 bei a
 
 - Andreas Madsack - Feuchtigkeitsmessung aus Fotos mittels CNNs
 
-  Schrittweise Demo des CNN aus https://cfp.mrmcd.net/2017/talk/EFZ97G/
+    Schrittweise Demo des CNN aus https://cfp.mrmcd.net/2017/talk/EFZ97G/
 
 - Kaggle: Zillow’s Home Value Prediction
 
-  https://www.kaggle.com/c/zillow-prize-1#timeline
+    https://www.kaggle.com/c/zillow-prize-1#timeline
 
 
 
