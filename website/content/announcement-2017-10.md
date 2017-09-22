@@ -9,6 +9,7 @@ Unser dreizehntes Treffen ist am Dienstag, dem 17.10. in der Marienstrasse 23 be
 
     https://www.kaggle.com/c/zillow-prize-1#timeline
 
+- (weitere Vorschläge sind willkommen!)
 
 
 ### Wann:
