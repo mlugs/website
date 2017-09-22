@@ -13,7 +13,7 @@ Unser dreizehntes Treffen ist am Dienstag, dem 17.10. in der Marienstrasse 23 be
 
 ### Wann:
 
-<p>17. September 2017 um 18:30</p>  
+<p>17. Oktober 2017 um 18:30</p>  
 
 ### Wo:
 
