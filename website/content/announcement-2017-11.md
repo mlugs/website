@@ -6,7 +6,7 @@ Unser vierzehntes Treffen ist am Dienstag, dem 21.11. in der Marienstrasse 23 be
 ### Themen:
 
 
-- Uwe Sterr - Entity Embeddings of Categorical Variables
+- Uwe Sterr - Entity Embeddings of Categorical Variables - 
   [https://arxiv.org/pdf/1604.06737.pdf](https://arxiv.org/pdf/1604.06737.pdf)
 
 - Wilhelm Brasch - OCR mit Deep Learning
