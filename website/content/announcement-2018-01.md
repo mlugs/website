@@ -11,6 +11,12 @@ Language: German only.
 - Andreas Madsack - Erfahrungsbericht: DeepLearning basierte Dependency Parser
   (SyntaxNet, DRAGNN, CoreNLP, Spacy)
 
+- Uwe Sterr - Diskussion: Signalprozessierung mit machine learning
+
+  * Methoden (NN, SVM)
+  * Vorgehensweisen
+  * Preprocessing (FFT, STFFT, wavelets)
+
 - (weitere Vorschläge sind willkommen!)
 
 
