@@ -12,10 +12,9 @@ Language: German only.
   (SyntaxNet, DRAGNN, CoreNLP, Spacy)
 
 - Uwe Sterr - Diskussion: Signalprozessierung mit machine learning
-
-  * Methoden (NN, SVM)
-  * Vorgehensweisen
-  * Preprocessing (FFT, STFFT, wavelets)
+    * Methoden (NN, SVM)
+    * Vorgehensweisen
+    * Preprocessing (FFT, STFFT, wavelets)
 
 - (weitere Vorschläge sind willkommen!)
 
