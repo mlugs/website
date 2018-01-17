@@ -1,5 +1,5 @@
 Title: MLUGS Treffen im Februar 2018
-Date: 2018-01-17 9:00
+Date: 2018-01-17 0:00
 
 Unser sechzehntes Treffen ist am Dienstag, dem 20.02. in der Marienstrasse 23 bei AX Semantics (aexea).
 
