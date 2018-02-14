@@ -5,9 +5,15 @@ Unser sechzehntes Treffen ist am Dienstag, dem 20.02. in der Marienstrasse 23 be
 
 Language: German only.
 
-### Themen:
+### Thema:
 
-- (Vorschläge sind willkommen!)
+Vortrag "Einführung ins reinforced learning anhand einer Verkehrssimulation und eines Beispiels aus der openai gym" von Uwe Sterr
+
+Behandelte Themen: Markov Decision Process, Value Function, Q-Learning, Deep Q-Learning
+
+Unter [https://github.com/uwesterr/Connected-Autonomous-Driving](https://github.com/uwesterr/Connected-Autonomous-Driving) findet ihr die Mindmap zum Vortrag.
+
+Wir suchen noch weitere Vorträge.
 
 
 ### Wann:
