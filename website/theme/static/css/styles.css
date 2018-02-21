@@ -113,6 +113,10 @@ a { /* Generic link styling, greyish and underlined. */
     text-decoration: none;
 }
 
+.pages-header {
+    font-size: 1em;
+}
+
 a:hover { /* Hover style: transition to orange. Cool! */
     -o-transition:color .2s ease-in-out;
     -webkit-transition:color .2s ease-in-out;

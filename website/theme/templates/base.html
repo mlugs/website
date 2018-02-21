@@ -42,7 +42,7 @@
             <!--pages-->
             {% if DISPLAY_PAGES_ON_MENU %}
             {% for p in pages %}
-                <li{% if p == page %} class="active"{% endif %}><a class="nodec" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                <li{% if p == page %} class="active"{% endif %}><a class="nodec pages-header" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
               {% endfor %}
             {% endif %}
             <!-- services icons -->
