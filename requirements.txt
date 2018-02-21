@@ -1,0 +1,5 @@
+pelican==3.7.1
+Markdown
+ghp-import
+shovel
+fabric

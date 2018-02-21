@@ -3,8 +3,8 @@ MAINTAINER X
 
 ENV DEBIAN_FRONTEND noninteractive
 
-# Install dependencies
-RUN pip install --upgrade pelican Markdown ghp-import shovel fabric
+ADD requirements.txt /srv/requirements.txt
+RUN pip install -r /srv/requirements.txt
 
 USER 1000
 
