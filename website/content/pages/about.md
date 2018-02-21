@@ -17,5 +17,5 @@ monatlich am dritten Dienstag im Monat.
 
 ## Links
 
-- [https://www.letsmeet.click/c/machine-learning-user-group-stuttgart/](https://www.letsmeet.click/c/machine-learning-user-group-stuttgart/)
+- [https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart/](https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart/)
 - [https://github.com/mlugs](https://github.com/mlugs)
