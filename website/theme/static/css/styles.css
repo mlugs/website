@@ -114,7 +114,7 @@ a { /* Generic link styling, greyish and underlined. */
 }
 
 .pages-header {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 a:hover { /* Hover style: transition to orange. Cool! */
