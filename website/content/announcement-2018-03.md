@@ -7,9 +7,11 @@ Language: German only.
 
 ### Thema:
 
-Vortrag: "Einführung in Sequence-to-Sequence-Modelle"  
-mit praktischen Beispielen  
-inklusive Verwendung in der Sprachgenerierung
+- Vortrag: "Einführung in Sequence-to-Sequence-Modelle" von Andreas Madsack  
+  mit praktischen Beispielen  
+  inklusive Verwendung in der Sprachgenerierung
+
+- Vortrag: "Machine Learning in einem Automobilkonzern" von Christian Drescher
 
 
 ### Wann:
