@@ -7,7 +7,8 @@ Language: German only.
 
 ### Thema:
 
-Wir suchen Vorträge. Vorschläge per Kommentar oder Email.
+- Learnings aus dem Erstellen eines Ordering-Sequence-Models
+- Problemvorstellungsrunde der Teilnehmer
 
 
 ### Wann:
