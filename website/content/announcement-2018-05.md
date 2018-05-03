@@ -7,8 +7,17 @@ Language: German only.
 
 ### Thema:
 
-Wir suchen Vorträge.  
+
+- Cats vs. Dogs Hands-On
+
+  * wir gehen zusammen durch den Code eines Katzen vs. Hunde Klassifikators
+  * der Code läuft mit GPUs auf AWS
+  * jeder kann (sofern Notebook mitgebracht) mit dem Code rumprobieren
+
+
+Wir suchen weitere Vorträge.  
 Stellt eure Projekte/Lösungen/Ideen vor.
+
 
 ### Wann:
 
