@@ -7,12 +7,11 @@ Language: German only.
 
 ### Thema:
 
-#### Thema 1:
+#### Thema 1: PyTorch vs. Tensorflow
 
-Vorgestellt und diskutiert werden anhand eines Pulsklassifizierungsprojekts:
-
-- Feature Generierung (dynamic time warp, discrete wavelet transform und andere)
-- Vergleich verschiedener Klassifizierungsalgorithmen und Hyperparameter Einstellungen
+- Warum PyTorch und nicht Tensorflow/Keras?
+- Ein paar Codebeispiele
+- viele Links für den Einstieg in PyTorch
 
 ##### Thema 2:
 
