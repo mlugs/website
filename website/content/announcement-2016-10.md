@@ -19,7 +19,7 @@ URL: http://www.5analytics.com/
 
 ### Wo:
 
-Marienstrasse 23, Stuttgart-West, aexea (1. OG)
+Marienstrasse 23, Stuttgart-Süd, aexea (1. OG)
 
 ### Bitte meldet euch an unter:
 [https://www.letsmeet.click/c/machine-learning-user-group-stuttgart](https://www.letsmeet.click/c/machine-learning-user-group-stuttgart)

@@ -17,7 +17,7 @@ Unser viertes Treffen ist am Dienstag, den 20.9. in der Marienstrasse 23 bei aex
 
 ### Wo:
 
-Marienstrasse 23, Stuttgart-West, aexea (1. OG)
+Marienstrasse 23, Stuttgart-Süd, aexea (1. OG)
 
 ### Bitte meldet euch an unter:
 [https://www.letsmeet.click/c/machine-learning-user-group-stuttgart](https://www.letsmeet.click/c/machine-learning-user-group-stuttgart)

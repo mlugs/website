@@ -20,7 +20,7 @@ Unser vierzehntes Treffen ist am Dienstag, dem 21.11. in der Marienstrasse 23 be
 
 ### Wo:
 
-Marienstrasse 23, Stuttgart-West, aexea (1. OG)
+Marienstrasse 23, Stuttgart-Süd, aexea (1. OG)
 
 ### Bitte meldet euch an unter:
 [https://www.letsmeet.click/c/machine-learning-user-group-stuttgart](https://www.letsmeet.click/c/machine-learning-user-group-stuttgart)
