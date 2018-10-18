@@ -6,16 +6,12 @@ Date: 2018-02-21 10:00
 
 ### März
 
-- 12.–13. [Big Data Paris](https://www.bigdataparis.com/), Paris, 790 €, 25% Discount Code: BDP18-EVENTS-AI
 - 15.–16. [Deep Learning in Finance Summit](https://www.re-work.co/events/deep-learning-in-finance-summit-london-2018), London
 - 15.–16. [AI Assistant Summit](https://www.re-work.co/events/ai-assistant-summit-london-2018), London
 - 15.–16. [Deep Learning in Retail & Advertising Summit](https://www.re-work.co/events/deep-learning-in-retail-summit-london-2018), London
-- 20.–21. [Robotic Process Automation (RPA) and Artificial Intelligence (AI) Exchange](https://rpaandaiexchangeeu.iqpc.co.uk/), Madrid
 
 ### April
 
-- 09.–11. [21st International Conference on Artificial Intelligence and Statistics (AISTATS)](http://www.aistats.org/), Lanzarote, 550 €
-- 23.–25. [Intelligent Automation Nordic's RPA & AI Summit](https://rpanordics.iqpc.co.uk/), Copenhagen, ab 2400 € (early bird bis 2018-03-09)
 - 24.–26. [Minds Mastering Machines](https://www.m3-konferenz.de/), Köln, ab 770 € + VAT (early bird bis 2018-03-02)
 
 
@@ -52,6 +48,7 @@ Date: 2018-02-21 10:00
 
 ### Oktober
 
+- 08.–10. [new.New Festival](https://www.newnewfestival.com/), Stuttgart
 - 10.–11. [World Summit AI](http://worldsummit.ai/), Amsterdam, ab 450 € + VAT (early bird bis 2018-03-30)
 - 10.–11. [GPU Technology Conference EU by NVIDIA (GTC)](https://www.gputechconf.eu/), München
 - 15.–16. 6th Global Summit on [Artificial Intelligence and Neural Networks](https://neuralnetworks.conferenceseries.com/), Helsinki, ab 770 €
@@ -68,6 +65,19 @@ Date: 2018-02-21 10:00
 - 12.–14. [AI-2018](http://www.bcs-sgai.org/ai2018/), Cambridge, £ 430 (Vorjahr)
 
 
-### ohne Datum
+## 2019
 
-- [http://aiforse.org/conference-2017](AI for Software Engineering (AIFORSE))
+### Januar
+
+### Februar
+
+- 19.–20. [Robotic Process Automation (RPA) and Artificial Intelligence (AI) Exchange](https://rpaandaiexchangeeu.iqpc.co.uk/), Germany
+
+### März
+
+- 11.–12. [Big Data Paris](https://www.bigdataparis.com/), Paris
+- 18.–20. [Intelligent Automation Nordic's RPA & AI Summit](https://rpanordics.iqpc.co.uk/), Copenhagen
+
+### April
+
+- 16.–18. [22nd International Conference on Artificial Intelligence and Statistics (AISTATS)](http://www.aistats.org/), Naha, Okinawa, Japan
