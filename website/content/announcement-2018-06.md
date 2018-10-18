@@ -22,7 +22,7 @@ Stellt eure Projekte/Lösungen/Ideen vor.
 
 ### Wo:
 
-Marienstrasse 23, Stuttgart-West, AX Semantics (1. OG)
+Marienstrasse 23, Stuttgart-Süd, AX Semantics (1. OG)
 
 ### Bitte meldet euch an unter:
 [https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart](https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart)

@@ -15,7 +15,7 @@ Unser achtes Treffen ist am Dienstag, dem 21.2. in der Marienstrasse 23 bei aexe
 
 ### Wo:
 
-Marienstrasse 23, Stuttgart-West, aexea (1. OG)
+Marienstrasse 23, Stuttgart-Süd, aexea (1. OG)
 
 ### Bitte meldet euch an unter:
 [https://www.letsmeet.click/c/machine-learning-user-group-stuttgart](https://www.letsmeet.click/c/machine-learning-user-group-stuttgart)
