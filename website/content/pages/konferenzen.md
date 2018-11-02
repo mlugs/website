@@ -75,9 +75,24 @@ Date: 2018-02-21 10:00
 
 ### März
 
-- 01\. [Applied AI](https://www.appliedai.co.uk/), London
-- 11.–12. [Big Data Paris](https://www.bigdataparis.com/), Paris
-- 18.–20. [Intelligent Automation Nordic's RPA & AI Summit](https://rpanordics.iqpc.co.uk/), Copenhagen
+<!---
+#+ORGTBL: SEND 201903 orgtbl-to-gfm
+| Date    | Name                                                                              | Location   |      Price |
+|---------+-----------------------------------------------------------------------------------+------------+------------|
+| <l>     | <l>                                                                               | <l>        |        <r> |
+| 01\.    | [Applied AI](https://www.appliedai.co.uk/)                                        | London     | £150 + £30 |
+| 11.–12. | [Big Data Paris](https://www.bigdataparis.com/)                                   | Paris      |            |
+| 18.–20. | [Intelligent Automation Nordic's RPA & AI Summit](https://rpanordics.iqpc.co.uk/) | Copenhagen |            |
+-->
+
+<!--- BEGIN RECEIVE ORGTBL 201903 -->
+| Date | Name | Location | Price |
+|---|---|---|--:|
+| 01\. | [Applied AI](https://www.appliedai.co.uk/) | London | £150 + £30 |
+| 11.–12. | [Big Data Paris](https://www.bigdataparis.com/) | Paris |  |
+| 18.–20. | [Intelligent Automation Nordic's RPA \&{} AI Summit](https://rpanordics.iqpc.co.uk/) | Copenhagen |  |
+<!--- END RECEIVE ORGTBL 201903 -->
+
 
 ### April
 
