@@ -75,6 +75,7 @@ Date: 2018-02-21 10:00
 
 ### März
 
+- 01\. [Applied AI](https://www.appliedai.co.uk/), London
 - 11.–12. [Big Data Paris](https://www.bigdataparis.com/), Paris
 - 18.–20. [Intelligent Automation Nordic's RPA & AI Summit](https://rpanordics.iqpc.co.uk/), Copenhagen
 
