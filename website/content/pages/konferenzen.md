@@ -62,7 +62,8 @@ Date: 2018-02-21 10:00
 
 ### Dezember
 
-- 12.–14. [AI-2018](http://www.bcs-sgai.org/ai2018/), Cambridge, £ 430 (Vorjahr)
+- 12.–14. [AI-2018](http://www.bcs-sgai.org/ai2018/), Cambridge
+  - Full Three-day Conference: [£ 430](http://www.bcs-sgai.org/ai2018/registration/registrationfees18.htm)
 
 
 ## 2019
@@ -72,12 +73,16 @@ Date: 2018-02-21 10:00
 ### Februar
 
 - 19.–20. [Robotic Process Automation (RPA) and Artificial Intelligence (AI) Exchange](https://rpaandaiexchangeeu.iqpc.co.uk/), Germany
+  - Only via invite
 
 ### März
 
 - 01\. [Applied AI](https://www.appliedai.co.uk/), London
+  - Early Bird: £ 150 + £ 30 (VAT)
 - 11.–12. [Big Data Paris](https://www.bigdataparis.com/), Paris
+  - Registration will open in mid-November.
 - 18.–20. [Intelligent Automation Nordic's RPA & AI Summit](https://rpanordics.iqpc.co.uk/), Copenhagen
+  - Tickets: ~2–5k €
 
 ### April
 
