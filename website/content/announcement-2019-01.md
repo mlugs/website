@@ -7,7 +7,7 @@ Language: German only.
 
 ### Themen:
 
-#### Einführung in Ignite
+#### Vorstellung von Ignite
 
 https://pytorch.org/ignite/index.html
 
