@@ -9,7 +9,13 @@ Language: German only.
 
 #### Vorstellung von BERT
 
-#### Vialytics gibt ein Update seit dem letzten Vortrag
+Thilo stellt uns [BERT](https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html) vor.
+
+
+#### Vialytics Update
+
+Vialytics gibt ein Update seit dem letzten Vortrag im September 2018.
+
 
 #### Wir suchen weitere Vorträge.
 
