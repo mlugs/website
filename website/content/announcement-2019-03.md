@@ -10,6 +10,13 @@ Language: German only.
 #### Thilo: eine Kaggle-Challenge
 
 
+#### Andreas: AllenNLP
+
+- Was ist AllenNLP?
+- Warum sollte man AllenNLP anstelle von X verwenden?
+- Ein paar Beispiele in/mit AllenNLP
+
+
 #### Wir suchen weitere Vorträge.
 
 Stellt eure Projekte/Lösungen/Ideen vor.
