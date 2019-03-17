@@ -7,7 +7,7 @@ Language: German only.
 
 ### Themen:
 
-#### Thilo: eine Kaggle-Challenge
+#### Thilo: Improving Standard ResNet-50
 
 &nbsp;
 
