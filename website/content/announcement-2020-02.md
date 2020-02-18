@@ -11,7 +11,7 @@ Language: German only.
 
 &nbsp;
 
-#### Tin: Adversial-ML hacking NNs
+#### Tin: Adversarial-ML hacking NNs
 
 &nbsp;
 
