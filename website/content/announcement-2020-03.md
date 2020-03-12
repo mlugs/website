@@ -9,7 +9,11 @@ Language: German only.
 
 #### Tin: recap vfb-hackathon
 
-&nbsp;
+YOLO v3 Darknet nachtrainiert und angewendet
+
+#### Andreas: sigmorphon 2020
+
+encoder-decoder shared-task(s) - erste exploration
 
 #### Wir suchen weitere Vorträge
 
