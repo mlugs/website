@@ -1,4 +1,4 @@
-Title: MLUGS Treffen im März 2020
+Title: CANCELED: MLUGS Treffen im März 2020
 Date: 2020-02-20 14:00
 
 Unser 35. Treffen ist am Dienstag, dem 17.03.2020 in der Marienstrasse 23 bei AX Semantics.
