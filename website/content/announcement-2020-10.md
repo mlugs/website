@@ -6,7 +6,7 @@ Auch im Oktober findet ein virtuelles MLUGS-Treffen statt.
 Vorträge (10-15 Minuten/Vortrag):
 
 - Andreas: Hosting of ML models
-- ??
+- Uwe: Buchbesprechung "Deep learning for Coder with fastai & PyTorch"
 - ??
 - ??
 
