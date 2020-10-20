@@ -7,8 +7,6 @@ Vorträge (10-15 Minuten/Vortrag):
 
 - Andreas: Hosting of ML models
 - Uwe: Buchbesprechung "Deep learning for Coder with fastai & PyTorch"
-- ??
-- ??
 
 Meldet euch, wenn ihr etwas vorstellen wollt.
 Das kann etwas sein mit dem ihr euch aktuell beschäftigt, ein Problem das ihr lösen möchtet oder auch ein Plug für etwas.
