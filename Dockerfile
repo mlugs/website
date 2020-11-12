@@ -10,4 +10,4 @@ USER 1000
 
 WORKDIR /srv/pelican-website
 EXPOSE 8000
-CMD make devserver
+CMD make devserver-global
