@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+      <title>MLUGS</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+      <div class= "siteimage">
+	<a class="nodec" href="../">
+          <img width="200" height="200" src="../theme/images/logo.png">
+	</a>
+      </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="..">MLUGS</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <!--pages-->
+                <li><a class="nodec pages-header" href="../pages/about/">Über MLUGS</a></li>
+                <li><a class="nodec pages-header" href="../pages/impressum/">Impressum</a></li>
+                <li><a class="nodec pages-header" href="../pages/konferenzen/">Konferenzen in Europa</a></li>
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/mlugs/"></a></li>
+              <li><a class="nodec icon-twitter" href="https://twitter.com/mlugs_de/"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/bericht-mlugs-treffen-im-september-2018/" rel="bookmark" title="Permalink to Bericht MLUGS Treffen im September 2018">
+      Bericht MLUGS Treffen im September 2018
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2018-09-18T18:30:00+02:00">
+      18. September 2018
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX Semantics</li>
+<li>Jens, Data-Scientist, AKKA</li>
+<li>Thomas, Software-Entwickler, Vialytics</li>
+<li>Patrick, Gründer, Vialytics</li>
+<li>Wilhelm, Software-Entwickler, Automotive</li>
+<li>Benedikt, Datascientist, Daimler</li>
+<li>Stefan, Physiker, AX Semantics</li>
+<li>Michael, Software-Entwickler, AX Semantics</li>
+<li>Max, Gründer, Deep Green</li>
+<li>Thilo, Student, Business-Analytics</li>
+<li>Christoph, Software-Entwickler, Frauenhofer IPA</li>
+<li>Brandon, Software-Entwickler, Frauenhofer</li>
+<li>Arne, Software-Entwickler, selbständig</li>
+<li>David, Digital-Analytics-Consultant, diconium</li>
+</ul>
+<h3>Andreas - PyTorch vs. Tensorflow</h3>
+<h4>pro pytorch</h4>
+<ul>
+<li>explizit! die forward function muss implementiert werden</li>
+<li>debugging. kann mit pdb/print erfolgen. weil es einfach python ist</li>
+<li>PyTorch may be used as a numpy replacement for things not neural network related</li>
+</ul>
+<h4>pro tensorflow</h4>
+<ul>
+<li>viel mehr beispiele/tutorial/blogposts</li>
+<li>sehr viel größere community</li>
+<li>google</li>
+</ul>
+<h4>Beispiele</h4>
+<ul>
+<li>Titanic in keras: <a href="https://www.kaggle.com/vipul92/titanic-keras-starter">https://www.kaggle.com/vipul92/titanic-keras-starter</a></li>
+<li>
+<p>Titanic in pytorch: <a href="https://www.kaggle.com/kiranscaria/titanic-pytorch/notebook">https://www.kaggle.com/kiranscaria/titanic-pytorch/notebook</a></p>
+</li>
+<li>
+<p>simple RNN: <a href="https://gist.github.com/spro/ef26915065225df65c1187562eca7ec4">https://gist.github.com/spro/ef26915065225df65c1187562eca7ec4</a></p>
+</li>
+<li>
+<p>komplexeres beispiel in pytorch: <a href="https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html">https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html</a></p>
+</li>
+<li>
+<p>zahlen addieren in keras: <a href="https://github.com/keras-team/keras/blob/master/examples/addition_rnn.py">https://github.com/keras-team/keras/blob/master/examples/addition_rnn.py</a></p>
+</li>
+</ul>
+<h4>visualisierung</h4>
+<ul>
+<li>was ähnliches zu tensorboard von facebook: <a href="https://github.com/facebookresearch/visdom">https://github.com/facebookresearch/visdom</a></li>
+<li>Tensorboard mit pytorch: <a href="https://github.com/lanpa/tensorboardX">https://github.com/lanpa/tensorboardX</a></li>
+<li>(oder: <a href="https://github.com/torrvision/crayon">https://github.com/torrvision/crayon</a> )</li>
+<li>(oder: <a href="https://github.com/TeamHG-Memex/tensorboard_logger">https://github.com/TeamHG-Memex/tensorboard_logger</a> )</li>
+<li>oder noch viel simpler: <a href="https://github.com/stared/livelossplot">https://github.com/stared/livelossplot</a></li>
+</ul>
+<h4>eager-mode (quasi pytorch in tensorflow)</h4>
+<ul>
+<li><a href="https://medium.com/@yaroslavvb/tensorflow-meets-pytorch-with-eager-mode-714cce161e6c">https://medium.com/@yaroslavvb/tensorflow-meets-pytorch-with-eager-mode-714cce161e6c</a></li>
+</ul>
+<h4>Vergleiche von anderen</h4>
+<ul>
+<li>2017-06 - <a href="https://towardsdatascience.com/pytorch-vs-tensorflow-spotting-the-difference-25c75777377b">https://towardsdatascience.com/pytorch-vs-tensorflow-spotting-the-difference-25c75777377b</a></li>
+<li>2018-06 - <a href="https://deepsense.ai/keras-or-pytorch/">https://deepsense.ai/keras-or-pytorch/</a></li>
+<li>2017-10 - <a href="https://medium.com/huggingface/understanding-emotions-from-keras-to-pytorch-3ccb61d5a983">https://medium.com/huggingface/understanding-emotions-from-keras-to-pytorch-3ccb61d5a983</a></li>
+</ul>
+<h4>misc</h4>
+<p>sequence lib in pytorch: <a href="https://github.com/pytorch/fairseq">https://github.com/pytorch/fairseq</a></p>
+<h3>Patrick - Vialytics</h3>
+<ul>
+<li>machen Straßenzustandserfassung</li>
+<li>verwendet werden iphones und die werden kehrmaschinen/müllwagen/... eingebaut</li>
+<li>mithilfe einer app. gps und accelerometer</li>
+<li>straßen werden bewertet (mit Noten)</li>
+<li>verwendet Faster-RCNN</li>
+<li>Google Object Detection API (lokal, nicht in der cloud)</li>
+<li>Problem ist die Qualität der Annotation der Bilder</li>
+<li>Google Object Detection API hat häufig out-of-memory</li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>Datum: 2018-10-16</li>
+<li>für Vorträge gerne an melden</li>
+</ul>
+  </div><!-- .content -->
+
+</section>
+
+  </body>
+</html>

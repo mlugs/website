@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+      <title>MLUGS</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+      <div class= "siteimage">
+	<a class="nodec" href="../">
+          <img width="200" height="200" src="../theme/images/logo.png">
+	</a>
+      </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="..">MLUGS</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <!--pages-->
+                <li><a class="nodec pages-header" href="../pages/about/">Über MLUGS</a></li>
+                <li><a class="nodec pages-header" href="../pages/impressum/">Impressum</a></li>
+                <li><a class="nodec pages-header" href="../pages/konferenzen/">Konferenzen in Europa</a></li>
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/mlugs/"></a></li>
+              <li><a class="nodec icon-twitter" href="https://twitter.com/mlugs_de/"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/bericht-mlugs-treffen-im-november-2017/" rel="bookmark" title="Permalink to Bericht MLUGS Treffen im November 2017">
+      Bericht MLUGS Treffen im November 2017
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2017-11-21T18:30:00+01:00">
+      21. November 2017
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Michael; AX Semantics; Software-Entwickler</li>
+<li>Andreas; AX Semantics; Software-Entwickler</li>
+<li>Uwe;ST2C;macht Raumfahrt</li>
+<li>Wilhelm;privat;Software-Entwickler</li>
+<li>Silvana;;Data-Scientist,eigentlich NLP</li>
+<li>Jörg;privat;Finanz-ML</li>
+</ul>
+<h3>Uwe Sterr - Entity Embeddings of Categorical Variables</h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/1604.06737.pdf">https://arxiv.org/pdf/1604.06737.pdf</a></li>
+<li>
+<p>Slides: <a href="https://github.com/mlugs/website/tree/master/website/content/pdfs/Entity%20Embeddings%20of%20Categorical%20Variables.pdf">https://github.com/mlugs/website/tree/master/website/content/pdfs/Entity Embeddings of Categorical Variables.pdf</a></p>
+</li>
+<li>
+<p>wird in Lesson 14 im Fast.AI Kurs besprochen: <a href="http://course.fast.ai/lessons/lesson14.html">http://course.fast.ai/lessons/lesson14.html</a></p>
+</li>
+<li>dritter platz kaggle rossmann sales prediction</li>
+<li>verwendet DNN - relativ simples model</li>
+<li>nach dem one-hot-encoding wird eine entity embeddings layer gelegt</li>
+<li>EE dimensions-anzahl ist ausprobieren</li>
+<li>auch mit einfacheren verfahren hilft EE zu besseren ergebnissen, i.e. gradient bootesd trees</li>
+<li>es hilft eigentlich immer, tage/monate/jahre als einzelfeatures und categoricals machen</li>
+<li>auch ein gutes feature sind zeiträume; i.e. wann war die letzte wartung</li>
+<li><a href="https://github.com/uwesterr/courses/blob/master/deeplearning2/rossmanWorksWithTF1.4.ipynb">https://github.com/uwesterr/courses/blob/master/deeplearning2/rossmanWorksWithTF1.4.ipynb</a></li>
+<li>das kann man damit vielleicht mal probieren: <a href="https://www.kaggle.com/c/favorita-grocery-sales-forecasting">https://www.kaggle.com/c/favorita-grocery-sales-forecasting</a></li>
+</ul>
+<h3>mlugs 2018</h3>
+<ul>
+<li>nächster Termin Januar</li>
+<li>meetup statt letsmeet yay/nay?  yay</li>
+<li>Termine vorher anlegen/announcen!</li>
+<li>das schwere sind die Vorträge</li>
+</ul>
+<h3>Wilhelm Brasch - OCR mit Deep Learning</h3>
+<ul>
+<li>privates DL projekt</li>
+<li>chinesische untertitel erkennung</li>
+<li>fast alle chinesischen videos haben untertitel und diese entsprechen meist der gesprochenen Sprache</li>
+<li>ziel ist es 3000 schriftzeichen zu können (als chinesischlernender)</li>
+<li>trainingsset: 1000/kategorie -&gt; 10000 kategorien -&gt; 10mio</li>
+<li>generator kann unendlich viele daten erzeugen</li>
+<li>der generator mit freetype; opencv/numpy</li>
+<li>wichtig am model: batchnorm; relu</li>
+<li>deutliche verbesserung brachte ein streifen generator</li>
+<li>aktuell 99% accuracy</li>
+<li>
+<p>mit sliding window über den text. viele false positives</p>
+</li>
+<li>
+<p>plan: mehr validierungsdaten; zusätzlich zur classification noch eine zeichendetection</p>
+</li>
+<li>andere idee: regression head, um den hintergrund rauszufiltern</li>
+</ul>
+<h3>Michael Käufl - Hidden Technical Debt in Machine Learning Systems</h3>
+<ul>
+<li>https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf</li>
+<li>von google</li>
+<li>9 Abschnitte</li>
+<li>das teure ist die Wartung nicht die Entwicklung</li>
+<li>"technical dept" soll die langzeitkosten aufzeigen</li>
+<li>die gefahr liegt in der "hidden technical dept"</li>
+<li>ziel vom abbau der technischen schuld ist bessere wartbarkeit zu bekommen</li>
+<li>change anything changes everything</li>
+<li>ein feature hinzufügen/modifizieren/entfernen kann das ganze model verändern</li>
+<li>correction cascades: z.b. lernen einer korrektur auf basis eines ursprungsmodels. wenn man allerdings das ursprungsmodel anpasst, dann hat man probleme mit dem darauf aufbauenden model</li>
+<li>unklare consumer. visibility dept!</li>
+<li>data dependencies können sich wie building dept verhalten. vor allem weil das tooling noch nicht so gut ist</li>
+<li>unstable data dependencies durch versionierung/tagging lösen</li>
+<li>ML anti-patterns:</li>
+<li>glue code - wechsel zu anderen packages ist schwerer -&gt; common apis verwenden/entwickeln</li>
+<li>pipeline jungles - datenaufbereiten ist das häufiger</li>
+<li>dead experimental codepaths</li>
+<li>abstraction dept - es gibt noch keine basic abstraction für ML</li>
+<li>multi-language-smell</li>
+<li>prototype-smell - weiterverwendung des prototyps</li>
+<li>configuration dept - häufig nachrangig behandelte konfiguration</li>
+<li>wie verhalten sich manuell gewählte thresholds auf real-world-probleme und veränderungen</li>
+<li>monitoring + testing: prediction bias / action limits / up-stream producers (hat sich die qualität der fremd-daten verändert?)</li>
+<li>reproducibility dept</li>
+<li>
+<p>cultural dept: ML research vs. engineering</p>
+</li>
+<li>
+<p>conclusion:</p>
+</li>
+<li>time for new algorithmus to full scale test?</li>
+<li>wie schnell können neue mitarbeiter auf den aktuellen stand gebracht werden?</li>
+</ul>
+  </div><!-- .content -->
+
+</section>
+
+  </body>
+</html>

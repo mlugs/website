@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+      <title>MLUGS - Articles by machine learning usergroup stuttgart</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+      <div class= "siteimage">
+	<a class="nodec" href="../">
+          <img width="200" height="200" src="../theme/images/logo.png">
+	</a>
+      </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="..">MLUGS</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <!--pages-->
+                <li><a class="nodec pages-header" href="../pages/about/">Über MLUGS</a></li>
+                <li><a class="nodec pages-header" href="../pages/impressum/">Impressum</a></li>
+                <li><a class="nodec pages-header" href="../pages/konferenzen/">Konferenzen in Europa</a></li>
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/mlugs/"></a></li>
+              <li><a class="nodec icon-twitter" href="https://twitter.com/mlugs_de/"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <ol id="postlist" style="list-style-type: none;">
+
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../bericht-mlugs-treffen-im-juni-2016/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht MLUGS Treffen im Juni 2016">Bericht MLUGS Treffen im Juni 2016</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2016-06-22T10:00:00+02:00"> 22. June 2016 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas; ax-semantics; Software-Entwickler</li>
+<li>Frank; IoT/Maschinenbau-Software-Entwicklung</li>
+<li>David; arbeitet sich in ML rein; arbeitet Bücher durch</li>
+<li>Viktor; Software-Architekt bei softwareinmotion; embedded/web. inzw. ML; verwendet F#</li>
+<li>Michael; Kaufland; Datamining</li>
+<li>Armin; Kaufland; Data-Warehousing</li>
+<li>Wolfgang; Kaufland; Innovation-Management, auch Kaufland-IT macht cooles Zeug</li>
+<li>Robin; Technische Biologie-Student; shack</li>
+<li>Stefan; hat eine Firma; Java/ERP</li>
+</ul>
+<p>+1 Nachzügler</p>
+<h3>Dr. Frank Gerhardt - Machine Learning with PySpark</h3>
+<p>wurde schon als Workshop auf der PyData in Berlin gehalten.</p>
+<p><a href="https://hub.docker.com/r/gerhardt/pyspark-workshop/">https://hub.docker.com/r/gerhardt/pyspark-workshop/</a></p>
+<p>Die Idee hinter PySpark: Apache Spark ist ein Framework um Kollektions beliebiger Größe verarbeiten zu können. Massiv parallel.</p>
+<p>Macht quasi map/reduce.</p>
+<p>Frank würde eher Cassandra verwenden. Und nicht Hadoop.</p>
+<p>Spark arbeitet komplett im RAM. Und verwendet eine Datenbank/Festplatte.</p>
+<p>Hat sehr viele ML-Funktionen fertig implementiert dabei.</p>
+<p>Idee: mit spark macht man aus vielen servern nach aussen hin einen Server.</p>
+<p>Integrierte Fehlertoleranz. Wenn ein Knoten ausfällt, werden die Jobs neu verteilt. </p>
+<p>PySpark redet über socket/pipes mit Spark/JVM.</p>
+<p>DataFrame als basis der Daten hat ein Schema. Das Schema wird abgeleitet aus den Daten. Das Schema sollte sich dann nicht mehr ändern.</p>
+<p>PySpark hängt immer etwas hinterher in der Entwicklung, weil eben erst Java und Scala entwickelt werden.</p>
+<p>DataFrame ist in Scala, Python, R und SQL gleich schnell.</p>
+<p>Zusammenfassung: Spark kann Collections berechnen und ist dabei nicht durch den RAM beschränkt.</p>
+<p>Todo jetzt: Datensammeln!! Später kann man dann modelle darauf rechnen. Wenn man keine Daten hat, dann kann man kein ML machen!</p>
+<h3>Diskussion</h3>
+<p>Wie beeinflusst ML Nutzer und wie verändern Nutzer ihr Verhalten, um den richtigen Effekt zu bekommen (und "tricksen" damit den Algorithmus aus).</p>
+<p>Privacydiskussion. Wenn der Laden den Nutzer auf Basis der Mac-Adresse im Wifi trackt.</p>
+<h4>alternativer Mitschrieb zum Vortrag</h4>
+<p>Spark</p>
+<ul>
+<li>große Datenmengen, die nicht nach oben begrenzt sind (nur Plattenplatz/memory ist limitierend)</li>
+<li>Streamverarbeitung: </li>
+</ul>
+<p>findspark # Hilft beim auffinden</p>
+<div class="highlight"><pre><span></span><code><span class="err">sc=pysparc.SparkContext()</span>
+<span class="err">sc.parallelize(range(1,1000),4).map(lambda x: 1/x)</span>
+</code></pre></div>
+
+<p>Cluster aus NUCs, gemeinsame Nutzung von Hauptspeicher, HD etc. </p>
+<h5>What is spark</h5>
+<ul>
+<li>implementiert in Java/</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spark SQL</td>
+<td>Sparc streaming real-time</td>
+<td>MLlib machine learning</td>
+<td>GraphX graph processing</td>
+</tr>
+<tr>
+<td>sparc</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Scheduler</td>
+<td>YARN</td>
+<td>Mesos</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>MLlib: machine learning lib
+pyspark.ml</p>
+<div class="highlight"><pre><span></span><code><span class="err">Spark driver</span>
+<span class="err">    -&gt; </span>
+<span class="err">    Cluster master</span>
+<span class="err">        -&gt; Cluster worker</span>
+</code></pre></div>
+
+<h6>main concept: RDD</h6>
+<ul>
+<li>RDD: resilient distributed dataset</li>
+<li>resilient: recover from failures</li>
+<li>distributed</li>
+<li>dataset: can be large (much larger than RAM)</li>
+</ul>
+<p>RDD metadata</p>
+<ul>
+<li>partitions (eher viele, 10000)</li>
+<li>dependencies</li>
+<li>compute function</li>
+<li>preferred locations</li>
+<li>partitioner</li>
+</ul>
+<p>RDD creation from
+* persistent storage: files, HDFS, Cassandra, HBAse
+* python collection
+* ...</p>
+<p>RDD caching</p>
+<ul>
+<li>memory</li>
+<li>mem+disk</li>
+<li>disk (seldom used)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="err">rdd1=sc.range(1,12345)</span>
+<span class="err">rdd2=rdd1.map(lambda x: x+1)</span>
+<span class="err">rdd2.collect()</span>
+<span class="err"># rdd2.cache() # otherwise result needs to be recomputed if needed later</span>
+</code></pre></div>
+
+<p>transformations and actions</p>
+<ul>
+<li>Aufbau eines Execute-Graphen</li>
+</ul>
+<p>Demo word-count im jupyter notebook</p>
+<h5>pysparc</h5>
+<p>Cluster</p>
+<ul>
+<li>Spark Worker on JVM<ul>
+<li>&lt;- Pipe -&gt; Python  </li>
+</ul>
+</li>
+<li>Spark Worker on JVM<ul>
+<li>&lt;- Pipe -&gt; Python  </li>
+</ul>
+</li>
+</ul>
+<p>Local</p>
+<ul>
+<li>Py4J <ul>
+<li>Spark Context
+-&gt; Local file system
+-&gt; ...</li>
+</ul>
+</li>
+</ul>
+<p>Data frame</p>
+<ul>
+<li>DF has schema</li>
+<li>not as lazy as RDDs are</li>
+</ul>
+<p>Data Sets</p>
+<ul>
+<li>wegen fehlender Typisierung: not available yet</li>
+</ul>
+<h5>Pointer</h5>
+<ul>
+<li>Advanced Analytics with Spark: Patterns for Learning from Data at Scale http://shop.oreilly.com/product/0636920035091.do</li>
+<li>https://github.com/gerhardt-io</li>
+</ul>
+<h3>Lightningtalks</h3>
+<h4>Andreas Madsack - TensorFlow auf dem Raspberry PI 3</h4>
+<p><a href="https://github.com/mlugs/jupyter/blob/master/notebook/Lightning%20Talk%20-%20Tensorflow%20on%20RaspberryPi%203.ipynb">https://github.com/mlugs/jupyter/blob/master/notebook/Lightning%20Talk%20-%20Tensorflow%20on%20RaspberryPi%203.ipynb</a></p>
+<p>Ähnlich sinnvolle Anwendung von ML: http://joelgrus.com/2016/05/23/fizz-buzz-in-tensorflow/</p>
+<h4>Andreas Madsack - Parsey McParseface and SyntaxNet</h4>
+<p><a href="https://github.com/mlugs/jupyter/blob/master/notebook/Lightning%20Talk%20-%20Parsey%20McParseface%20and%20SyntaxNet.ipynb">https://github.com/mlugs/jupyter/blob/master/notebook/Lightning%20Talk%20-%20Parsey%20McParseface%20and%20SyntaxNet.ipynb</a></p>
+<h4>Martin Weis - Data Mining</h4>
+<p>Herbologie an der Uni-Hohenheim.</p>
+<p>Schnelldurchlauf über Data-Mining.</p>
+<p>hilfreich: deviation plot (mittelwert/std-abweichung)</p>
+<p>alternative software: <a href="http://community.pentaho.com/">http://community.pentaho.com/</a></p>
+<h3>next</h3>
+<p>wir wollen business-usecases zusammentragen und diskutieren.</p>
+<p>nächster Termin ist Dienstag, der 19. Juli 2016!</p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../mlugs-treffen-im-juni-2016/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to MLUGS Treffen im Juni 2016">MLUGS Treffen im Juni 2016</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2016-05-18T14:00:00+02:00"> 18. May 2016 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Unser zweites Treffen ist am Dienstag, den 21.6. in der Marienstrasse 23 bei aexea.</p>
+<h3>Themen:</h3>
+<ul>
+<li>Dr. Frank Gerhardt - <strong>Machine Learning with PySpark</strong>. Kurzfassung des <a href="http://pydata.org/berlin2016/schedule/presentation/28/">Workshops</a> von der <a href="http://pydata.org/berlin2016/schedule/">PyData Berlin 2016</a>. Wer live hands-on mitmachen will, kann sich das <a href="https://hub.docker.com/r/gerhardt/pyspark-workshop/">Docker Image holen</a>.  </li>
+<li>(weitere Vorschläge sind willkommen)</li>
+<li>
+<p>Lightningtalks:</p>
+<ul>
+<li>Andreas Madsack - Tensorflow auf dem Raspberry PI</li>
+<li>(auch hier könnt ihr gerne Vorschläge machen)</li>
+</ul>
+</li>
+</ul>
+<h3>Wann:</h3>
+<p>21. Juni 2016 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>Marienstrasse 23, Stuttgart-Süd, aexea (1. OG)</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.letsmeet.click/c/machine-learning-user-group-stuttgart">https://www.letsmeet.click/c/machine-learning-user-group-stuttgart</a></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../bericht-mlugs-treffen-im-april-2016/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht MLUGS Treffen im April 2016">Bericht MLUGS Treffen im April 2016</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2016-04-22T10:00:00+02:00"> 22. April 2016 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<p>18 Leute erzählen wie sie heissen, wo sie arbeiten und wieviel Ahnung sie von ML haben.<br>
++2 Nachzügler.</p>
+<p>Das hier lohnt sich: <a href="https://www.coursera.org/learn/machine-learning/">https://www.coursera.org/learn/machine-learning/</a></p>
+<h3>Vortrag: David Lackovic - Einführung in Machine Learning mit Scikit-Learn</h3>
+<p><a href="http://scikit-learn.org/">scikit-learn</a> ist die ML-Bibliothek für Python (verwendet NumPy und SciPy)</p>
+<p>Fragen:</p>
+<ul>
+<li>Was passiert eigentlich im Hintergrund? (Wie viele Layer?, …) Strategien?</li>
+<li>Korrektheit, Validierung, … (des Klassifikators)</li>
+<li>
+<p>Empfehlung: Choosing the right estimator – <a href="http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html">http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html</a> (A graphical overview of basic areas of machine learning, and guidance which kind of algorithms to use in a given situation.)</p>
+</li>
+<li>
+<p>Slides: <a href="https://github.com/mlugs/jupyter/blob/master/notebook/MLUGS%20Scikit-Learn.ipynb">https://github.com/mlugs/jupyter/blob/master/notebook/MLUGS%20Scikit-Learn.ipynb</a></p>
+</li>
+</ul>
+<h3>Buchvorstellung: Andreas Madsack - Python Machine Learning</h3>
+<ul>
+<li>Sehr technisch und mit viel Mathematik (erklärt die Theorie hinter ML)</li>
+<li>Best Practice Implementierungen</li>
+<li>Code gibt es bei Github in IPython Notebooks: <a href="https://github.com/rasbt/python-machine-learning-book">https://github.com/rasbt/python-machine-learning-book</a></li>
+<li><a href="https://www.tensorflow.org/">https://www.tensorflow.org/</a></li>
+<li><a href="http://deeplearning.net/software/theano/">http://deeplearning.net/software/theano/</a></li>
+</ul>
+<p><a href="http://shop.oreilly.com/product/9781783555130.do">http://shop.oreilly.com/product/9781783555130.do</a><br>
+Discount Code: WCYAZ (40% gedruckt, 50% digital)</p>
+<ul>
+<li>Slides: <a href="https://github.com/mlugs/jupyter/blob/master/notebook/Book--Python_Machine_Learning.ipynb">https://github.com/mlugs/jupyter/blob/master/notebook/Book--Python_Machine_Learning.ipynb</a></li>
+</ul>
+<h3>Lightning Talks</h3>
+<ul>
+<li>Vorstellung des Tensorflow Playgrounds: <a href="http://playground.tensorflow.org/">http://playground.tensorflow.org/</a></li>
+<li>Slides: <a href="https://github.com/mlugs/jupyter/blob/master/notebook/Lightning-Talk--TensorFlow-Playground.ipynb">https://github.com/mlugs/jupyter/blob/master/notebook/Lightning-Talk--TensorFlow-Playground.ipynb</a></li>
+</ul>
+<h3>Diskussion</h3>
+<ul>
+<li>Wann soll das nächste Treffen stattfinden? <strong>21.6.2016</strong></li>
+<li>Autonomes Fahren und ML</li>
+<li>Wer verwendet ML in der Wirtschaft?<ul>
+<li>Bauern optimieren. z.b. humpelt die Kuh, ist was auf dem Acker problematisch, ist die Milch in Ordnung …</li>
+<li>Frauddetection bei Kreditkarten</li>
+<li>Intrusiondetection bei Netzwerken</li>
+<li>noch nicht die Raumfahrt :)</li>
+</ul>
+</li>
+<li>Overfitting<ul>
+<li>einfacheres Model finden (aber nicht zu einfach)</li>
+<li>mehr Trainingsdaten</li>
+</ul>
+</li>
+</ul>
+<p><img alt="image 1" src="/images/2016-04_image1.jpg"> <img alt="image 2" src="/images/2016-04_image2.jpg"></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../erstes-treffen-april-2016/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Erstes Treffen April 2016">Erstes Treffen April 2016</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2016-04-07T22:00:00+02:00"> 07. April 2016 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Unser erstes Treffen ist am Donnerstag, den 21.4. in der Marienstrasse 23 bei aexea.</p>
+<h3>Themen:</h3>
+<ol>
+<li>"sklearn (Python Machine Learning Framework) Einführung" von David Lackovic</li>
+<li>eine Buchvorstellung (Machine Learning mit Python)</li>
+<li>2-3 Lightningtalks</li>
+</ol>
+<h3>Wann:</h3>
+<p>21. April 2016 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>Marienstrasse 23, Stuttgart-Süd, aexea (1. OG)</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.letsmeet.click/c/machine-learning-user-group-stuttgart">https://www.letsmeet.click/c/machine-learning-user-group-stuttgart</a></p> </div>
+    </li>
+
+  </ol><!-- /#post-list -->
+
+
+</section><!-- /#content -->
+
+  </body>
+</html>

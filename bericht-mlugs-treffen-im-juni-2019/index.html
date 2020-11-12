@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+      <title>MLUGS</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+      <div class= "siteimage">
+	<a class="nodec" href="../">
+          <img width="200" height="200" src="../theme/images/logo.png">
+	</a>
+      </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="..">MLUGS</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <!--pages-->
+                <li><a class="nodec pages-header" href="../pages/about/">Über MLUGS</a></li>
+                <li><a class="nodec pages-header" href="../pages/impressum/">Impressum</a></li>
+                <li><a class="nodec pages-header" href="../pages/konferenzen/">Konferenzen in Europa</a></li>
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/mlugs/"></a></li>
+              <li><a class="nodec icon-twitter" href="https://twitter.com/mlugs_de/"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/bericht-mlugs-treffen-im-juni-2019/" rel="bookmark" title="Permalink to Bericht MLUGS Treffen im Juni 2019">
+      Bericht MLUGS Treffen im Juni 2019
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2019-06-18T18:30:00+02:00">
+      18. June 2019
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX-Semantics</li>
+<li>Hermann, IT-Architekt / Mathematiker, Vorruhestand / DHBW</li>
+<li>Lars, Freiberuflicher Entwickler CGI</li>
+<li>John, 3d-artist, klassiche 3d-produktion; unreal/unity</li>
+<li>Stefan, bilderkennung/outlyer-detection</li>
+<li>wilhelm, software-entwickler, privat</li>
+<li>christian, automatisierungstechniker, selbständig</li>
+<li>jens, data-scientist, akka</li>
+<li>marvin, algorithmenentwicker, automotive</li>
+<li>thomas, data-scientist, ap sensing</li>
+<li>thilo, consultant, freelancer</li>
+<li>uwe, raumfahrt / laser, selbständig</li>
+</ul>
+<h3>Thilo: Objekterkennung</h3>
+<ul>
+<li>
+<p>convolution + relu + batchnorm</p>
+</li>
+<li>
+<p>feature pyramid networks - haben sich quasi durchgesetzt</p>
+</li>
+<li>path aggregation networks - brauchen mehr vram</li>
+<li>
+<p>global convolution networks - auch hier viel ram - sehr kleine batches</p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/1703.02719">https://arxiv.org/abs/1703.02719</a></p>
+</li>
+</ul>
+<p>typen von aufgaben (head):</p>
+<ul>
+<li>bildklassifikation</li>
+<li>objekterkennung</li>
+<li>bildsegmentierung</li>
+<li>keypoint detection (i.e. beim menschen)</li>
+<li>visual reasoning</li>
+</ul>
+<p>detectortyps:</p>
+<ul>
+<li>YOLO, SSD</li>
+<li>
+<p>faster-r cnn (2 stages)</p>
+</li>
+<li>
+<p><a href="https://www.jeremyjordan.me/object-detection-one-stage/">https://www.jeremyjordan.me/object-detection-one-stage/</a></p>
+</li>
+<li><a href="https://arxiv.org/abs/1708.02002">https://arxiv.org/abs/1708.02002</a></li>
+</ul>
+<p>bei 2-stages: first step: ist es vordergrund oder hintergrund</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1703.06870">https://arxiv.org/abs/1703.06870</a></li>
+</ul>
+<p>code:</p>
+<ul>
+<li><a href="https://github.com/roytseng-tw/Detectron.pytorch">https://github.com/roytseng-tw/Detectron.pytorch</a></li>
+</ul>
+<p>datasets:</p>
+<ul>
+<li><a href="http://cocodataset.org/">http://cocodataset.org/</a></li>
+<li><a href="https://opensource.google.com/projects/open-images-dataset">https://opensource.google.com/projects/open-images-dataset</a></li>
+<li><a href="https://cs.stanford.edu/people/jcjohns/clevr/">https://cs.stanford.edu/people/jcjohns/clevr/</a></li>
+<li><a href="https://visualgenome.org">https://visualgenome.org</a></li>
+</ul>
+<h3>verschiedenes</h3>
+<ul>
+<li>edge computer: <a href="https://www.nvidia.com/de-de/autonomous-machines/embedded-systems/jetson-nano/">https://www.nvidia.com/de-de/autonomous-machines/embedded-systems/jetson-nano/</a></li>
+<li>
+<p>robocar - <a href="https://www.meetup.com/Esslingen-Makerspace/">https://www.meetup.com/Esslingen-Makerspace/</a></p>
+</li>
+<li>
+<p>NAACL 2019</p>
+<ul>
+<li>Blogpost von Sebastian Ruder: <a href="http://ruder.io/naacl2019/">http://ruder.io/naacl2019/</a></li>
+<li>btw, Best Paper: BERT</li>
+<li>video zu elmo/bert/... von Prof. Manning (stanford): <a href="https://www.youtube.com/watch?v=S-CspeZ8FHc">https://www.youtube.com/watch?v=S-CspeZ8FHc</a></li>
+<li>stand der dinge in NLP: <a href="https://medium.com/huggingface/the-best-and-most-current-of-modern-natural-language-processing-5055f409a1d1">https://medium.com/huggingface/the-best-and-most-current-of-modern-natural-language-processing-5055f409a1d1</a></li>
+<li><a href="http://blog.aylien.com/a-review-of-the-recent-history-of-natural-language-processing/">http://blog.aylien.com/a-review-of-the-recent-history-of-natural-language-processing/</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/zalandoresearch/fashion-mnist">https://github.com/zalandoresearch/fashion-mnist</a></p>
+</li>
+<li>
+<p><a href="https://github.com/zalandoresearch/flair">https://github.com/zalandoresearch/flair</a></p>
+</li>
+<li>
+<p>spaCy</p>
+<ul>
+<li><a href="https://spacy.io/usage/spacy-101">https://spacy.io/usage/spacy-101</a></li>
+<li><a href="https://course.spacy.io/">https://course.spacy.io/</a></li>
+<li><a href="https://medium.com/eliiza-ai/a-tour-of-awesome-features-of-spacy-part-1-2-58b32425954f">https://medium.com/eliiza-ai/a-tour-of-awesome-features-of-spacy-part-1-2-58b32425954f</a></li>
+<li>spacy universe: <a href="https://spacy.io/universe">https://spacy.io/universe</a></li>
+</ul>
+</li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>date: 2019-09-17</li>
+<li>wir suchen Vorträge!!</li>
+</ul>
+  </div><!-- .content -->
+
+</section>
+
+  </body>
+</html>

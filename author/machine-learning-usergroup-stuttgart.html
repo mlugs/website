@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+      <title>MLUGS - Articles by machine learning usergroup stuttgart</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+      <div class= "siteimage">
+	<a class="nodec" href="../">
+          <img width="200" height="200" src="../theme/images/logo.png">
+	</a>
+      </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="..">MLUGS</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <!--pages-->
+                <li><a class="nodec pages-header" href="../pages/about/">Über MLUGS</a></li>
+                <li><a class="nodec pages-header" href="../pages/impressum/">Impressum</a></li>
+                <li><a class="nodec pages-header" href="../pages/konferenzen/">Konferenzen in Europa</a></li>
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/mlugs/"></a></li>
+              <li><a class="nodec icon-twitter" href="https://twitter.com/mlugs_de/"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <ol id="postlist" style="list-style-type: none;">
+
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../virtuelles-mlugs-treffen-im-november-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to virtuelles MLUGS Treffen im November 2020">virtuelles MLUGS Treffen im November 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-10-26T14:00:00+01:00"> 26. October 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Auch im November findet ein virtuelles MLUGS-Treffen statt.</p>
+<p>Vorträge (10-15 Minuten/Vortrag):</p>
+<ul>
+<li>Andreas Graf: Requirements Traceability and Open Source Natural Language Processing</li>
+<li>Tin: Detectron2</li>
+<li>Uwe: Adaptive Optik mit Machine Learning, Problemvorstellung</li>
+<li>Andreas: Hyperparameter optimization using Weights &amp; Biases</li>
+</ul>
+<p>Meldet euch, wenn ihr etwas vorstellen wollt.
+Das kann etwas sein mit dem ihr euch aktuell beschäftigt, ein Problem das ihr lösen möchtet oder auch ein Plug für etwas.
+Es sollte etwas mit machine-learning zu tun haben.</p>
+<p>Wir werden Zoom verwenden.</p>
+<h3>Wann:</h3>
+<p>17. November 2020 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>virtuell. Zoom.</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../bericht-virtuelles-mlugs-treffen-im-oktober-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht (virtuelles) MLUGS Treffen im Oktober 2020">Bericht (virtuelles) MLUGS Treffen im Oktober 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-10-20T20:00:00+02:00"> 20. October 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Intro</h3>
+<p>Das Ziel der MLUGS ist der Austausch über Machine-Learning-Themen.
+Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zum jeweiligen Thema.</p>
+<h3>Teilnehmer</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX-Semantics</li>
+<li>Uwe, ST2C, Laser comm in space</li>
+<li>Philipp, ML-Engineer &amp; start-up co-founder</li>
+<li>
+<p>Jens, Data Scientist, AKKA</p>
+</li>
+<li>
+<p>5 weitere</p>
+</li>
+</ul>
+<h3>Andreas: Hosting of ML models</h3>
+<h4>AWS ECS (Fargate)</h4>
+<ul>
+<li>expensive: 10+$/month (0.25cpu / 1GB ram) | 27$/month (0.5cpu / 4GB ram)</li>
+<li>min 0.25cpu possible</li>
+<li>max 30GB possible</li>
+<li>deployment can be tricky when reproducable (cloudformation)</li>
+<li>when running - low maintenance</li>
+<li>examples:<ul>
+<li><a href="https://compound-split.research.qax.io/docs">https://compound-split.research.qax.io/docs</a></li>
+</ul>
+</li>
+</ul>
+<h4>Google Cloud Run (GCR)</h4>
+<ul>
+<li>zero downscaling option -&gt; "cheap"</li>
+<li>needs to boot every time -&gt; startup time can be a few seconds when cold</li>
+<li>2GB limit for managed option</li>
+<li>for more memory: GKE - complicated to setup - expensive to run</li>
+<li>really easy to deploy</li>
+</ul>
+<div class="highlight"><pre><span></span><code>gcloud builds submit --tag eu.gcr.io/&lt;PROJECT_ID&gt;/compound-split
+gcloud run deploy compound-split --image eu.gcr.io/&lt;PROJECT_ID&gt;/compound-split --allow-unauthenticated --memory<span class="o">=</span>1G
+</code></pre></div>
+
+<ul>
+<li>300$ credit in the first year and enough free credits to run low usage GCR services free after that</li>
+<li>examples:<ul>
+<li><a href="https://compound-split-ejn6yf4k4q-ez.a.run.app/docs">https://compound-split-ejn6yf4k4q-ez.a.run.app/docs</a></li>
+</ul>
+</li>
+</ul>
+<h4>Hetzner VPS</h4>
+<ul>
+<li>the cheapest option: 3€+/month (2GB ram) | 60€/month (30GB ram)</li>
+<li>you have to maintain everything. including linux</li>
+<li>you have to add SSL</li>
+<li>automated deployments can be hard</li>
+</ul>
+<h4>Paperspace gradient deployments</h4>
+<ul>
+<li>expensive: $12+/month (+ possible usage)</li>
+<li>needs G1 plan</li>
+<li>free old GPUs (with time limits)</li>
+<li>managed</li>
+<li><a href="https://gradient.paperspace.com/pricing">https://gradient.paperspace.com/pricing</a></li>
+<li>google for "paperspace promo code" to get 10$ credit!</li>
+</ul>
+<h4>Floydhub model serving</h4>
+<ul>
+<li>expensive: cpu usage (~1$/h)</li>
+<li>easy to use</li>
+<li>managed</li>
+<li><a href="https://docs.floydhub.com/guides/serving/">https://docs.floydhub.com/guides/serving/</a></li>
+</ul>
+<h3>Uwe: Buchbesprechung "Deep learning for Coder with fastai &amp; PyTorch"</h3>
+<ul>
+<li>das Buch: <a href="https://github.com/fastai/fastbook">https://github.com/fastai/fastbook</a></li>
+<li>
+<p>Notebooks / Kurs: <a href="https://course.fast.ai/">https://course.fast.ai/</a></p>
+</li>
+<li>
+<p>das erste Kapitel ist sehr praxisorientiert um schnell eine gute Lösung im Unternehmen zu haben</p>
+</li>
+<li>trainiert erst ein Modell und schaut euch dann die Fehler an, die es gemacht hat und bereinigt erst dann die Daten (falls nötig)</li>
+<li>Deployment-Beispiele mit <a href="https://voila.readthedocs.io/">Voila</a> auf Heroku</li>
+<li>cropping/presizing von Bildern in der GPU</li>
+<li>Anschauen: learning-rate-finder</li>
+<li>
+<p>hintere layers bekommen größere learning-rate</p>
+</li>
+<li>
+<p>Podcast mit Jeremy Howard: <a href="https://lexfridman.com/jeremy-howard/">https://lexfridman.com/jeremy-howard/</a></p>
+</li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>date: 2020-11-17</li>
+<li>talks:</li>
+<li>(meldet euch wenn ihr Vorträge habt!)</li>
+</ul> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../virtuelles-mlugs-treffen-im-oktober-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to virtuelles MLUGS Treffen im Oktober 2020">virtuelles MLUGS Treffen im Oktober 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-09-28T13:00:00+02:00"> 28. September 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Auch im Oktober findet ein virtuelles MLUGS-Treffen statt.</p>
+<p>Vorträge (10-15 Minuten/Vortrag):</p>
+<ul>
+<li>Andreas: Hosting of ML models</li>
+<li>Uwe: Buchbesprechung "Deep learning for Coder with fastai &amp; PyTorch"</li>
+</ul>
+<p>Meldet euch, wenn ihr etwas vorstellen wollt.
+Das kann etwas sein mit dem ihr euch aktuell beschäftigt, ein Problem das ihr lösen möchtet oder auch ein Plug für etwas.
+Es sollte etwas mit machine-learning zu tun haben.</p>
+<p>Wir werden Zoom verwenden.</p>
+<h3>Wann:</h3>
+<p>20. Oktober 2020 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>virtuell. Zoom.</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../bericht-virtuelles-mlugs-treffen-im-september-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht (virtuelles) MLUGS Treffen im September 2020">Bericht (virtuelles) MLUGS Treffen im September 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-09-15T23:00:00+02:00"> 15. September 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Intro</h3>
+<p>Das Ziel der MLUGS ist der Austausch über Machine-Learning-Themen.
+Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zum jeweiligen Thema.</p>
+<h3>Teilnehmer</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX-Semantics</li>
+<li>Thomas, Data Scientist</li>
+<li>Lukas, Mechatronik &amp; SupplyChain, Sensor.Community</li>
+<li>David, Analytics Engineer</li>
+<li>Steffen, Data Driven Visuals, Brands and Spaces</li>
+</ul>
+<h3>Andreas: GPT2 für nicht-Englisch zu trainieren</h3>
+<p>Slides / Notebook: <a href="https://github.com/mfa/talks/blob/master/20200915--train-GPT2-not-in-English/slides.ipynb">https://github.com/mfa/talks/blob/master/20200915--train-GPT2-not-in-English/slides.ipynb</a></p>
+<h3>Thomas: Mensa-Bezahlung überprüfen</h3>
+<ul>
+<li>mit camera das Essen filmen</li>
+<li>Damit überprüfen ob das richtige bezahlt wird</li>
+<li>verwendet yolov3 + vgg16</li>
+<li>trainingsdaten manuell annotiert: 40-60 bilder / zu erkennendes objekt</li>
+<li>wird weiter entwickelt: next viewshot detection</li>
+</ul>
+<h3>Steffen: Möbelszenenvisualisierung</h3>
+<h3>next</h3>
+<ul>
+<li>machen wir das jetzt (wieder) regelmässig? ja</li>
+<li>müssen die Vorträge besser geplant werden? mglw. nötig bei mehr Teilnehmern</li>
+<li>date: 2020-10-20</li>
+<li>
+<p>talks:</p>
+<ul>
+<li>Andreas: Hosting of ML models</li>
+<li>??</li>
+</ul>
+</li>
+</ul> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../virtuelles-mlugs-treffen-im-september-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to virtuelles MLUGS Treffen im September 2020">virtuelles MLUGS Treffen im September 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-08-17T13:00:00+02:00"> 17. August 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Wir versuchen nach der Corona-Pause den virtuellen Neustart der MLUGS.</p>
+<p>Der Plan für diesen Termin ist, jede/r (die/der möchte) stellt in 5-10 Minuten etwas vor.<br>
+Das kann etwas sein mit dem man sich aktuell beschäftigt, ein Problem das man lösen möchte oder auch ein Plug für etwas.<br>
+Es sollte allerdings schon mit machine-learning zu tun haben.<br>
+Z.B. könnte ich von meinen Versuchen berichten, GPT2 für nicht-Englisch zu trainieren.  </p>
+<p>Wir werden Zoom verwenden und der Link wird (auf Meetup) rechtzeitig ergänzt.</p>
+<h3>Wann:</h3>
+<p>15. September 2020 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>virtuell. Zoom.</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../canceled-mlugs-treffen-im-marz-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to CANCELED: MLUGS Treffen im März 2020">CANCELED: MLUGS Treffen im März 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-02-20T14:00:00+01:00"> 20. February 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Unser 35. Treffen ist am Dienstag, dem 17.03.2020 in der Marienstrasse 23 bei AX Semantics.</p>
+<p>Language: German only.</p>
+<h3>Themen:</h3>
+<h4>Tin: recap vfb-hackathon</h4>
+<p>YOLO v3 Darknet nachtrainiert und angewendet</p>
+<h4>Andreas: sigmorphon 2020</h4>
+<p>encoder-decoder shared-task(s) - erste exploration</p>
+<h4>Wir suchen weitere Vorträge</h4>
+<p>&nbsp;</p>
+<h3>Wann:</h3>
+<p>17. März 2020 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>Marienstrasse 23, Stuttgart, AX Semantics (2. OG)</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../bericht-mlugs-treffen-im-februar-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht MLUGS Treffen im Februar 2020">Bericht MLUGS Treffen im Februar 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-02-18T18:30:00+01:00"> 18. February 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Tin, DHBW-Dozent</li>
+<li>Andreas, Software-Entwickler, AX-Semantics</li>
+<li>Frank, mlugs-Gründer</li>
+<li>Daniel, Wirtschaft-Informatiker / IT-Berufe-Ausbilder, Trumpf</li>
+<li>Ioana, Bosch-Rexrodt, IOT</li>
+<li>Jörg, Data-Engineer, Bosch</li>
+<li>Romeo, Rust-Meetup-Organizer, will KI mit SAP nutzen</li>
+<li>Andreas, Software-Entwickler, WGV</li>
+<li>Uwe, macht Raumfahrt, ST2C</li>
+<li>Stefan, ML-Berater, Deloitte</li>
+<li>Simon, Mathematiker, macht seit 2015 ML</li>
+</ul>
+<p>+2 Nachzügler</p>
+<h3>Uwe: Kaggle Survey</h3>
+<ul>
+<li>Kaggle bietet datasets und problemstellungen</li>
+<li>sinn der survey: was wird so benutzt, welche platformen</li>
+<li>häufigste algorithmen: linear / logistic regression; decision tree/random tree; gradient boosting</li>
+</ul>
+<p>podcasts:</p>
+<ul>
+<li><a href="https://changelog.com/practicalai">https://changelog.com/practicalai</a></li>
+<li><a href="https://lexfridman.com/ai/">https://lexfridman.com/ai/</a></li>
+</ul>
+<p>online-kurse:</p>
+<ul>
+<li>viel coursera</li>
+<li>kaggle lean</li>
+<li>udemy</li>
+<li>fast.ai</li>
+</ul>
+<p>weitere automated ML (nicht in der liste):</p>
+<ul>
+<li><a href="https://github.com/automl/Auto-PyTorch">https://github.com/automl/Auto-PyTorch</a></li>
+</ul>
+<p>Slides von Uwe: <a href="http://machinelearningintro.uwesterr.de/KaggleSurvey.html">http://machinelearningintro.uwesterr.de/KaggleSurvey.html</a></p>
+<h3>Tin: Adversarial-ML hacking NNs</h3>
+<p>Hacking NNs mit FGSM</p>
+<ul>
+<li>panda beispiel: panda bild + X wird als Gibbon erkannt</li>
+<li><a href="https://www.tensorflow.org/tutorials/generative/adversarial_fgsm">https://www.tensorflow.org/tutorials/generative/adversarial_fgsm</a></li>
+<li><a href="https://pytorch.org/tutorials/beginner/fgsm_tutorial.html">https://pytorch.org/tutorials/beginner/fgsm_tutorial.html</a></li>
+<li><a href="https://github.com/IBM/adversarial-robustness-toolbox">https://github.com/IBM/adversarial-robustness-toolbox</a></li>
+</ul>
+<p>slides: <a href="https://github.com/tvotan/mlugs_adversarial_ml/blob/master/mlugs_adversarial_ml.pdf">https://github.com/tvotan/mlugs_adversarial_ml/blob/master/mlugs_adversarial_ml.pdf</a></p>
+<h3>misc</h3>
+<ul>
+<li>
+<p>meetup zu chatbots: <a href="https://www.meetup.com/ChatbotStuttgart/events/267929038/">https://www.meetup.com/ChatbotStuttgart/events/267929038/</a></p>
+</li>
+<li>
+<p>tesseract-ocr ist gut: <a href="https://github.com/tesseract-ocr/tesseract">https://github.com/tesseract-ocr/tesseract</a></p>
+</li>
+<li>
+<p>gute blogposts zu opencv: <a href="https://www.pyimagesearch.com/">https://www.pyimagesearch.com/</a></p>
+</li>
+<li>
+<p>numpy/pandas in schnell mit Rust: <a href="https://www.weld.rs/">https://www.weld.rs/</a></p>
+</li>
+<li>python-regex in schnell mit Rust: <a href="https://github.com/davidblewett/rure-python">https://github.com/davidblewett/rure-python</a></li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>Date: 2020-03-17</li>
+<li>Themen:</li>
+<li>Tin: recap vfb-hackathon - <a href="https://www.vfb-hackathon.de/de">https://www.vfb-hackathon.de/de</a></li>
+<li>(bitte meldet euch, wenn ihr einen Vortrag habt)</li>
+</ul> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../mlugs-treffen-im-februar-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to MLUGS Treffen im Februar 2020">MLUGS Treffen im Februar 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-01-31T11:00:00+01:00"> 31. January 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Unser 34. Treffen ist am Dienstag, dem 18.02.2020 in der Marienstrasse 23 bei AX Semantics.</p>
+<p>Language: German only.</p>
+<h3>Themen:</h3>
+<h4>Uwe: Kaggle Survey</h4>
+<p>&nbsp;</p>
+<h4>Tin: Adversarial-ML hacking NNs</h4>
+<p>&nbsp;</p>
+<h4>Wir suchen weitere Vorträge</h4>
+<p>&nbsp;</p>
+<h3>Wann:</h3>
+<p>18. Februar 2020 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>Marienstrasse 23, Stuttgart, AX Semantics (2. OG)</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../bericht-mlugs-treffen-im-januar-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht MLUGS Treffen im Januar 2020">Bericht MLUGS Treffen im Januar 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-01-21T18:30:00+01:00"> 21. January 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX-Semantics</li>
+<li>Uwe, ST2C</li>
+<li>Florian, Kärcher</li>
+<li>Alessandro, Security Manager, Bosch</li>
+<li>Brian</li>
+<li>Julian, Master-Student, Bosch</li>
+<li>Thomas, Data-Scientist, AB Sensing</li>
+<li>Jan, Mathematiker, selbständig</li>
+<li>Roland</li>
+<li>Jacob, Data-Scientist, Allianz</li>
+<li>Ralf, Data-Scientist</li>
+<li>Jens, Data-Scientist, AKKA</li>
+<li>Tin, Dozent, DHBW Stuttgart</li>
+</ul>
+<p>+2 Nachzügler</p>
+<h3>Jens: alibi und tf-explain</h3>
+<ul>
+<li>Erklärbarkeit ist sinnvoll</li>
+<li>auch zur Erkennung von falschen labels</li>
+</ul>
+<h4>tf-explain</h4>
+<ul>
+<li><a href="https://github.com/sicara/tf-explain">https://github.com/sicara/tf-explain</a></li>
+<li>sehr nah an tensorflow/keras</li>
+<li>ermöglicht heatmaps der aktivierungen</li>
+<li>Visualisierung von Gradienten</li>
+<li>Occlusion Sensitivity verdeckt Teile des Bildes und erreichnet so die Teile des Bildes, die am meisten zur Erkennung beitragen</li>
+</ul>
+<h4>alibi</h4>
+<ul>
+<li><a href="https://github.com/SeldonIO/alibi">https://github.com/SeldonIO/alibi</a></li>
+<li><a href="https://docs.seldon.io/projects/alibi/en/stable/overview/algorithms.html">https://docs.seldon.io/projects/alibi/en/stable/overview/algorithms.html</a></li>
+</ul>
+<p>Anchors:</p>
+<ul>
+<li>3 verschiedene Arten von Modellen: Tabular, Text, Images</li>
+<li><a href="https://docs.seldon.io/projects/alibi/en/stable/methods/Anchors.html">https://docs.seldon.io/projects/alibi/en/stable/methods/Anchors.html</a></li>
+</ul>
+<p>CEM:</p>
+<ul>
+<li>feature entfernen bei gleicher aussage</li>
+<li><a href="https://docs.seldon.io/projects/alibi/en/stable/methods/CEM.html">https://docs.seldon.io/projects/alibi/en/stable/methods/CEM.html</a></li>
+</ul>
+<p>CF:</p>
+<ul>
+<li>wieviel veränderung ist nötig, um die klasse zu wechseln</li>
+<li>verwendet eine distanz-funktion um die änderung zu bestimmen</li>
+<li><a href="https://docs.seldon.io/projects/alibi/en/stable/methods/CF.html">https://docs.seldon.io/projects/alibi/en/stable/methods/CF.html</a></li>
+</ul>
+<p>Counterfactuals Guided by Prototypes:</p>
+<ul>
+<li><a href="https://docs.seldon.io/projects/alibi/en/stable/methods/CFProto.html">https://docs.seldon.io/projects/alibi/en/stable/methods/CFProto.html</a></li>
+</ul>
+<p>TrustScores:</p>
+<ul>
+<li>versucht hohes vertrauen durch distanz auszurechnen</li>
+<li><a href="https://docs.seldon.io/projects/alibi/en/stable/methods/TrustScores.html">https://docs.seldon.io/projects/alibi/en/stable/methods/TrustScores.html</a></li>
+</ul>
+<p>Beispiele:</p>
+<ul>
+<li><a href="https://github.com/SeldonIO/alibi/blob/master/examples/">https://github.com/SeldonIO/alibi/blob/master/examples/</a></li>
+</ul>
+<p>für Pytorch:</p>
+<ul>
+<li><a href="https://captum.ai/tutorials/Resnet_TorchVision_Interpret">https://captum.ai/tutorials/Resnet_TorchVision_Interpret</a></li>
+<li><a href="https://allennlp.org/interpret">https://allennlp.org/interpret</a></li>
+</ul>
+<h3>Tin: Demo streamlit.io</h3>
+<ul>
+<li>alles in Python. kein Frontend mehr nötig. Deployment auch gelöst.</li>
+<li>ziel: für data-scientist schneller dinge ins web bringen</li>
+<li>opensource: <a href="https://github.com/streamlit/streamlit">https://github.com/streamlit/streamlit</a></li>
+<li>coole demo: <a href="https://github.com/streamlit/demo-self-driving">https://github.com/streamlit/demo-self-driving</a></li>
+</ul>
+<p>konkurrenten:</p>
+<ul>
+<li><a href="https://github.com/voila-dashboards/voila">https://github.com/voila-dashboards/voila</a></li>
+<li><a href="https://github.com/plotly/dash">https://github.com/plotly/dash</a></li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>Date: 2020-02-18</li>
+<li>Themen</li>
+<li>Uwe: Kaggle Survey</li>
+<li>Tin: Adversial-ML hacking NNs</li>
+</ul> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="../mlugs-treffen-im-januar-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to MLUGS Treffen im Januar 2020">MLUGS Treffen im Januar 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2019-11-20T11:00:00+01:00"> 20. November 2019 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Unser 33. Treffen ist am Dienstag, dem 21.01.2020 in der Marienstrasse 23 bei AX Semantics.</p>
+<p>Language: German only.</p>
+<h3>Themen:</h3>
+<h4>Jens: alibi und tf-explain</h4>
+<p>&nbsp;</p>
+<h4>Tin: Demo streamlit.io</h4>
+<p>&nbsp;</p>
+<h4>Wir suchen weitere Vorträge</h4>
+<p>&nbsp;</p>
+<h3>Wann:</h3>
+<p>21. Januar 2020 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>Marienstrasse 23, Stuttgart, AX Semantics (2. OG)</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
+    </li>
+
+  </ol><!-- /#post-list -->
+
+
+</section><!-- /#content -->
+
+  </body>
+</html>

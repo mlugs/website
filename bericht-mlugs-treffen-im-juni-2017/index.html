@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+      <title>MLUGS</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+      <div class= "siteimage">
+	<a class="nodec" href="../">
+          <img width="200" height="200" src="../theme/images/logo.png">
+	</a>
+      </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="..">MLUGS</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <!--pages-->
+                <li><a class="nodec pages-header" href="../pages/about/">Über MLUGS</a></li>
+                <li><a class="nodec pages-header" href="../pages/impressum/">Impressum</a></li>
+                <li><a class="nodec pages-header" href="../pages/konferenzen/">Konferenzen in Europa</a></li>
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/mlugs/"></a></li>
+              <li><a class="nodec icon-twitter" href="https://twitter.com/mlugs_de/"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/bericht-mlugs-treffen-im-juni-2017/" rel="bookmark" title="Permalink to Bericht MLUGS Treffen im Juni 2017">
+      Bericht MLUGS Treffen im Juni 2017
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2017-06-20T18:30:00+02:00">
+      20. June 2017
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas; Aexea; Software-Entwickler</li>
+<li>Uwe; macht Raumfahrt; will ML in der Raumfahrt umsetzen</li>
+<li>Eva; macht app/webapp; next personalisierung</li>
+<li>Wilhelm; Software-Entwickler; macht DL privat</li>
+<li>Jörg; Finance/Accounting</li>
+<li>Andreas; Agrarinformatiker; Milchauswertungen</li>
+<li>Ashant; E-Commerce; ERP/Personalisierung</li>
+<li>Frank; App/Web und ML nebenher</li>
+<li>Nandor; arbeitet mit Frank; macht Bioinformatik</li>
+<li>Oliver; Optikerabrechnungszentrum; hat viele Daten</li>
+<li>Sebastian; macht Big-Data auf dem Mainframe</li>
+<li>
+<p>Andreas; Luft- und Raumfahrttechniker; ist interessiert an ML</p>
+</li>
+<li>
+<p>1 Nachzügler</p>
+</li>
+</ul>
+<h3>Uwe Sterr - Timeseries Prediction</h3>
+<ul>
+<li>thema heute: feature extraction / nicht das ANN</li>
+<li>bivariante / univariante (non)-linear measures</li>
+<li>univariante linear measures:<ul>
+<li>variance, skewness, kurtosis are important statistical moments</li>
+<li><a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">FFT</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wavelet">Wavelets</a></li>
+<li>Autoregressive moving averages</li>
+</ul>
+</li>
+<li>bivariante linear measures:<ul>
+<li>maximum linear cross-correlation</li>
+<li>linear coherence (simmilarity between signals over time)</li>
+</ul>
+</li>
+<li>bivariante non-linear measures<ul>
+<li>non-linear interdepence (how do signals correlate in a non-linear system?)</li>
+<li>phase synchronization measures</li>
+</ul>
+</li>
+<li>decomposition of time series:<ul>
+<li>observed, trend, seasonal, random are measures that we want to tackle with ML and use as an input rather than the "raw" data.</li>
+<li>neural networks may replace standard algorithms</li>
+</ul>
+</li>
+</ul>
+<h3>Sebastian Muszytowski - Optical quality control on texture images</h3>
+<ul>
+<li>sollte was mit ML machen, weil es cool ist</li>
+<li>Problem: Qualistätskontrolle von Defekten auf Texturen</li>
+<li>erster Ansatz: alles in ein CNN. Fehlerquote von 100%</li>
+<li>zweiter Ansatz: alles kleiner machen; statt 512x512 in 16x16 -&gt; Problem overfitting</li>
+<li>dritter (erfolgreicher) Ansatz: verwendet eine graustufenerkennungsalgorithmus und deren Ausgabe wird in ein NN gesteckt.</li>
+<li>Learning: nicht alle Bildprobleme sind für CNN geeignet</li>
+</ul>
+<h3>Nandor Poka, Gerhardt Informatik - Big Data problem(s) in biology / bio informatics: a short introduction to bio informatics and a few typical problems that are either data or computation intensive</h3>
+<ul>
+<li>macht PhD in Micro-Biologe</li>
+<li>seit gestern arbeitet er in Stuttgart</li>
+<li>"Human Genome Project" hat die Bioinformatik in den 00er Jahren deutlich voran gebracht</li>
+<li>Areas<ul>
+<li>sequence analysis</li>
+<li>image/signal processing</li>
+<li>gene/protein expression</li>
+<li>network and systems biology</li>
+</ul>
+</li>
+<li>current representation in sequencing: <a href="https://en.wikipedia.org/wiki/De_Bruijn_graph">De Bruijn graph</a></li>
+<li>aktuelles Problem: Parallelisierung von Graphenalgorithmen in einem verteilten System</li>
+<li>How big is the current data:<ul>
+<li>for each sequencing performaned there is GB to TB of data</li>
+<li>de-novo assembly size of millions of nodes is data intense</li>
+<li>aligning read data - matching millions of sequences is compute intense</li>
+</ul>
+</li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>19.9.</li>
+<li>Hausaufgabe: https://www.kaggle.com/c/zillow-prize-1</li>
+</ul>
+  </div><!-- .content -->
+
+</section>
+
+  </body>
+</html>

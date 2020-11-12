@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+      <title>MLUGS</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <meta charset="utf-8" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+      <div class= "siteimage">
+	<a class="nodec" href="../">
+          <img width="200" height="200" src="../theme/images/logo.png">
+	</a>
+      </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="..">MLUGS</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <!--pages-->
+                <li><a class="nodec pages-header" href="../pages/about/">Über MLUGS</a></li>
+                <li><a class="nodec pages-header" href="../pages/impressum/">Impressum</a></li>
+                <li><a class="nodec pages-header" href="../pages/konferenzen/">Konferenzen in Europa</a></li>
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/mlugs/"></a></li>
+              <li><a class="nodec icon-twitter" href="https://twitter.com/mlugs_de/"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/bericht-mlugs-treffen-im-januar-2019/" rel="bookmark" title="Permalink to Bericht MLUGS Treffen im Januar 2019">
+      Bericht MLUGS Treffen im Januar 2019
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2019-01-15T18:30:00+01:00">
+      15. January 2019
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX-Semantics</li>
+<li>Uwe, Luftraumfahrt</li>
+<li>Jens, Datascients, AKKA</li>
+<li>Fernando, CV, Bosch</li>
+<li>Wilhelm, Software-Entwickler, privat</li>
+<li>Thomas, Software-Entwickler, Vialytics</li>
+<li>Michael, Software-Entwickler, AX Semantics</li>
+<li>Friedrich, werkstudent, Vialytics</li>
+<li>Leonard, Bosch</li>
+<li>Thilo, Student, Vialytics</li>
+<li>Arne, Luftraumfahrttechniker</li>
+<li>Benedikt, Datascientist, Daimler</li>
+<li>Christian, Software-Entwickler, privat</li>
+<li>
+<p>Christoph, Software-Entwickler, Freelancer</p>
+</li>
+<li>
+<p>2 Nachzügler</p>
+</li>
+</ul>
+<h3>Vorstellung von Ignite</h3>
+<p>Andreas Madsack, AX Semantics</p>
+<p>https://pytorch.org/ignite/index.html</p>
+<h4>Warum?</h4>
+<ul>
+<li>weniger boilerplate code. Die train/validate funktionen sind viel code, der von Projekt zu Projekt sehr ähnlich ist.</li>
+<li>fertig Helper für ModelCheckpoint, EarlyStopping, ...</li>
+</ul>
+<h4>Beispiel 1</h4>
+<ul>
+<li>https://github.com/pytorch/ignite/tree/master/examples/mnist</li>
+<li>https://github.com/pytorch/ignite/blob/master/examples/mnist/mnist_with_tensorboardx.py</li>
+</ul>
+<p>tensorflow/tensorboard sind noch nicht Python 3.7 kompatibel, deshalb:</p>
+<div class="highlight"><pre><span></span><code><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">p</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">:</span><span class="mi">6006</span><span class="p">:</span><span class="mi">6006</span> <span class="o">-</span><span class="n">it</span> <span class="o">-</span><span class="n">v</span> <span class="ss">`pwd`</span><span class="o">/</span><span class="n">logs</span><span class="p">:</span><span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="n">logs</span>  <span class="n">tensorflow</span><span class="o">/</span><span class="n">tensorflow</span> <span class="n">tensorboard</span> <span class="o">--</span><span class="n">logdir</span> <span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="n">logs</span><span class="o">/</span>
+</code></pre></div>
+
+<h4>Beispiel 2</h4>
+<p>Addition mit PyTorch und Ignite</p>
+<p>https://github.com/mfa/addition_seq2seq</p>
+<h3>misc</h3>
+<ul>
+<li>https://www.slideshare.net/lukaszlanga/i-regret-nothing</li>
+<li>https://www.youtube.com/watch?v=kSLJriaOumA</li>
+<li>transformer-XL: https://arxiv.org/pdf/1901.02860.pdf</li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>2019-02-19</li>
+<li>Thilo: BERT</li>
+</ul>
+  </div><!-- .content -->
+
+</section>
+
+  </body>
+</html>
