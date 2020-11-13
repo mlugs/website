@@ -1,6 +1,6 @@
 ## "Machine Learning UserGroup Stuttgart" website
 
-[![Build Status](https://travis-ci.org/mlugs/website.svg?branch=master)](https://travis-ci.org/mlugs/website)
+![github pages](https://github.com/mlugs/website/workflows/github%20pages/badge.svg)
 
 Live website: [mlugs.de](http://mlugs.de)
 
