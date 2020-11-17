@@ -99,29 +99,30 @@ Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zu
 <p>free for single user - private or public</p>
 </li>
 <li>
-<p>lib to use n pytorch: <a href="https://github.com/wandb/client">https://github.com/wandb/client</a></p>
+<p>lib to use in pytorch: <a href="https://github.com/wandb/client">https://github.com/wandb/client</a></p>
 </li>
 <li>docs: <a href="https://docs.wandb.com/sweeps/configuration">https://docs.wandb.com/sweeps/configuration</a></li>
 <li>
-<p>and the AllenNLP addon: <a href="https://github.com/dhruvdcoder/wandb-allennlp/">https://github.com/dhruvdcoder/wandb-allennlp/</a></p>
+<p>the AllenNLP addon: <a href="https://github.com/dhruvdcoder/wandb-allennlp/">https://github.com/dhruvdcoder/wandb-allennlp/</a></p>
 </li>
 <li>
-<p>in AllenNLP add this to config</p>
+<p>in AllenNLP add the callback to your configuration:</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>  <span class="s2">&quot;trainer&quot;</span><span class="err">:</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;trainer&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="nt">&quot;epoch_callbacks&quot;</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
         <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;log_metrics_to_wandb&quot;</span>
       <span class="p">}</span>
     <span class="p">],</span>
-   <span class="err">...</span>
-  <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 
 <ul>
 <li>popular alternative <a href="https://optuna.org/">https://optuna.org/</a></li>
-<li>good talk about Optuna last week on PyTorch Developer day: "Hyperparameter Importance"</li>
+<li>good talk about Optuna last week on PyTorch Developer Day: "Hyperparameter Importance"</li>
 </ul>
 <h3>misc</h3>
 <ul>
