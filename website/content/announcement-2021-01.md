@@ -7,6 +7,7 @@ Vorträge (10-15 Minuten/Vortrag):
 
 - Tin: AlphaFold
 - Uwe: Künstliche Intelligenz löst Schrödingers Gleichung, Ideen für eigene KI-Anwendungen aus dem Vergleich der Ansätze von DeepMind und FU Berlin
+- Lukas: deterministisches machine learning mit mlf-core und mlflow
 
 - Ihr könnt noch Vorträge vorschlagen
 
