@@ -48,6 +48,88 @@
 
     <li class="post" >
         <header class="posttitle">
+          <h3><a href="./bericht-mlugs-treffen-im-mai-2018/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht MLUGS Treffen im Mai 2018">Bericht MLUGS Treffen im Mai 2018</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2018-05-15T18:30:00+02:00"> 15. May 2018 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX Semantics</li>
+<li>Uwe, macht Raumfahrt, versucht da ML einzusetzen</li>
+<li>Thomas, Daimler, Analytics</li>
+<li>Benedikt, Daimler, Ersatzteilpreisvorhersage</li>
+<li>Wilhelm, Software-Entwickler, privat ML</li>
+<li>Patrick, Institut für Photogrammetrie, Theorie von DL</li>
+<li>Michael, Software-Entwickler, AX-Semantics</li>
+<li>Burkhard, Ulm Uni, Maschinenüberwachung</li>
+<li>David, aus Ulm</li>
+<li>Phil, Software-Entwickler, Hobby mit RPI und ML</li>
+</ul>
+<h3>Cats vs. Dogs Hands-On</h3>
+<ul>
+<li>wir gehen zusammen durch den Code eines Katzen vs. Hunde Klassifikators</li>
+<li>
+<p>der Code läuft mit GPUs auf AWS</p>
+</li>
+<li>
+<p>Beispiel ist aus: <a href="https://www.manning.com/books/deep-learning-with-python">https://www.manning.com/books/deep-learning-with-python</a></p>
+</li>
+<li>
+<p>Link zum verwendeten Notebook: <a href="https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.2-using-convnets-with-small-datasets.ipynb">https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.2-using-convnets-with-small-datasets.ipynb</a></p>
+</li>
+<li>
+<p>Notebook unter Verwendung von ImageNet:
+<a href="https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.3-using-a-pretrained-convnet.ipynb">https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.3-using-a-pretrained-convnet.ipynb</a></p>
+</li>
+<li>
+<p>code um predictions zu machen:</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">keras</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">keras.preprocessing.image</span> <span class="kn">import</span> <span class="n">ImageDataGenerator</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">load_model</span><span class="p">(</span><span class="s1">&#39;cats_and_dogs_small_2.h5&#39;</span><span class="p">)</span>
+<span class="n">test_datagen</span> <span class="o">=</span> <span class="n">ImageDataGenerator</span><span class="p">(</span><span class="n">rescale</span><span class="o">=</span><span class="mf">1.</span><span class="o">/</span><span class="mi">255</span><span class="p">)</span>
+<span class="n">predict_generator</span> <span class="o">=</span> <span class="n">test_datagen</span><span class="o">.</span><span class="n">flow_from_directory</span><span class="p">(</span>
+        <span class="s1">&#39;predict&#39;</span><span class="p">,</span>
+        <span class="n">target_size</span><span class="o">=</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span>
+        <span class="n">batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">class_mode</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">predict_generator</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<h3>Uwe stellt ein Signalverarbeitungsproblem vor</h3>
+<h3>misc</h3>
+<ul>
+<li>Video zur Decodierung von iridium-Signalen: <a href="https://media.ccc.de/v/gpn18-89-gr-iridium-unter-der-haube">https://media.ccc.de/v/gpn18-89-gr-iridium-unter-der-haube</a></li>
+<li>GPN18: <a href="https://media.ccc.de/c/gpn18">https://media.ccc.de/c/gpn18</a></li>
+<li><a href="https://pretalx.entropia.de/gpn18/schedule/">https://pretalx.entropia.de/gpn18/schedule/</a></li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>Uwe stellt die Lösung von seinem Problem unter Verwendung von DTW vor. :)</li>
+<li>(weitere Vorschläge sind willkommen!)</li>
+</ul>
+<p>Date: 2018-06-19</p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
           <h3><a href="./mlugs-treffen-im-mai-2018/"
                   rel="bookmark"
                   class="nodec"
@@ -588,111 +670,6 @@ Wavelets um noise zu entfernen. FFT für die eigentliche Signalverarbeitung.</p>
 <p>Marienstrasse 23, Stuttgart-Süd, AX Semantics (aexea) (1. OG)</p>
 <h3>Bitte meldet euch an unter:</h3>
 <p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
-    </li>
-    <li class="post" >
-        <header class="posttitle">
-          <h3><a href="./bericht-mlugs-treffen-im-november-2017/"
-                  rel="bookmark"
-                  class="nodec"
-                  title="Permalink to Bericht MLUGS Treffen im November 2017">Bericht MLUGS Treffen im November 2017</a>
-          </h3>
-        </header>
-
-        <div class="postinfo">
-          <p class="published" title="2017-11-21T18:30:00+01:00"> 21. November 2017 </p>
-        </div><!-- /.postinfo -->
-
-        <div class="article"> <h2>Protokoll</h2>
-<h3>Vorstellungsrunde</h3>
-<ul>
-<li>Michael; AX Semantics; Software-Entwickler</li>
-<li>Andreas; AX Semantics; Software-Entwickler</li>
-<li>Uwe;ST2C;macht Raumfahrt</li>
-<li>Wilhelm;privat;Software-Entwickler</li>
-<li>Silvana;;Data-Scientist,eigentlich NLP</li>
-<li>Jörg;privat;Finanz-ML</li>
-</ul>
-<h3>Uwe Sterr - Entity Embeddings of Categorical Variables</h3>
-<ul>
-<li><a href="https://arxiv.org/pdf/1604.06737.pdf">https://arxiv.org/pdf/1604.06737.pdf</a></li>
-<li>
-<p>Slides: <a href="https://github.com/mlugs/website/tree/master/website/content/pdfs/Entity%20Embeddings%20of%20Categorical%20Variables.pdf">https://github.com/mlugs/website/tree/master/website/content/pdfs/Entity Embeddings of Categorical Variables.pdf</a></p>
-</li>
-<li>
-<p>wird in Lesson 14 im Fast.AI Kurs besprochen: <a href="http://course.fast.ai/lessons/lesson14.html">http://course.fast.ai/lessons/lesson14.html</a></p>
-</li>
-<li>dritter platz kaggle rossmann sales prediction</li>
-<li>verwendet DNN - relativ simples model</li>
-<li>nach dem one-hot-encoding wird eine entity embeddings layer gelegt</li>
-<li>EE dimensions-anzahl ist ausprobieren</li>
-<li>auch mit einfacheren verfahren hilft EE zu besseren ergebnissen, i.e. gradient bootesd trees</li>
-<li>es hilft eigentlich immer, tage/monate/jahre als einzelfeatures und categoricals machen</li>
-<li>auch ein gutes feature sind zeiträume; i.e. wann war die letzte wartung</li>
-<li><a href="https://github.com/uwesterr/courses/blob/master/deeplearning2/rossmanWorksWithTF1.4.ipynb">https://github.com/uwesterr/courses/blob/master/deeplearning2/rossmanWorksWithTF1.4.ipynb</a></li>
-<li>das kann man damit vielleicht mal probieren: <a href="https://www.kaggle.com/c/favorita-grocery-sales-forecasting">https://www.kaggle.com/c/favorita-grocery-sales-forecasting</a></li>
-</ul>
-<h3>mlugs 2018</h3>
-<ul>
-<li>nächster Termin Januar</li>
-<li>meetup statt letsmeet yay/nay?  yay</li>
-<li>Termine vorher anlegen/announcen!</li>
-<li>das schwere sind die Vorträge</li>
-</ul>
-<h3>Wilhelm Brasch - OCR mit Deep Learning</h3>
-<ul>
-<li>privates DL projekt</li>
-<li>chinesische untertitel erkennung</li>
-<li>fast alle chinesischen videos haben untertitel und diese entsprechen meist der gesprochenen Sprache</li>
-<li>ziel ist es 3000 schriftzeichen zu können (als chinesischlernender)</li>
-<li>trainingsset: 1000/kategorie -&gt; 10000 kategorien -&gt; 10mio</li>
-<li>generator kann unendlich viele daten erzeugen</li>
-<li>der generator mit freetype; opencv/numpy</li>
-<li>wichtig am model: batchnorm; relu</li>
-<li>deutliche verbesserung brachte ein streifen generator</li>
-<li>aktuell 99% accuracy</li>
-<li>
-<p>mit sliding window über den text. viele false positives</p>
-</li>
-<li>
-<p>plan: mehr validierungsdaten; zusätzlich zur classification noch eine zeichendetection</p>
-</li>
-<li>andere idee: regression head, um den hintergrund rauszufiltern</li>
-</ul>
-<h3>Michael Käufl - Hidden Technical Debt in Machine Learning Systems</h3>
-<ul>
-<li>https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf</li>
-<li>von google</li>
-<li>9 Abschnitte</li>
-<li>das teure ist die Wartung nicht die Entwicklung</li>
-<li>"technical dept" soll die langzeitkosten aufzeigen</li>
-<li>die gefahr liegt in der "hidden technical dept"</li>
-<li>ziel vom abbau der technischen schuld ist bessere wartbarkeit zu bekommen</li>
-<li>change anything changes everything</li>
-<li>ein feature hinzufügen/modifizieren/entfernen kann das ganze model verändern</li>
-<li>correction cascades: z.b. lernen einer korrektur auf basis eines ursprungsmodels. wenn man allerdings das ursprungsmodel anpasst, dann hat man probleme mit dem darauf aufbauenden model</li>
-<li>unklare consumer. visibility dept!</li>
-<li>data dependencies können sich wie building dept verhalten. vor allem weil das tooling noch nicht so gut ist</li>
-<li>unstable data dependencies durch versionierung/tagging lösen</li>
-<li>ML anti-patterns:</li>
-<li>glue code - wechsel zu anderen packages ist schwerer -&gt; common apis verwenden/entwickeln</li>
-<li>pipeline jungles - datenaufbereiten ist das häufiger</li>
-<li>dead experimental codepaths</li>
-<li>abstraction dept - es gibt noch keine basic abstraction für ML</li>
-<li>multi-language-smell</li>
-<li>prototype-smell - weiterverwendung des prototyps</li>
-<li>configuration dept - häufig nachrangig behandelte konfiguration</li>
-<li>wie verhalten sich manuell gewählte thresholds auf real-world-probleme und veränderungen</li>
-<li>monitoring + testing: prediction bias / action limits / up-stream producers (hat sich die qualität der fremd-daten verändert?)</li>
-<li>reproducibility dept</li>
-<li>
-<p>cultural dept: ML research vs. engineering</p>
-</li>
-<li>
-<p>conclusion:</p>
-</li>
-<li>time for new algorithmus to full scale test?</li>
-<li>wie schnell können neue mitarbeiter auf den aktuellen stand gebracht werden?</li>
-</ul> </div>
     </li>
 
   </ol><!-- /#post-list -->
