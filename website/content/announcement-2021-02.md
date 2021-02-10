@@ -6,7 +6,7 @@ Auch im Februar findet ein virtuelles MLUGS-Treffen statt.
 Vorträge (10-15 Minuten/Vortrag):
 
 - Andreas: Erfahrungen mit Google AutoML
-- [open slot]
+- Tin: A Regression Approach to Speech Enhancement Based on Deep Neural Networks
 - [open slot]
 
 - Ihr könnt noch Vorträge vorschlagen
@@ -20,7 +20,7 @@ Wir werden Zoom verwenden.
 
 ### Wann:
 
-<p>16. Februaranuar 2021 um 18:30</p>  
+<p>16. Februar 2021 um 18:30</p>  
 
 ### Wo:
 
