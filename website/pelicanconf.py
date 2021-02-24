@@ -15,7 +15,6 @@ TIMEZONE = 'Europe/Berlin'
 DEFAULT_LANG = u'de'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
@@ -39,3 +38,7 @@ CATEGORY_SAVE_AS = "category/{slug}/index.html"
 GITHUB_ADDRESS = "https://github.com/mlugs/"
 TWITTER_ADDRESS = "https://twitter.com/mlugs_de/"
 DEFAULT_DATE_FORMAT = '%d. %B %Y'
+
+# atom feed
+FEED_DOMAIN = 'http://www.mlugs.de'
+FEED_ATOM = "feed.atom.xml"
