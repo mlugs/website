@@ -6,7 +6,7 @@ Auch im März findet ein virtuelles MLUGS-Treffen statt.
 Vorträge (10-15 Minuten/Vortrag):
 
 - Jürgen - Find 'em all - Deep Learning für die Suche nach archäologische Stätten
-- Tin: A Regression Approach to Speech Enhancement Based on Deep Neural Networks
+- Tin: Graph Neural Networks
 - [open slot]
 
 - Ihr könnt noch Vorträge vorschlagen
