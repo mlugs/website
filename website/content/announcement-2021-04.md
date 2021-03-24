@@ -5,7 +5,7 @@ Auch im April findet ein virtuelles MLUGS-Treffen statt.
 
 Vorträge (10-15 Minuten/Vortrag):
 
-- Silvana - ML in Produktion bei autoretouch
+- Silvana: ML in Produktion bei autoretouch
 - Robert: Automatisierte Analyse medizinischer Daten z.B. aus Studien mit Hilfe von NLP bei CUREDATIS.
 - Paul: Anomalieerkennung mit Hilfe eines Komprimierungsalgorithmus am Beispiel von Daten aus dem Schlaflabor
 
