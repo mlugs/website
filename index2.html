@@ -49,6 +49,117 @@
 
     <li class="post" >
         <header class="posttitle">
+          <h3><a href="./bericht-virtuelles-mlugs-treffen-im-oktober-2020/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht (virtuelles) MLUGS Treffen im Oktober 2020">Bericht (virtuelles) MLUGS Treffen im Oktober 2020</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2020-10-20T20:00:00+02:00"> 20. October 2020 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Intro</h3>
+<p>Das Ziel der MLUGS ist der Austausch über Machine-Learning-Themen.
+Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zum jeweiligen Thema.</p>
+<h3>Teilnehmer</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX-Semantics</li>
+<li>Uwe, ST2C, Laser comm in space</li>
+<li>Philipp, ML-Engineer &amp; start-up co-founder</li>
+<li>
+<p>Jens, Data Scientist, AKKA</p>
+</li>
+<li>
+<p>+ 5 weitere</p>
+</li>
+</ul>
+<h3>Andreas: Hosting of ML models</h3>
+<h4>AWS ECS (Fargate)</h4>
+<ul>
+<li>expensive: 10+$/month (0.25cpu / 1GB ram) | 27$/month (0.5cpu / 4GB ram)</li>
+<li>min 0.25cpu possible</li>
+<li>max 30GB possible</li>
+<li>deployment can be tricky when reproducable (cloudformation)</li>
+<li>when running - low maintenance</li>
+<li>examples:<ul>
+<li><a href="https://compound-split.research.qax.io/docs">https://compound-split.research.qax.io/docs</a></li>
+</ul>
+</li>
+</ul>
+<h4>Google Cloud Run (GCR)</h4>
+<ul>
+<li>zero downscaling option -&gt; "cheap"</li>
+<li>needs to boot every time -&gt; startup time can be a few seconds when cold</li>
+<li>2GB limit for managed option</li>
+<li>for more memory: GKE - complicated to setup - expensive to run</li>
+<li>really easy to deploy</li>
+</ul>
+<div class="highlight"><pre><span></span><code>gcloud builds submit --tag eu.gcr.io/&lt;PROJECT_ID&gt;/compound-split
+gcloud run deploy compound-split --image eu.gcr.io/&lt;PROJECT_ID&gt;/compound-split --allow-unauthenticated --memory<span class="o">=</span>1G
+</code></pre></div>
+
+<ul>
+<li>300$ credit in the first year and enough free credits to run low usage GCR services free after that</li>
+<li>examples:<ul>
+<li><a href="https://compound-split-ejn6yf4k4q-ez.a.run.app/docs">https://compound-split-ejn6yf4k4q-ez.a.run.app/docs</a></li>
+</ul>
+</li>
+</ul>
+<h4>Hetzner VPS</h4>
+<ul>
+<li>the cheapest option: 3€+/month (2GB ram) | 60€/month (30GB ram)</li>
+<li>you have to maintain everything. including linux</li>
+<li>you have to add SSL</li>
+<li>automated deployments can be hard</li>
+</ul>
+<h4>Paperspace gradient deployments</h4>
+<ul>
+<li>expensive: $12+/month (+ possible usage)</li>
+<li>needs G1 plan</li>
+<li>free old GPUs (with time limits)</li>
+<li>managed</li>
+<li><a href="https://gradient.paperspace.com/pricing">https://gradient.paperspace.com/pricing</a></li>
+<li>google for "paperspace promo code" to get 10$ credit!</li>
+</ul>
+<h4>Floydhub model serving</h4>
+<ul>
+<li>expensive: cpu usage (~1$/h)</li>
+<li>easy to use</li>
+<li>managed</li>
+<li><a href="https://docs.floydhub.com/guides/serving/">https://docs.floydhub.com/guides/serving/</a></li>
+</ul>
+<h3>Uwe: Buchbesprechung "Deep learning for Coder with fastai &amp; PyTorch"</h3>
+<ul>
+<li>das Buch: <a href="https://github.com/fastai/fastbook">https://github.com/fastai/fastbook</a></li>
+<li>
+<p>Notebooks / Kurs: <a href="https://course.fast.ai/">https://course.fast.ai/</a></p>
+</li>
+<li>
+<p>das erste Kapitel ist sehr praxisorientiert um schnell eine gute Lösung im Unternehmen zu haben</p>
+</li>
+<li>trainiert erst ein Modell und schaut euch dann die Fehler an, die es gemacht hat und bereinigt erst dann die Daten (falls nötig)</li>
+<li>Deployment-Beispiele mit <a href="https://voila.readthedocs.io/">Voila</a> auf Heroku</li>
+<li>cropping/presizing von Bildern in der GPU</li>
+<li>Anschauen: learning-rate-finder</li>
+<li>
+<p>hintere layers bekommen größere learning-rate</p>
+</li>
+<li>
+<p>Podcast mit Jeremy Howard: <a href="https://lexfridman.com/jeremy-howard/">https://lexfridman.com/jeremy-howard/</a></p>
+</li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>date: 2020-11-17</li>
+<li>talks:</li>
+<li>(meldet euch wenn ihr Vorträge habt!)</li>
+</ul> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
           <h3><a href="./virtuelles-mlugs-treffen-im-oktober-2020/"
                   rel="bookmark"
                   class="nodec"
@@ -511,36 +622,6 @@ Z.B. könnte ich von meinen Versuchen berichten, GPT2 für nicht-Englisch zu tra
 </ul>
 </li>
 </ul> </div>
-    </li>
-    <li class="post" >
-        <header class="posttitle">
-          <h3><a href="./mlugs-treffen-im-november-2019/"
-                  rel="bookmark"
-                  class="nodec"
-                  title="Permalink to MLUGS Treffen im November 2019">MLUGS Treffen im November 2019</a>
-          </h3>
-        </header>
-
-        <div class="postinfo">
-          <p class="published" title="2019-10-24T11:00:00+02:00"> 24. October 2019 </p>
-        </div><!-- /.postinfo -->
-
-        <div class="article"> <p>Unser 32. Treffen ist am Dienstag, dem 19.11. in der Marienstrasse 23 bei AX Semantics.</p>
-<p>Language: German only.</p>
-<h3>Themen:</h3>
-<h4>Tin: machine learning and security</h4>
-<p>&nbsp;</p>
-<h4>Alessandro: Hippocampal-based learning</h4>
-<p>&nbsp;</p>
-<h4>Wir suchen weitere Vorträge</h4>
-<p>&nbsp;</p>
-<h3>Wann:</h3>
-<p>19. November 2019 um 18:30</p>
-
-<h3>Wo:</h3>
-<p>Marienstrasse 23, Stuttgart, AX Semantics (2. OG)</p>
-<h3>Bitte meldet euch an unter:</h3>
-<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
     </li>
 
   </ol><!-- /#post-list -->
