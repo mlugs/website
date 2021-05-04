@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2021-04-20T18:30:00+02:00</updated><entry><title>Bericht (virtuelles) MLUGS Treffen im April 2021</title><link href="bericht-virtuelles-mlugs-treffen-im-april-2021/" rel="alternate"></link><published>2021-04-20T18:30:00+02:00</published><updated>2021-04-20T18:30:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2021-04-20:bericht-virtuelles-mlugs-treffen-im-april-2021/</id><summary type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2021-05-04T20:00:00+02:00</updated><entry><title>virtuelles MLUGS Treffen im Mai 2021</title><link href="virtuelles-mlugs-treffen-im-mai-2021/" rel="alternate"></link><published>2021-05-04T20:00:00+02:00</published><updated>2021-05-04T20:00:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2021-05-04:virtuelles-mlugs-treffen-im-mai-2021/</id><summary type="html">&lt;p&gt;Auch im Mai findet ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+&lt;p&gt;Vorträge (10-15 Minuten/Vortrag):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Uwe: Machine learning Ansätze für Adaptive Optik Systeme&lt;/li&gt;
+&lt;li&gt;[open slot]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[open slot]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ihr könnt noch Vorträge vorschlagen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Meldet euch, wenn ihr etwas vorstellen wollt.
+Das kann etwas sein mit dem ihr euch aktuell beschäftigt, ein Problem das ihr …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Auch im Mai findet ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+&lt;p&gt;Vorträge (10-15 Minuten/Vortrag):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Uwe: Machine learning Ansätze für Adaptive Optik Systeme&lt;/li&gt;
+&lt;li&gt;[open slot]&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[open slot]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ihr könnt noch Vorträge vorschlagen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Meldet euch, wenn ihr etwas vorstellen wollt.
+Das kann etwas sein mit dem ihr euch aktuell beschäftigt, ein Problem das ihr lösen möchtet oder auch ein Plug für etwas.
+Es sollte etwas mit machine-learning zu tun haben.&lt;/p&gt;
+&lt;p&gt;Wir werden Zoom verwenden.&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;18. Mai 2021 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;p&gt;virtuell. Zoom.&lt;/p&gt;
+&lt;h3&gt;Bitte meldet euch an unter:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart"&gt;https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Bericht (virtuelles) MLUGS Treffen im April 2021</title><link href="bericht-virtuelles-mlugs-treffen-im-april-2021/" rel="alternate"></link><published>2021-04-20T18:30:00+02:00</published><updated>2021-04-20T18:30:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2021-04-20:bericht-virtuelles-mlugs-treffen-im-april-2021/</id><summary type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
 &lt;h3&gt;Intro&lt;/h3&gt;
 &lt;p&gt;Das Ziel der MLUGS ist der Austausch über Machine-Learning-Themen.&lt;/p&gt;
 &lt;h3&gt;Teilnehmer&lt;/h3&gt;
