@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+      <title>MLUGS</title>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'/>
+      <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700' rel='stylesheet' type='text/css'/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/icons.css"/>
+      <link rel="stylesheet" type="text/css" href="../theme/css/styles.css"/>
+      <meta charset="utf-8" />
+        <link href="/feed.atom.xml" type="application/atom+xml" rel="alternate" title="MLUGS Atom Feed" />
+  </head>
+
+  <body id="index">
+    <!-- header -->
+    <header class="siteheader">
+      <!-- site image -->
+      <div class= "siteimage">
+	<a class="nodec" href="../">
+          <img width="200" height="200" src="../theme/images/logo.png">
+	</a>
+      </div>
+
+      <div class = "sitebanner">
+        <h1><a class="sitetitle nodec" href="..">MLUGS</a></h1>
+        <h3 class ="sitesubtitle"></h3>
+        <!-- nav -->
+        <nav class="menu">
+          <ul>
+            <!-- menu items-->
+            <!--pages-->
+                <li><a class="nodec pages-header" href="../pages/about/">Über MLUGS</a></li>
+                <li><a class="nodec pages-header" href="../pages/impressum/">Impressum</a></li>
+                <li><a class="nodec pages-header" href="../pages/konferenzen/">Konferenzen in Europa</a></li>
+            <!-- services icons -->
+              <li><a class="nodec icon-github" href="https://github.com/mlugs/"></a></li>
+              <li><a class="nodec icon-twitter" href="https://twitter.com/mlugs_de/"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- sitebanner -->
+    </header>
+
+    <!-- content -->
+
+<section class="content">
+
+  <h3 class="posttitle">
+    <a class="nodec" href="/bericht-virtuelles-mlugs-treffen-im-mai-2021/" rel="bookmark" title="Permalink to Bericht (virtuelles) MLUGS Treffen im Mai 2021">
+      Bericht (virtuelles) MLUGS Treffen im Mai 2021
+    </a>
+  </h3>
+
+  <div class="postinfo">
+    <p class="published" title="2021-05-18T18:30:00+02:00">
+      18. May 2021
+    </p>
+
+  </div><!-- .postinfo -->
+
+  <div class="article">
+    <h2>Protokoll</h2>
+<h3>Intro</h3>
+<p>Das Ziel der MLUGS ist der Austausch über Machine-Learning-Themen.
+Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zum jeweiligen Thema.</p>
+<h3>Teilnehmer</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX-Semantics, Sprachverarbeitung (NLP, NLG)</li>
+<li>Uwe, ST2C, Laserkommunikation im All</li>
+<li>Jens, Data-Scientist, AKKA</li>
+<li>Thomas, Data Scientist, Schwarz Dienstleistungen</li>
+<li>Philip, Student Informatik (Data Science), DHBW &amp; HPE</li>
+<li>Paul, Student HS Esslingen</li>
+</ul>
+<p>(insg. 9 Teilnehmer)</p>
+<h3>Uwe: Machine learning Ansätze für Adaptive Optik Systeme</h3>
+<p>basics:</p>
+<ul>
+<li>atmospherische störungen rausrechnen, um das laser-signal zu verbessern</li>
+</ul>
+<p>Vier paper werden in dem talk vorgestellt:</p>
+<ol>
+<li>
+<p>An all-photonic focal-plane wavefront sensor (October 2020)</p>
+</li>
+<li>
+<p><a href="https://www.nature.com/articles/s41467-020-19117-w">https://www.nature.com/articles/s41467-020-19117-w</a></p>
+</li>
+<li>Uwe hat die daten aus dem paper</li>
+<li>laserlicht wird auf ein feld gemappt -- dabei kann man die phaseninformation bekommen</li>
+<li>
+<p>liefert eine baseline architektur für das problem: ein einfaches NN</p>
+</li>
+<li>
+<p>Direct determination of aberration functions in microscopy by an artifical neural network (May 2020)</p>
+</li>
+<li>
+<p><a href="https://www.osapublishing.org/oe/fulltext.cfm?uri=oe-28-10-14511&amp;id=431335">https://www.osapublishing.org/oe/fulltext.cfm?uri=oe-28-10-14511&amp;id=431335</a></p>
+</li>
+<li>3 layer ANN</li>
+<li>
+<p>vorteil des systems: sehr schnell</p>
+</li>
+<li>
+<p>Machine learning for image-based wavefront sensing</p>
+</li>
+<li>
+<p>https://ml4physicalsciences.github.io/2019/files/NeurIPS_ML4PS_2019_107.pdf</p>
+</li>
+<li>resnet</li>
+<li>unet / unet++</li>
+<li>
+<p>bild zu phasenverteilung</p>
+</li>
+<li>
+<p>Wavefront prediction using artificial neural networks for open-loop Adaptive Optics</p>
+</li>
+<li>
+<p>https://arxiv.org/abs/2005.14078</p>
+</li>
+<li>stacked LSTM</li>
+<li>prediction des nächsten timestep</li>
+</ol>
+<h3>Paul: Modellierung der Verbreitung von Wallboxen anhand soziodemografischer Daten</h3>
+<ul>
+<li>Teilgebiet Masterthesis</li>
+<li>welchen einfluss hat die emobilität auf unser stromnetz - und viel hält unser stromnetz aus?</li>
+<li>was für einen einfluß haben/hätten wallboxen</li>
+<li>datenbasis zu bevölkerung, kaufkraft, gebäuden, personen -&gt; daraus ausrechnen ob da wallboxen installiert sind</li>
+<li>"species distribution modelling" als vorbild für die flächenmodellierung</li>
+<li>classifier: logistic-regression; svm; keras</li>
+</ul>
+<h3>misc</h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/2105.03824.pdf">FNet: Mixing Tokens with Fourier Transforms</a></li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>date: 2021-06-15 -- das letzte mal vor der Sommerpause (Juli+August)</li>
+<li>talks:<ul>
+<li>wir suchen vorträge. meldet euch.</li>
+</ul>
+</li>
+</ul>
+  </div><!-- .content -->
+
+  <hr>
+
+</section>
+
+  </body>
+</html>
