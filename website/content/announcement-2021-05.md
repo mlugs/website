@@ -6,7 +6,7 @@ Auch im Mai findet ein virtuelles MLUGS-Treffen statt.
 Vorträge (10-15 Minuten/Vortrag):
 
 - Uwe: Machine learning Ansätze für Adaptive Optik Systeme
-- [open slot]
+- Paul: Modellierung der Verbreitung von Wallboxen anhand Soziodemografischer Daten
 - [open slot]
 
 - Ihr könnt noch Vorträge vorschlagen
