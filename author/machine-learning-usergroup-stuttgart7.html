@@ -49,6 +49,45 @@
 
     <li class="post" >
         <header class="posttitle">
+          <h3><a href="../bericht-mlugs-treffen-im-oktober-2017/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht MLUGS Treffen im Oktober 2017">Bericht MLUGS Treffen im Oktober 2017</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2017-10-17T18:30:00+02:00"> 17. October 2017 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas; AX Semantics; Software-Entwickler</li>
+<li>Wilhelm; Software-Entwickler, privat ML</li>
+<li>Uwe; macht Raumfahrt, ML in der Raumfahrt</li>
+<li>Barbara; macht Steno</li>
+<li>Jörg; Privat; Buchhaltung</li>
+</ul>
+<h3>Kaggle - Zillow’s Home Value Prediction</h3>
+<p><a href="https://www.kaggle.com/c/zillow-prize-1#timeline">https://www.kaggle.com/c/zillow-prize-1#timeline</a></p>
+<p>Deadline war am 2017-10-16.</p>
+<h3>Object-Detection</h3>
+<p>viele machen gerade (wieder) Object-Detection.
+Weil jetzt genug Leute Zeit hatten, um <a href="https://research.googleblog.com/2017/06/supercharge-your-computer-vision-models.html">https://research.googleblog.com/2017/06/supercharge-your-computer-vision-models.html</a> auszuprobieren.</p>
+<ul>
+<li><a href="https://medium.com/towards-data-science/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9">https://medium.com/towards-data-science/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9</a></li>
+<li><a href="https://www.youtube.com/user/sentdex/videos">https://www.youtube.com/user/sentdex/videos</a></li>
+</ul>
+<h3>Paperspace</h3>
+<p><a href="https://www.paperspace.com/&amp;R=BI3LIF">https://www.paperspace.com/&amp;R=BI3LIF</a>
+(mit referral code gibt es 10$ Guthaben zum rumspielen.)</p>
+<h3>next</h3>
+<p>Termin: 2017-11-21
+Thema: Entity Embeddings of Categorical Variables - <a href="https://arxiv.org/pdf/1604.06737.pdf">https://arxiv.org/pdf/1604.06737.pdf</a></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
           <h3><a href="../mlugs-treffen-im-oktober-2017/"
                   rel="bookmark"
                   class="nodec"
@@ -479,104 +518,6 @@ Themen:
 <p>Marienstrasse 23, Stuttgart-Süd, aexea (1. OG)</p>
 <h3>Bitte meldet euch an unter:</h3>
 <p><a href="https://www.letsmeet.click/c/machine-learning-user-group-stuttgart">https://www.letsmeet.click/c/machine-learning-user-group-stuttgart</a></p> </div>
-    </li>
-    <li class="post" >
-        <header class="posttitle">
-          <h3><a href="../bericht-mlugs-treffen-im-februar-2017/"
-                  rel="bookmark"
-                  class="nodec"
-                  title="Permalink to Bericht MLUGS Treffen im Februar 2017">Bericht MLUGS Treffen im Februar 2017</a>
-          </h3>
-        </header>
-
-        <div class="postinfo">
-          <p class="published" title="2017-02-21T18:30:00+01:00"> 21. February 2017 </p>
-        </div><!-- /.postinfo -->
-
-        <div class="article"> <h2>Protokoll</h2>
-<h3>Vorstellungsrunde</h3>
-<ul>
-<li>Andreas;aexea;Software-Entwickler</li>
-<li>Frank;selbständig</li>
-<li>Georg;Daimler-TSS;verwendet TensorFlow mit AWS</li>
-<li>Siegfried;privat;interessiert an ML</li>
-<li>Michael;aexea;Software-Entwickler</li>
-<li>Robin;Technischer-Biologe;interessiert an ML</li>
-<li>Andreas;Landeskontrollverband BW;macht Milchanalyse mit ML</li>
-<li>Uwe;macht Raumfahrt;versucht ML-Konzept in die Raumfahrt zu bringen</li>
-<li>Simon;Uni-Stuttgart Politik-Wissenschaftsstudent;macht R</li>
-</ul>
-<h3>Andreas Madsack - Tensorflow/Keras in Production @ AX-Semantics</h3>
-<ul>
-<li>Ziel: ein kleines Problem mit Tensorflow lösen um Erfahrung in der Produktionsumgebung zu sammeln</li>
-<li>Problem: Daten in String/Number/Date unter Einbeziehung des Feldnamens klassifizieren</li>
-<li>Hintergrund: Die Daten kommen von Kunden und sind für die Generierung von Texten vorgesehen.</li>
-</ul>
-<p><strong>Basics</strong></p>
-<ul>
-<li>Nutzer können das Ergebnis korrigieren</li>
-<li>Erste Version mit Tensorflow (0.10), spätere Version mit Keras + Tensorflow, weil Keras Graph und Model in Dateien speichern kann</li>
-<li>Implementierung mit Keras war einfacher als mit TensorFlow</li>
-<li>3 Layer mit 32, 12, 3 Knoten</li>
-<li>Speichern ist einfach dank keras: <code>model.to_json()</code> bzw. <code>model.save_weights(name)</code>; ähnliche Methoden sind inzwischen auch in Tensorflow, aber nicht so einfach zu verwenden</li>
-</ul>
-<p><strong>Architektur</strong></p>
-<ul>
-<li>Microservices + RPC calls via messages (Django, Celery, RabbitMQ)</li>
-<li>Microservice besteht aus mehreren Servern (dynamisch skaliert)</li>
-</ul>
-<p><strong>Workflow</strong></p>
-<ul>
-<li>Neue Daten vom Kunden über API</li>
-<li>Daten werden über RabbitMQ zur Klassifikation geschickt</li>
-<li>Keine neue Prediction falls schonmal eine für dieses Projekt lief (falls ja -&gt; skip)</li>
-<li>Prediction dauert 2–4 Sekunden</li>
-<li>Ergebnis wird zum nächsten Microservice geschickt; dieser schickt Korrekturen durch den User zurück</li>
-</ul>
-<p><strong>Ergebnis</strong></p>
-<ul>
-<li>System hat sich kaputt trainiert</li>
-<li>zu wenig Häufung in den Daten</li>
-<li>User haben Ergebnis nicht korrigiert</li>
-<li>wird durch regelbasiertes System ersetzt</li>
-<li>Workflow funktioniert prinzipiell</li>
-</ul>
-<h3>Uwe Sterr - autonomes Fahren end-to-end</h3>
-<ul>
-<li>Nanodegree auf udacity: https://de.udacity.com/course/self-driving-car-engineer-nanodegree--nd013/</li>
-<li>autosteuern. dabei das lenkrad bedienen (automatisch)</li>
-<li>3 kameras. bildvorverarbeitung. dann in ein CNN</li>
-<li>bilder deutlich verkleinert</li>
-<li>16x32x3</li>
-<li>HSV - https://en.wikipedia.org/wiki/HSL_and_HSV</li>
-<li>der S-Kanal hat am meisten gebracht</li>
-<li>model speichern ist in tensorflow relativ kompliziert</li>
-<li>mit keras deutlich einfacher</li>
-<li>model.summary() liefert das komplette NN</li>
-<li>trainiert wird mit einer strecke in einem simulator</li>
-<li>der test ist dann auf einer neuen strecke, die sehr anders ist. und das trainierte netz ist gut.</li>
-<li>uwe war begeistert wie einfach es war das NN dazu zu bringen zu generalisieren</li>
-</ul>
-<h3>Andreas Werner -- RStudio</h3>
-<ul>
-<li>https://www.rstudio.com/</li>
-<li>gibt eine Server-version, die man im Browser bedient</li>
-<li>es gibt neben .R noch .Rmd - http://rmarkdown.rstudio.com/</li>
-<li>generiert aus dem .Rmd eine PDF mit Auswertungen und Plots</li>
-<li>kann auch Präsentationen auf HTML basis erzeugen</li>
-<li>oder mit Widgets, die Graphen interaktiv beeinflussen</li>
-</ul>
-<h3>next</h3>
-<p><strong> März: 21.03.2017 </strong></p>
-<p>Thema: RNN</p>
-<ul>
-<li>jeder macht irgendwas mit RNNs</li>
-<li>(in die Ankündigung ein paar Inspirationen zu RNN)</li>
-</ul>
-<p><strong> April: 18.04.2017 </strong></p>
-<ul>
-<li>Simon - Textanalytics mit ML</li>
-</ul> </div>
     </li>
 
   </ol><!-- /#post-list -->
