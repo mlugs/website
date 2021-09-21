@@ -1,7 +1,7 @@
 Title: virtuelles MLUGS Treffen im Oktober 2021
 Date: 2021-09-21 20:00
 
-Im Oktober findet wieder ein virtuelle MLUGS-Treffen statt.
+Im Oktober findet wieder ein virtuelles MLUGS-Treffen statt.
 
 Vorträge:
 
