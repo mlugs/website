@@ -7,7 +7,7 @@ Vorträge:
 
 - Tin: Noise Suppression Model
 
-- Ihr könnt noch Vorträge vorschlagen
+- Uwe: Optimierung einer KI-Lösung für ein adaptives Optiksystem mit Hilfe von Weights & Biases
 
 Wir werden Zoom verwenden.
 
