@@ -108,15 +108,16 @@ Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zu
 <p>in AllenNLP add the callback to your configuration:</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;trainer&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;epoch_callbacks&quot;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="p">{</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;log_metrics_to_wandb&quot;</span>
-      <span class="p">}</span>
-    <span class="p">],</span>
-   <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="err">:::json</span>
+<span class="err">{</span>
+<span class="err">  &quot;trainer&quot;: {</span>
+<span class="err">    &quot;epoch_callbacks&quot;: [</span>
+<span class="err">      {</span>
+<span class="err">        &quot;type&quot;: &quot;log_metrics_to_wandb&quot;</span>
+<span class="err">      }</span>
+<span class="err">    ],</span>
+<span class="err">   }</span>
+<span class="err">}</span>
 </code></pre></div>
 
 <ul>

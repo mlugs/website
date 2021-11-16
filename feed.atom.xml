@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2021-10-19T18:30:00+02:00</updated><subtitle></subtitle><entry><title>Bericht (virtuelles) MLUGS Treffen im Oktober 2021</title><link href="bericht-virtuelles-mlugs-treffen-im-oktober-2021/" rel="alternate"></link><published>2021-10-19T18:30:00+02:00</published><updated>2021-10-19T18:30:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2021-10-19:bericht-virtuelles-mlugs-treffen-im-oktober-2021/</id><content type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2021-11-16T17:01:00+01:00</updated><subtitle></subtitle><entry><title>virtuelles MLUGS Treffen im November 2021</title><link href="virtuelles-mlugs-treffen-im-november-2021/" rel="alternate"></link><published>2021-11-16T17:01:00+01:00</published><updated>2021-11-16T17:01:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2021-11-16:virtuelles-mlugs-treffen-im-november-2021/</id><content type="html">&lt;p&gt;Im November findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+&lt;p&gt;Wir werden Zoom verwenden.&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;16. November 2021 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;p&gt;virtuell. Zoom.&lt;/p&gt;
+&lt;h3&gt;Bitte meldet euch an unter:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart"&gt;https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Bericht (virtuelles) MLUGS Treffen im Oktober 2021</title><link href="bericht-virtuelles-mlugs-treffen-im-oktober-2021/" rel="alternate"></link><published>2021-10-19T18:30:00+02:00</published><updated>2021-10-19T18:30:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2021-10-19:bericht-virtuelles-mlugs-treffen-im-oktober-2021/</id><content type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
 &lt;h3&gt;Teilnehmer&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Andreas, AX-Semantics&lt;/li&gt;
@@ -748,15 +756,16 @@ Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zu
 &lt;p&gt;in AllenNLP add the callback to your configuration:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="nt"&gt;&amp;quot;trainer&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="nt"&gt;&amp;quot;epoch_callbacks&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
-      &lt;span class="p"&gt;{&lt;/span&gt;
-        &lt;span class="nt"&gt;&amp;quot;type&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;log_metrics_to_wandb&amp;quot;&lt;/span&gt;
-      &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="p"&gt;],&lt;/span&gt;
-   &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;:::json&lt;/span&gt;
+&lt;span class="err"&gt;{&lt;/span&gt;
+&lt;span class="err"&gt;  &amp;quot;trainer&amp;quot;: {&lt;/span&gt;
+&lt;span class="err"&gt;    &amp;quot;epoch_callbacks&amp;quot;: [&lt;/span&gt;
+&lt;span class="err"&gt;      {&lt;/span&gt;
+&lt;span class="err"&gt;        &amp;quot;type&amp;quot;: &amp;quot;log_metrics_to_wandb&amp;quot;&lt;/span&gt;
+&lt;span class="err"&gt;      }&lt;/span&gt;
+&lt;span class="err"&gt;    ],&lt;/span&gt;
+&lt;span class="err"&gt;   }&lt;/span&gt;
+&lt;span class="err"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
@@ -854,8 +863,9 @@ Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zu
 &lt;li&gt;for more memory: GKE - complicated to setup - expensive to run&lt;/li&gt;
 &lt;li&gt;really easy to deploy&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;gcloud builds submit --tag eu.gcr.io/&amp;lt;PROJECT_ID&amp;gt;/compound-split
-gcloud run deploy compound-split --image eu.gcr.io/&amp;lt;PROJECT_ID&amp;gt;/compound-split --allow-unauthenticated --memory&lt;span class="o"&gt;=&lt;/span&gt;1G
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;:::bash&lt;/span&gt;
+&lt;span class="err"&gt;gcloud builds submit --tag eu.gcr.io/&amp;lt;PROJECT_ID&amp;gt;/compound-split&lt;/span&gt;
+&lt;span class="err"&gt;gcloud run deploy compound-split --image eu.gcr.io/&amp;lt;PROJECT_ID&amp;gt;/compound-split --allow-unauthenticated --memory=1G&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;

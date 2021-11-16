@@ -49,6 +49,38 @@
 
     <li class="post" >
         <header class="posttitle">
+          <h3><a href="../../virtuelles-mlugs-treffen-im-april-2021/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to virtuelles MLUGS Treffen im April 2021">virtuelles MLUGS Treffen im April 2021</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2021-03-23T20:00:00+01:00"> 23. March 2021 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Auch im April findet ein virtuelles MLUGS-Treffen statt.</p>
+<p>Vorträge (10-15 Minuten/Vortrag):</p>
+<ul>
+<li>Silvana: ML in Produktion bei autoretouch</li>
+<li>Robert: Automatisierte Analyse medizinischer Daten z.B. aus Studien mit Hilfe von NLP bei CUREDATIS.</li>
+<li>Paul: Anomalieerkennung mit Hilfe eines Komprimierungsalgorithmus am Beispiel von Daten aus dem Schlaflabor</li>
+</ul>
+<p>Meldet euch, wenn ihr etwas vorstellen wollt.
+Das kann etwas sein mit dem ihr euch aktuell beschäftigt, ein Problem das ihr lösen möchtet oder auch ein Plug für etwas.
+Es sollte etwas mit machine-learning zu tun haben.</p>
+<p>Wir werden Zoom verwenden.</p>
+<h3>Wann:</h3>
+<p>20. April 2021 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>virtuell. Zoom.</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
           <h3><a href="../../bericht-virtuelles-mlugs-treffen-im-marz-2021/"
                   rel="bookmark"
                   class="nodec"
@@ -411,15 +443,16 @@ Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zu
 <p>in AllenNLP add the callback to your configuration:</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;trainer&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;epoch_callbacks&quot;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="p">{</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;log_metrics_to_wandb&quot;</span>
-      <span class="p">}</span>
-    <span class="p">],</span>
-   <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="err">:::json</span>
+<span class="err">{</span>
+<span class="err">  &quot;trainer&quot;: {</span>
+<span class="err">    &quot;epoch_callbacks&quot;: [</span>
+<span class="err">      {</span>
+<span class="err">        &quot;type&quot;: &quot;log_metrics_to_wandb&quot;</span>
+<span class="err">      }</span>
+<span class="err">    ],</span>
+<span class="err">   }</span>
+<span class="err">}</span>
 </code></pre></div>
 
 <ul>
@@ -521,8 +554,9 @@ Keine Vorträge, die besser bei Youtube aufgehoben wären, sondern Diskussion zu
 <li>for more memory: GKE - complicated to setup - expensive to run</li>
 <li>really easy to deploy</li>
 </ul>
-<div class="highlight"><pre><span></span><code>gcloud builds submit --tag eu.gcr.io/&lt;PROJECT_ID&gt;/compound-split
-gcloud run deploy compound-split --image eu.gcr.io/&lt;PROJECT_ID&gt;/compound-split --allow-unauthenticated --memory<span class="o">=</span>1G
+<div class="highlight"><pre><span></span><code><span class="err">:::bash</span>
+<span class="err">gcloud builds submit --tag eu.gcr.io/&lt;PROJECT_ID&gt;/compound-split</span>
+<span class="err">gcloud run deploy compound-split --image eu.gcr.io/&lt;PROJECT_ID&gt;/compound-split --allow-unauthenticated --memory=1G</span>
 </code></pre></div>
 
 <ul>
@@ -581,37 +615,6 @@ gcloud run deploy compound-split --image eu.gcr.io/&lt;PROJECT_ID&gt;/compound-s
 <li>talks:</li>
 <li>(meldet euch wenn ihr Vorträge habt!)</li>
 </ul> </div>
-    </li>
-    <li class="post" >
-        <header class="posttitle">
-          <h3><a href="../../virtuelles-mlugs-treffen-im-oktober-2020/"
-                  rel="bookmark"
-                  class="nodec"
-                  title="Permalink to virtuelles MLUGS Treffen im Oktober 2020">virtuelles MLUGS Treffen im Oktober 2020</a>
-          </h3>
-        </header>
-
-        <div class="postinfo">
-          <p class="published" title="2020-09-28T13:00:00+02:00"> 28. September 2020 </p>
-        </div><!-- /.postinfo -->
-
-        <div class="article"> <p>Auch im Oktober findet ein virtuelles MLUGS-Treffen statt.</p>
-<p>Vorträge (10-15 Minuten/Vortrag):</p>
-<ul>
-<li>Andreas: Hosting of ML models</li>
-<li>Uwe: Buchbesprechung "Deep learning for Coder with fastai &amp; PyTorch"</li>
-</ul>
-<p>Meldet euch, wenn ihr etwas vorstellen wollt.
-Das kann etwas sein mit dem ihr euch aktuell beschäftigt, ein Problem das ihr lösen möchtet oder auch ein Plug für etwas.
-Es sollte etwas mit machine-learning zu tun haben.</p>
-<p>Wir werden Zoom verwenden.</p>
-<h3>Wann:</h3>
-<p>20. Oktober 2020 um 18:30</p>
-
-<h3>Wo:</h3>
-<p>virtuell. Zoom.</p>
-<h3>Bitte meldet euch an unter:</h3>
-<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
     </li>
 
   </ol><!-- /#post-list -->
