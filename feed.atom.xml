@@ -9,8 +9,8 @@
 &lt;p&gt;+1&lt;/p&gt;
 &lt;h3&gt;Andreas: Datums-umwandel-seq2seq mit AllenNLP&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Live-Demo: https://date2iso-ejn6yf4k4q-ez.a.run.app/?i=30.%20Oktober%201445&lt;/li&gt;
-&lt;li&gt;Code: https://github.com/mfa/allennlp-date2iso&lt;/li&gt;
+&lt;li&gt;Live-Demo: &lt;a href="https://date2iso-ejn6yf4k4q-ez.a.run.app/?i=30.%20Oktober%201445"&gt;https://date2iso-ejn6yf4k4q-ez.a.run.app/?i=30.%20Oktober%201445&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href="https://github.com/mfa/allennlp-date2iso"&gt;https://github.com/mfa/allennlp-date2iso&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Trainiert via AllenNLP als composed_seq2seq&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Paul: Zeitreihenvorhersageproblem beschreiben&lt;/h3&gt;
@@ -26,8 +26,8 @@
 &lt;p&gt;+1&lt;/p&gt;
 &lt;h3&gt;Andreas: Datums-umwandel-seq2seq mit AllenNLP&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Live-Demo: https://date2iso-ejn6yf4k4q-ez.a.run.app/?i=30.%20Oktober%201445&lt;/li&gt;
-&lt;li&gt;Code: https://github.com/mfa/allennlp-date2iso&lt;/li&gt;
+&lt;li&gt;Live-Demo: &lt;a href="https://date2iso-ejn6yf4k4q-ez.a.run.app/?i=30.%20Oktober%201445"&gt;https://date2iso-ejn6yf4k4q-ez.a.run.app/?i=30.%20Oktober%201445&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href="https://github.com/mfa/allennlp-date2iso"&gt;https://github.com/mfa/allennlp-date2iso&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Trainiert via AllenNLP als composed_seq2seq&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Paul: Zeitreihenvorhersageproblem beschreiben&lt;/h3&gt;
@@ -38,7 +38,7 @@
 &lt;h3&gt;misc&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;spacy pipelines vs. huggingface&lt;/li&gt;
-&lt;li&gt;https://ai.facebook.com/blog/the-first-ever-multilingual-model-to-win-wmt-beating-out-bilingual-models/&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ai.facebook.com/blog/the-first-ever-multilingual-model-to-win-wmt-beating-out-bilingual-models/"&gt;https://ai.facebook.com/blog/the-first-ever-multilingual-model-to-win-wmt-beating-out-bilingual-models/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;next:&lt;/h3&gt;
 &lt;ul&gt;
