@@ -49,6 +49,106 @@
 
     <li class="post" >
         <header class="posttitle">
+          <h3><a href="./bericht-mlugs-treffen-im-januar-2019/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht MLUGS Treffen im Januar 2019">Bericht MLUGS Treffen im Januar 2019</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2019-01-15T18:30:00+01:00"> 15. January 2019 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX-Semantics</li>
+<li>Uwe, Luftraumfahrt</li>
+<li>Jens, Datascients, AKKA</li>
+<li>Fernando, CV, Bosch</li>
+<li>Wilhelm, Software-Entwickler, privat</li>
+<li>Thomas, Software-Entwickler, Vialytics</li>
+<li>Michael, Software-Entwickler, AX Semantics</li>
+<li>Friedrich, werkstudent, Vialytics</li>
+<li>Leonard, Bosch</li>
+<li>Thilo, Student, Vialytics</li>
+<li>Arne, Luftraumfahrttechniker</li>
+<li>Benedikt, Datascientist, Daimler</li>
+<li>Christian, Software-Entwickler, privat</li>
+<li>
+<p>Christoph, Software-Entwickler, Freelancer</p>
+</li>
+<li>
+<p>2 Nachzügler</p>
+</li>
+</ul>
+<h3>Vorstellung von Ignite</h3>
+<p>Andreas Madsack, AX Semantics</p>
+<p>https://pytorch.org/ignite/index.html</p>
+<h4>Warum?</h4>
+<ul>
+<li>weniger boilerplate code. Die train/validate funktionen sind viel code, der von Projekt zu Projekt sehr ähnlich ist.</li>
+<li>fertig Helper für ModelCheckpoint, EarlyStopping, ...</li>
+</ul>
+<h4>Beispiel 1</h4>
+<ul>
+<li>https://github.com/pytorch/ignite/tree/master/examples/mnist</li>
+<li>https://github.com/pytorch/ignite/blob/master/examples/mnist/mnist_with_tensorboardx.py</li>
+</ul>
+<p>tensorflow/tensorboard sind noch nicht Python 3.7 kompatibel, deshalb:</p>
+<div class="highlight"><pre><span></span><code><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">p</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">:</span><span class="mi">6006</span><span class="p">:</span><span class="mi">6006</span> <span class="o">-</span><span class="n">it</span> <span class="o">-</span><span class="n">v</span> <span class="ss">`pwd`</span><span class="o">/</span><span class="n">logs</span><span class="p">:</span><span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="n">logs</span>  <span class="n">tensorflow</span><span class="o">/</span><span class="n">tensorflow</span> <span class="n">tensorboard</span> <span class="o">--</span><span class="n">logdir</span> <span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="n">logs</span><span class="o">/</span>
+</code></pre></div>
+
+<h4>Beispiel 2</h4>
+<p>Addition mit PyTorch und Ignite</p>
+<p>https://github.com/mfa/addition_seq2seq</p>
+<h3>misc</h3>
+<ul>
+<li>https://www.slideshare.net/lukaszlanga/i-regret-nothing</li>
+<li>https://www.youtube.com/watch?v=kSLJriaOumA</li>
+<li>transformer-XL: https://arxiv.org/pdf/1901.02860.pdf</li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>2019-02-19</li>
+<li>Thilo: BERT</li>
+</ul> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
+          <h3><a href="./mlugs-treffen-im-januar-2019/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to MLUGS Treffen im Januar 2019">MLUGS Treffen im Januar 2019</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2019-01-10T11:00:00+01:00"> 10. January 2019 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <p>Unser 24. Treffen ist am Dienstag, dem 15.01. in der Marienstrasse 23 bei AX Semantics.</p>
+<p>Language: German only.</p>
+<h3>Themen:</h3>
+<h4>Vorstellung von Ignite</h4>
+<p>https://pytorch.org/ignite/index.html</p>
+<ul>
+<li>Warum ignite?</li>
+<li>Beispiele</li>
+</ul>
+<h4>Wir suchen weitere Vorträge.</h4>
+<p>Stellt eure Projekte/Lösungen/Ideen vor.</p>
+<h3>Wann:</h3>
+<p>15. Januar 2019 um 18:30</p>
+
+<h3>Wo:</h3>
+<p>Marienstrasse 23, Stuttgart, AX Semantics (1. OG)</p>
+<h3>Bitte meldet euch an unter:</h3>
+<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
           <h3><a href="./bericht-mlugs-treffen-im-november-2018/"
                   rel="bookmark"
                   class="nodec"
@@ -660,124 +760,6 @@ Bibliotheken.</p>
 Stellt eure Projekte/Lösungen/Ideen vor.</p>
 <h3>Wann:</h3>
 <p>19. Juni 2018 um 18:30</p>
-
-<h3>Wo:</h3>
-<p>Marienstrasse 23, Stuttgart-Süd, AX Semantics (1. OG)</p>
-<h3>Bitte meldet euch an unter:</h3>
-<p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
-    </li>
-    <li class="post" >
-        <header class="posttitle">
-          <h3><a href="./bericht-mlugs-treffen-im-mai-2018/"
-                  rel="bookmark"
-                  class="nodec"
-                  title="Permalink to Bericht MLUGS Treffen im Mai 2018">Bericht MLUGS Treffen im Mai 2018</a>
-          </h3>
-        </header>
-
-        <div class="postinfo">
-          <p class="published" title="2018-05-15T18:30:00+02:00"> 15. May 2018 </p>
-        </div><!-- /.postinfo -->
-
-        <div class="article"> <h2>Protokoll</h2>
-<h3>Vorstellungsrunde</h3>
-<ul>
-<li>Andreas, Software-Entwickler, AX Semantics</li>
-<li>Uwe, macht Raumfahrt, versucht da ML einzusetzen</li>
-<li>Thomas, Daimler, Analytics</li>
-<li>Benedikt, Daimler, Ersatzteilpreisvorhersage</li>
-<li>Wilhelm, Software-Entwickler, privat ML</li>
-<li>Patrick, Institut für Photogrammetrie, Theorie von DL</li>
-<li>Michael, Software-Entwickler, AX-Semantics</li>
-<li>Burkhard, Ulm Uni, Maschinenüberwachung</li>
-<li>David, aus Ulm</li>
-<li>Phil, Software-Entwickler, Hobby mit RPI und ML</li>
-</ul>
-<h3>Cats vs. Dogs Hands-On</h3>
-<ul>
-<li>wir gehen zusammen durch den Code eines Katzen vs. Hunde Klassifikators</li>
-<li>
-<p>der Code läuft mit GPUs auf AWS</p>
-</li>
-<li>
-<p>Beispiel ist aus: <a href="https://www.manning.com/books/deep-learning-with-python">https://www.manning.com/books/deep-learning-with-python</a></p>
-</li>
-<li>
-<p>Link zum verwendeten Notebook: <a href="https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.2-using-convnets-with-small-datasets.ipynb">https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.2-using-convnets-with-small-datasets.ipynb</a></p>
-</li>
-<li>
-<p>Notebook unter Verwendung von ImageNet:
-<a href="https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.3-using-a-pretrained-convnet.ipynb">https://github.com/fchollet/deep-learning-with-python-notebooks/blob/master/5.3-using-a-pretrained-convnet.ipynb</a></p>
-</li>
-<li>
-<p>code um predictions zu machen:</p>
-</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">keras</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">keras.preprocessing.image</span> <span class="kn">import</span> <span class="n">ImageDataGenerator</span>
-
-<span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">load_model</span><span class="p">(</span><span class="s1">&#39;cats_and_dogs_small_2.h5&#39;</span><span class="p">)</span>
-<span class="n">test_datagen</span> <span class="o">=</span> <span class="n">ImageDataGenerator</span><span class="p">(</span><span class="n">rescale</span><span class="o">=</span><span class="mf">1.</span><span class="o">/</span><span class="mi">255</span><span class="p">)</span>
-<span class="n">predict_generator</span> <span class="o">=</span> <span class="n">test_datagen</span><span class="o">.</span><span class="n">flow_from_directory</span><span class="p">(</span>
-        <span class="s1">&#39;predict&#39;</span><span class="p">,</span>
-        <span class="n">target_size</span><span class="o">=</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">150</span><span class="p">),</span>
-        <span class="n">batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-        <span class="n">class_mode</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
-    <span class="n">img</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">predict_generator</span><span class="p">)</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-
-<h3>Uwe stellt ein Signalverarbeitungsproblem vor</h3>
-<h3>misc</h3>
-<ul>
-<li>Video zur Decodierung von iridium-Signalen: <a href="https://media.ccc.de/v/gpn18-89-gr-iridium-unter-der-haube">https://media.ccc.de/v/gpn18-89-gr-iridium-unter-der-haube</a></li>
-<li>GPN18: <a href="https://media.ccc.de/c/gpn18">https://media.ccc.de/c/gpn18</a></li>
-<li><a href="https://pretalx.entropia.de/gpn18/schedule/">https://pretalx.entropia.de/gpn18/schedule/</a></li>
-</ul>
-<h3>next</h3>
-<ul>
-<li>Uwe stellt die Lösung von seinem Problem unter Verwendung von DTW vor. :)</li>
-<li>(weitere Vorschläge sind willkommen!)</li>
-</ul>
-<p>Date: 2018-06-19</p> </div>
-    </li>
-    <li class="post" >
-        <header class="posttitle">
-          <h3><a href="./mlugs-treffen-im-mai-2018/"
-                  rel="bookmark"
-                  class="nodec"
-                  title="Permalink to MLUGS Treffen im Mai 2018">MLUGS Treffen im Mai 2018</a>
-          </h3>
-        </header>
-
-        <div class="postinfo">
-          <p class="published" title="2018-04-24T23:00:00+02:00"> 24. April 2018 </p>
-        </div><!-- /.postinfo -->
-
-        <div class="article"> <p>Unser neunzehntes Treffen ist am Dienstag, dem 15.05. in der Marienstrasse 23 bei AX Semantics.</p>
-<p>Language: German only.</p>
-<h3>Thema:</h3>
-<ul>
-<li>
-<p>Cats vs. Dogs Hands-On</p>
-<ul>
-<li>wir gehen zusammen durch den Code eines Katzen vs. Hunde Klassifikators</li>
-<li>der Code läuft mit GPUs auf AWS</li>
-<li>jeder kann (sofern Notebook mitgebracht) mit dem Code rumprobieren</li>
-</ul>
-</li>
-</ul>
-<p>Wir suchen weitere Vorträge.<br>
-Stellt eure Projekte/Lösungen/Ideen vor.</p>
-<h3>Wann:</h3>
-<p>15. Mai 2018 um 18:30</p>
 
 <h3>Wo:</h3>
 <p>Marienstrasse 23, Stuttgart-Süd, AX Semantics (1. OG)</p>
