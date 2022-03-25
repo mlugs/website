@@ -12,7 +12,7 @@ Themen:
 - Ausschneiden von Elementen in Bildern
 - Eigenen DataLoader schreiben
 - Traingsdaten mittels OpenCV erzeugen
-- Verwendung von Unet: https://arxiv.org/abs/1505.04597
+- Verwendung von Unet: <https://arxiv.org/abs/1505.04597>
 
 Voraussetzungen:
 
