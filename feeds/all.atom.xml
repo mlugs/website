@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2022-03-24T22:02:00+01:00</updated><subtitle></subtitle><entry><title>Machine-Learning-Workshop Teil 3</title><link href="machine-learning-workshop-teil-3/" rel="alternate"></link><published>2022-03-24T22:02:00+01:00</published><updated>2022-03-24T22:02:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-03-24:machine-learning-workshop-teil-3/</id><summary type="html">&lt;p&gt;Die mlugs veranstaltet zusammen mit dem Makerspace Esslingen eine Workshopreihe.&lt;br&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2022-04-07T10:00:00+02:00</updated><subtitle></subtitle><entry><title>Machine-Learning-Workshop Teil 4</title><link href="machine-learning-workshop-teil-4/" rel="alternate"></link><published>2022-04-07T10:00:00+02:00</published><updated>2022-04-07T10:00:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-04-07:machine-learning-workshop-teil-4/</id><summary type="html">&lt;p&gt;Die Machine Learning User Group Stuttgart veranstaltet zusammen mit dem &lt;a href="https://makerspace-esslingen.de/"&gt;Makerspace Esslingen&lt;/a&gt; und dieses mal mit &lt;a href="https://aerospaceresearch.net/"&gt;AerospaceResearch.net&lt;/a&gt; eine Workshopreihe. Unser Ziel ist PyTorch anhand von Beispielen zu vermitteln.&lt;/p&gt;
+&lt;p&gt;Der vierte Termin ist am 2022-05-03 von 18:30 bis 21:00 Uhr. Die weiteren Termine sind am ersten Dienstag im …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Die Machine Learning User Group Stuttgart veranstaltet zusammen mit dem &lt;a href="https://makerspace-esslingen.de/"&gt;Makerspace Esslingen&lt;/a&gt; und dieses mal mit &lt;a href="https://aerospaceresearch.net/"&gt;AerospaceResearch.net&lt;/a&gt; eine Workshopreihe. Unser Ziel ist PyTorch anhand von Beispielen zu vermitteln.&lt;/p&gt;
+&lt;p&gt;Der vierte Termin ist am 2022-05-03 von 18:30 bis 21:00 Uhr. Die weiteren Termine sind am ersten Dienstag im Monat.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Themen&lt;/strong&gt;: Dieses mal ist es ein Vorbereitungstermin für Teil 5 und wir werden mehr Raumfahrtanwendungen machen. Wir wollen Brainstormen, wie wir in Videos vom Nachthimmel Satelliten finden sollen und Sterne ignorrieren können. Sterne und Satelliten sehen auf Photoaufnahmen sehr ähnlich aus als helle Lichtpunkte, aber die Relativbewegungen sind anders. Satelliten bewegen sich deutlich schneller als Sterne, und Sterne bewegen sich alle ähnlich im Kollektiv. Wir wollen uns jetzt zusammensetzen und besprechen, was wir dafür brauchen, um per Machine Learning Satelliten zu finden.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wir wollen "Fake" Bilder generieren vom Nachthimmel und diese beim Treffen besprechen &lt;a href="https://github.com/aerospaceresearch/inthenightsky"&gt;https://github.com/aerospaceresearch/inthenightsky&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Wir wollen Methoden besprechen, die genutzt werden können&lt;/li&gt;
+&lt;li&gt;Wir denken, dass Maskierung wie im Teil 3 mit Unet funktionieren könnte, wissen es aber noch nicht&lt;/li&gt;
+&lt;li&gt;Verwendung von Unet: &lt;a href="https://arxiv.org/abs/1505.04597"&gt;https://arxiv.org/abs/1505.04597&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Voraussetzungen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;etwas Programmierkenntnisse - wir werden Python verwenden&lt;/li&gt;
+&lt;li&gt;Interesse an Raumfahrt und Astrophotographie&lt;/li&gt;
+&lt;li&gt;Diesmal werden wir gemeinsam Brainstormen und haben (noch) keinen nachbaubaren Plan für einen Hands-on-Workshop.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Slack-Raum für Fragen, Diskussionen, Spoilers: &lt;a href="https://mlugs.slack.com"&gt;https://mlugs.slack.com&lt;/a&gt; (Invite auf Anfrage per Email oder am Workshoptag)&lt;/p&gt;
+&lt;p&gt;Anmeldung via Meetup oder per Email an anmeldung [at] makerspace-esslingen.de&lt;/p&gt;
+&lt;p&gt;Wir werden Zoom verwenden.&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;03. Mai 2022 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;p&gt;virtuell. Zoom.&lt;/p&gt;
+&lt;h3&gt;Bitte meldet euch an unter:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart"&gt;https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Machine-Learning-Workshop Teil 3</title><link href="machine-learning-workshop-teil-3/" rel="alternate"></link><published>2022-03-24T22:02:00+01:00</published><updated>2022-03-24T22:02:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-03-24:machine-learning-workshop-teil-3/</id><summary type="html">&lt;p&gt;Die mlugs veranstaltet zusammen mit dem Makerspace Esslingen eine Workshopreihe.&lt;br&gt;
 Unser Ziel ist PyTorch anhand von Beispielen zu vermitteln.&lt;/p&gt;
 &lt;p&gt;Der dritte Termin ist am 2022-04-05 von 18:30 bis 21:00 Uhr.&lt;br&gt;
 Die weiteren Termine sind am ersten Dienstag im Monat.&lt;/p&gt;
