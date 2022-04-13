@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2022-04-07T10:00:00+02:00</updated><subtitle></subtitle><entry><title>Machine-Learning-Workshop Teil 4</title><link href="machine-learning-workshop-teil-4/" rel="alternate"></link><published>2022-04-07T10:00:00+02:00</published><updated>2022-04-07T10:00:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-04-07:machine-learning-workshop-teil-4/</id><summary type="html">&lt;p&gt;Die Machine Learning User Group Stuttgart veranstaltet zusammen mit dem &lt;a href="https://makerspace-esslingen.de/"&gt;Makerspace Esslingen&lt;/a&gt; und dieses mal mit &lt;a href="https://aerospaceresearch.net/"&gt;AerospaceResearch.net&lt;/a&gt; eine Workshopreihe. Unser Ziel ist PyTorch anhand von Beispielen zu vermitteln.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2022-04-12T22:01:00+02:00</updated><subtitle></subtitle><entry><title>virtuelles MLUGS Treffen im April 2022</title><link href="virtuelles-mlugs-treffen-im-april-2022/" rel="alternate"></link><published>2022-04-12T22:01:00+02:00</published><updated>2022-04-12T22:01:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-04-12:virtuelles-mlugs-treffen-im-april-2022/</id><summary type="html">&lt;p&gt;Im April findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+&lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.
+Ende spätestens um 20 Uhr.&lt;/p&gt;
+&lt;p&gt;Vortrag:&lt;/p&gt;
+&lt;p&gt;Christian: Designing and Optimizing a Convolutional Neural Net for Dice Recognition&lt;/p&gt;
+&lt;p&gt;Wir werden Zoom verwenden.&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;19. April 2022 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;p&gt;virtuell. Zoom.&lt;/p&gt;
+&lt;h3&gt;Bitte meldet euch …&lt;/h3&gt;</summary><content type="html">&lt;p&gt;Im April findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+&lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.
+Ende spätestens um 20 Uhr.&lt;/p&gt;
+&lt;p&gt;Vortrag:&lt;/p&gt;
+&lt;p&gt;Christian: Designing and Optimizing a Convolutional Neural Net for Dice Recognition&lt;/p&gt;
+&lt;p&gt;Wir werden Zoom verwenden.&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;19. April 2022 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;p&gt;virtuell. Zoom.&lt;/p&gt;
+&lt;h3&gt;Bitte meldet euch an unter:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart"&gt;https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Machine-Learning-Workshop Teil 4</title><link href="machine-learning-workshop-teil-4/" rel="alternate"></link><published>2022-04-07T10:00:00+02:00</published><updated>2022-04-07T10:00:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-04-07:machine-learning-workshop-teil-4/</id><summary type="html">&lt;p&gt;Die Machine Learning User Group Stuttgart veranstaltet zusammen mit dem &lt;a href="https://makerspace-esslingen.de/"&gt;Makerspace Esslingen&lt;/a&gt; und dieses mal mit &lt;a href="https://aerospaceresearch.net/"&gt;AerospaceResearch.net&lt;/a&gt; eine Workshopreihe. Unser Ziel ist PyTorch anhand von Beispielen zu vermitteln.&lt;/p&gt;
 &lt;p&gt;Der vierte Termin ist am 2022-05-03 von 18:30 bis 21:00 Uhr. Die weiteren Termine sind am ersten Dienstag im …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Die Machine Learning User Group Stuttgart veranstaltet zusammen mit dem &lt;a href="https://makerspace-esslingen.de/"&gt;Makerspace Esslingen&lt;/a&gt; und dieses mal mit &lt;a href="https://aerospaceresearch.net/"&gt;AerospaceResearch.net&lt;/a&gt; eine Workshopreihe. Unser Ziel ist PyTorch anhand von Beispielen zu vermitteln.&lt;/p&gt;
 &lt;p&gt;Der vierte Termin ist am 2022-05-03 von 18:30 bis 21:00 Uhr. Die weiteren Termine sind am ersten Dienstag im Monat.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Themen&lt;/strong&gt;: Dieses mal ist es ein Vorbereitungstermin für Teil 5 und wir werden mehr Raumfahrtanwendungen machen. Wir wollen Brainstormen, wie wir in Videos vom Nachthimmel Satelliten finden sollen und Sterne ignorrieren können. Sterne und Satelliten sehen auf Photoaufnahmen sehr ähnlich aus als helle Lichtpunkte, aber die Relativbewegungen sind anders. Satelliten bewegen sich deutlich schneller als Sterne, und Sterne bewegen sich alle ähnlich im Kollektiv. Wir wollen uns jetzt zusammensetzen und besprechen, was wir dafür brauchen, um per Machine Learning Satelliten zu finden.&lt;/p&gt;
@@ -76,7 +99,7 @@ Diesmal werden GPUs benötigt und das volle Training wird länger dauern als der
 &lt;li&gt;labeln und nur majority-vote von mehreren Labelern dann verwendet&lt;/li&gt;
 &lt;li&gt;Ungleichverteilung der Klassen durch WeightedRandomSampler beheben&lt;/li&gt;
 &lt;li&gt;Visualisierung der Layer sieht sehr anders aus als bei Forest-vs-Houses&lt;/li&gt;
-&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>virtuelles MLUGS Treffen im März 2022</title><link href="virtuelles-mlugs-treffen-im-marz-2022/" rel="alternate"></link><published>2022-03-03T22:01:00+01:00</published><updated>2022-03-03T22:01:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-03-03:virtuelles-mlugs-treffen-im-marz-2022/</id><summary type="html">&lt;p&gt;Im März findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>virtuelles MLUGS Treffen im März 2022</title><link href="virtuelles-mlugs-treffen-im-marz-2022/" rel="alternate"></link><published>2022-03-02T22:01:00+01:00</published><updated>2022-03-02T22:01:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-03-02:virtuelles-mlugs-treffen-im-marz-2022/</id><summary type="html">&lt;p&gt;Im März findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
 &lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.
 Ende spätestens um 20 Uhr.&lt;/p&gt;
 &lt;p&gt;Vortrag:&lt;/p&gt;
