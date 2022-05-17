@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2022-04-19T18:30:00+02:00</updated><subtitle></subtitle><entry><title>Bericht (virtuelles) MLUGS Treffen im April 2022</title><link href="bericht-virtuelles-mlugs-treffen-im-april-2022/" rel="alternate"></link><published>2022-04-19T18:30:00+02:00</published><updated>2022-04-19T18:30:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-04-19:bericht-virtuelles-mlugs-treffen-im-april-2022/</id><summary type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2022-05-17T18:30:00+02:00</updated><subtitle></subtitle><entry><title>Bericht (virtuelles) MLUGS Treffen im Mai 2022</title><link href="bericht-virtuelles-mlugs-treffen-im-mai-2022/" rel="alternate"></link><published>2022-05-17T18:30:00+02:00</published><updated>2022-05-17T18:30:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-05-17:bericht-virtuelles-mlugs-treffen-im-mai-2022/</id><summary type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+&lt;h3&gt;Andreas: Simulate Satellites in the night sky for machine learning training&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Detect satellites from stars by recognizing movement -- blurry effect when the satellite is faster&lt;/li&gt;
+&lt;li&gt;Generate the satellites into a (pre-)recorded video of the night sky&lt;/li&gt;
+&lt;li&gt;Addionally interpolation between the frames&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href="https://github.com/aerospaceresearch/inthenightsky"&gt;https://github.com/aerospaceresearch/inthenightsky&lt;/a&gt; (private …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+&lt;h3&gt;Andreas: Simulate Satellites in the night sky for machine learning training&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Detect satellites from stars by recognizing movement -- blurry effect when the satellite is faster&lt;/li&gt;
+&lt;li&gt;Generate the satellites into a (pre-)recorded video of the night sky&lt;/li&gt;
+&lt;li&gt;Addionally interpolation between the frames&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href="https://github.com/aerospaceresearch/inthenightsky"&gt;https://github.com/aerospaceresearch/inthenightsky&lt;/a&gt; (private until our paper is done)&lt;/li&gt;
+&lt;li&gt;Abstract: https://iafastro.directory/iac/paper/id/70314/summary/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Teaser für ML-Workshop Teil 5&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Satelliten von Sternen unterscheiden mit Hilfe von CNNs.&lt;/li&gt;
+&lt;li&gt;using UNet with 1frame and 3frames of input images and masks as output&lt;/li&gt;
+&lt;li&gt;date: 2022-06-07&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Discussion&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;bewegliche dinge finden. Tipp: https://en.wikipedia.org/wiki/Hungarian_algorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;next&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2022-06-21&lt;/li&gt;
+&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>virtuelles MLUGS Treffen im Mai 2022</title><link href="virtuelles-mlugs-treffen-im-mai-2022/" rel="alternate"></link><published>2022-05-17T18:01:00+02:00</published><updated>2022-05-17T18:01:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-05-17:virtuelles-mlugs-treffen-im-mai-2022/</id><summary type="html">&lt;p&gt;Im Mai findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+&lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.
+Ende spätestens um 20 Uhr.&lt;/p&gt;
+&lt;p&gt;Vortrag:&lt;/p&gt;
+&lt;p&gt;Andreas: Wird‘s klappen? Satelliten am Nachthimmel simulieren als ML-Training&lt;/p&gt;
+&lt;p&gt;Wir werden Zoom verwenden.&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;17. Mai 2022 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;p&gt;virtuell. Zoom.&lt;/p&gt;
+&lt;h3&gt;Bitte meldet euch an …&lt;/h3&gt;</summary><content type="html">&lt;p&gt;Im Mai findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+&lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.
+Ende spätestens um 20 Uhr.&lt;/p&gt;
+&lt;p&gt;Vortrag:&lt;/p&gt;
+&lt;p&gt;Andreas: Wird‘s klappen? Satelliten am Nachthimmel simulieren als ML-Training&lt;/p&gt;
+&lt;p&gt;Wir werden Zoom verwenden.&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;17. Mai 2022 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;p&gt;virtuell. Zoom.&lt;/p&gt;
+&lt;h3&gt;Bitte meldet euch an unter:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart"&gt;https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Bericht (virtuelles) MLUGS Treffen im April 2022</title><link href="bericht-virtuelles-mlugs-treffen-im-april-2022/" rel="alternate"></link><published>2022-04-19T18:30:00+02:00</published><updated>2022-04-19T18:30:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-04-19:bericht-virtuelles-mlugs-treffen-im-april-2022/</id><summary type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
 &lt;h3&gt;Christian: Designing and Optimizing a Convolutional Neural Net for Dice Recognition&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;eigene Würfelfotos gemacht und von Hand ausgeschnitten&lt;/li&gt;
