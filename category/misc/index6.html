@@ -49,6 +49,123 @@
 
     <li class="post" >
         <header class="posttitle">
+          <h3><a href="../../bericht-mlugs-treffen-im-juni-2019/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht MLUGS Treffen im Juni 2019">Bericht MLUGS Treffen im Juni 2019</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2019-06-18T18:30:00+02:00"> 18. June 2019 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas, Software-Entwickler, AX-Semantics</li>
+<li>Hermann, IT-Architekt / Mathematiker, Vorruhestand / DHBW</li>
+<li>Lars, Freiberuflicher Entwickler CGI</li>
+<li>John, 3d-artist, klassiche 3d-produktion; unreal/unity</li>
+<li>Stefan, bilderkennung/outlyer-detection</li>
+<li>wilhelm, software-entwickler, privat</li>
+<li>christian, automatisierungstechniker, selbständig</li>
+<li>jens, data-scientist, akka</li>
+<li>marvin, algorithmenentwicker, automotive</li>
+<li>thomas, data-scientist, ap sensing</li>
+<li>thilo, consultant, freelancer</li>
+<li>uwe, raumfahrt / laser, selbständig</li>
+</ul>
+<h3>Thilo: Objekterkennung</h3>
+<ul>
+<li>
+<p>convolution + relu + batchnorm</p>
+</li>
+<li>
+<p>feature pyramid networks - haben sich quasi durchgesetzt</p>
+</li>
+<li>path aggregation networks - brauchen mehr vram</li>
+<li>
+<p>global convolution networks - auch hier viel ram - sehr kleine batches</p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/1703.02719">https://arxiv.org/abs/1703.02719</a></p>
+</li>
+</ul>
+<p>typen von aufgaben (head):</p>
+<ul>
+<li>bildklassifikation</li>
+<li>objekterkennung</li>
+<li>bildsegmentierung</li>
+<li>keypoint detection (i.e. beim menschen)</li>
+<li>visual reasoning</li>
+</ul>
+<p>detectortyps:</p>
+<ul>
+<li>YOLO, SSD</li>
+<li>
+<p>faster-r cnn (2 stages)</p>
+</li>
+<li>
+<p><a href="https://www.jeremyjordan.me/object-detection-one-stage/">https://www.jeremyjordan.me/object-detection-one-stage/</a></p>
+</li>
+<li><a href="https://arxiv.org/abs/1708.02002">https://arxiv.org/abs/1708.02002</a></li>
+</ul>
+<p>bei 2-stages: first step: ist es vordergrund oder hintergrund</p>
+<ul>
+<li><a href="https://arxiv.org/abs/1703.06870">https://arxiv.org/abs/1703.06870</a></li>
+</ul>
+<p>code:</p>
+<ul>
+<li><a href="https://github.com/roytseng-tw/Detectron.pytorch">https://github.com/roytseng-tw/Detectron.pytorch</a></li>
+</ul>
+<p>datasets:</p>
+<ul>
+<li><a href="http://cocodataset.org/">http://cocodataset.org/</a></li>
+<li><a href="https://opensource.google.com/projects/open-images-dataset">https://opensource.google.com/projects/open-images-dataset</a></li>
+<li><a href="https://cs.stanford.edu/people/jcjohns/clevr/">https://cs.stanford.edu/people/jcjohns/clevr/</a></li>
+<li><a href="https://visualgenome.org">https://visualgenome.org</a></li>
+</ul>
+<h3>verschiedenes</h3>
+<ul>
+<li>edge computer: <a href="https://www.nvidia.com/de-de/autonomous-machines/embedded-systems/jetson-nano/">https://www.nvidia.com/de-de/autonomous-machines/embedded-systems/jetson-nano/</a></li>
+<li>
+<p>robocar - <a href="https://www.meetup.com/Esslingen-Makerspace/">https://www.meetup.com/Esslingen-Makerspace/</a></p>
+</li>
+<li>
+<p>NAACL 2019</p>
+<ul>
+<li>Blogpost von Sebastian Ruder: <a href="http://ruder.io/naacl2019/">http://ruder.io/naacl2019/</a></li>
+<li>btw, Best Paper: BERT</li>
+<li>video zu elmo/bert/... von Prof. Manning (stanford): <a href="https://www.youtube.com/watch?v=S-CspeZ8FHc">https://www.youtube.com/watch?v=S-CspeZ8FHc</a></li>
+<li>stand der dinge in NLP: <a href="https://medium.com/huggingface/the-best-and-most-current-of-modern-natural-language-processing-5055f409a1d1">https://medium.com/huggingface/the-best-and-most-current-of-modern-natural-language-processing-5055f409a1d1</a></li>
+<li><a href="http://blog.aylien.com/a-review-of-the-recent-history-of-natural-language-processing/">http://blog.aylien.com/a-review-of-the-recent-history-of-natural-language-processing/</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/zalandoresearch/fashion-mnist">https://github.com/zalandoresearch/fashion-mnist</a></p>
+</li>
+<li>
+<p><a href="https://github.com/zalandoresearch/flair">https://github.com/zalandoresearch/flair</a></p>
+</li>
+<li>
+<p>spaCy</p>
+<ul>
+<li><a href="https://spacy.io/usage/spacy-101">https://spacy.io/usage/spacy-101</a></li>
+<li><a href="https://course.spacy.io/">https://course.spacy.io/</a></li>
+<li><a href="https://medium.com/eliiza-ai/a-tour-of-awesome-features-of-spacy-part-1-2-58b32425954f">https://medium.com/eliiza-ai/a-tour-of-awesome-features-of-spacy-part-1-2-58b32425954f</a></li>
+<li>spacy universe: <a href="https://spacy.io/universe">https://spacy.io/universe</a></li>
+</ul>
+</li>
+</ul>
+<h3>next</h3>
+<ul>
+<li>date: 2019-09-17</li>
+<li>wir suchen Vorträge!!</li>
+</ul> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
           <h3><a href="../../mlugs-treffen-im-juni-2019/"
                   rel="bookmark"
                   class="nodec"
@@ -432,74 +549,6 @@
 <p>Marienstrasse 23, Stuttgart, AX Semantics (1. OG)</p>
 <h3>Bitte meldet euch an unter:</h3>
 <p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
-    </li>
-    <li class="post" >
-        <header class="posttitle">
-          <h3><a href="../../bericht-mlugs-treffen-im-januar-2019/"
-                  rel="bookmark"
-                  class="nodec"
-                  title="Permalink to Bericht MLUGS Treffen im Januar 2019">Bericht MLUGS Treffen im Januar 2019</a>
-          </h3>
-        </header>
-
-        <div class="postinfo">
-          <p class="published" title="2019-01-15T18:30:00+01:00"> 15. January 2019 </p>
-        </div><!-- /.postinfo -->
-
-        <div class="article"> <h2>Protokoll</h2>
-<h3>Vorstellungsrunde</h3>
-<ul>
-<li>Andreas, Software-Entwickler, AX-Semantics</li>
-<li>Uwe, Luftraumfahrt</li>
-<li>Jens, Datascients, AKKA</li>
-<li>Fernando, CV, Bosch</li>
-<li>Wilhelm, Software-Entwickler, privat</li>
-<li>Thomas, Software-Entwickler, Vialytics</li>
-<li>Michael, Software-Entwickler, AX Semantics</li>
-<li>Friedrich, werkstudent, Vialytics</li>
-<li>Leonard, Bosch</li>
-<li>Thilo, Student, Vialytics</li>
-<li>Arne, Luftraumfahrttechniker</li>
-<li>Benedikt, Datascientist, Daimler</li>
-<li>Christian, Software-Entwickler, privat</li>
-<li>
-<p>Christoph, Software-Entwickler, Freelancer</p>
-</li>
-<li>
-<p>2 Nachzügler</p>
-</li>
-</ul>
-<h3>Vorstellung von Ignite</h3>
-<p>Andreas Madsack, AX Semantics</p>
-<p>https://pytorch.org/ignite/index.html</p>
-<h4>Warum?</h4>
-<ul>
-<li>weniger boilerplate code. Die train/validate funktionen sind viel code, der von Projekt zu Projekt sehr ähnlich ist.</li>
-<li>fertig Helper für ModelCheckpoint, EarlyStopping, ...</li>
-</ul>
-<h4>Beispiel 1</h4>
-<ul>
-<li>https://github.com/pytorch/ignite/tree/master/examples/mnist</li>
-<li>https://github.com/pytorch/ignite/blob/master/examples/mnist/mnist_with_tensorboardx.py</li>
-</ul>
-<p>tensorflow/tensorboard sind noch nicht Python 3.7 kompatibel, deshalb:</p>
-<div class="highlight"><pre><span></span><code><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">p</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">:</span><span class="mi">6006</span><span class="p">:</span><span class="mi">6006</span> <span class="o">-</span><span class="n">it</span> <span class="o">-</span><span class="n">v</span> <span class="ss">`pwd`</span><span class="o">/</span><span class="n">logs</span><span class="p">:</span><span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="n">logs</span>  <span class="n">tensorflow</span><span class="o">/</span><span class="n">tensorflow</span> <span class="n">tensorboard</span> <span class="o">--</span><span class="n">logdir</span> <span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="n">logs</span><span class="o">/</span>
-</code></pre></div>
-
-<h4>Beispiel 2</h4>
-<p>Addition mit PyTorch und Ignite</p>
-<p>https://github.com/mfa/addition_seq2seq</p>
-<h3>misc</h3>
-<ul>
-<li>https://www.slideshare.net/lukaszlanga/i-regret-nothing</li>
-<li>https://www.youtube.com/watch?v=kSLJriaOumA</li>
-<li>transformer-XL: https://arxiv.org/pdf/1901.02860.pdf</li>
-</ul>
-<h3>next</h3>
-<ul>
-<li>2019-02-19</li>
-<li>Thilo: BERT</li>
-</ul> </div>
     </li>
 
   </ol><!-- /#post-list -->
