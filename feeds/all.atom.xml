@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2022-09-10T18:01:00+02:00</updated><subtitle></subtitle><entry><title>virtuelles MLUGS Treffen im September 2022</title><link href="virtuelles-mlugs-treffen-im-september-2022/" rel="alternate"></link><published>2022-09-10T18:01:00+02:00</published><updated>2022-09-10T18:01:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-09-10:virtuelles-mlugs-treffen-im-september-2022/</id><summary type="html">&lt;p&gt;Im September findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2022-10-09T18:30:00+02:00</updated><subtitle></subtitle><entry><title>Bericht (virtuelles) MLUGS Treffen im September 2022</title><link href="bericht-virtuelles-mlugs-treffen-im-september-2022/" rel="alternate"></link><published>2022-10-09T18:30:00+02:00</published><updated>2022-10-09T18:30:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-10-09:bericht-virtuelles-mlugs-treffen-im-september-2022/</id><summary type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+&lt;h3&gt;Andreas: Bilder aus Sätzen generieren mit "Stable Diffusion" auf der eigenen GPU.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;pre-trained stable diffusion model: &lt;a href="https://huggingface.co/CompVis/stable-diffusion-v1-4"&gt;https://huggingface.co/CompVis/stable-diffusion-v1-4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;verwendetes Codebeispiel: &lt;a href="https://gist.github.com/mfa/821926475beffe3881899247081b9c45"&gt;https://gist.github.com/mfa/821926475beffe3881899247081b9c45&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blogposts:&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.paepper.com/blog/posts/how-and-why-stable-diffusion-works-for-text-to-image-generation/"&gt;https://www.paepper.com/blog/posts/how-and-why-stable-diffusion-works-for-text-to-image-generation/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://simonwillison.net/2022/Aug/29/stable-diffusion/"&gt;https://simonwillison.net/2022/Aug/29/stable-diffusion/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.unite.ai/how-stable-diffusion-could-develop-as-a-mainstream-consumer-product/"&gt;https://www.unite.ai/how-stable-diffusion-could-develop-as-a-mainstream-consumer-product …&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+&lt;h3&gt;Andreas: Bilder aus Sätzen generieren mit "Stable Diffusion" auf der eigenen GPU.&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;pre-trained stable diffusion model: &lt;a href="https://huggingface.co/CompVis/stable-diffusion-v1-4"&gt;https://huggingface.co/CompVis/stable-diffusion-v1-4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;verwendetes Codebeispiel: &lt;a href="https://gist.github.com/mfa/821926475beffe3881899247081b9c45"&gt;https://gist.github.com/mfa/821926475beffe3881899247081b9c45&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blogposts:&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.paepper.com/blog/posts/how-and-why-stable-diffusion-works-for-text-to-image-generation/"&gt;https://www.paepper.com/blog/posts/how-and-why-stable-diffusion-works-for-text-to-image-generation/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://simonwillison.net/2022/Aug/29/stable-diffusion/"&gt;https://simonwillison.net/2022/Aug/29/stable-diffusion/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.unite.ai/how-stable-diffusion-could-develop-as-a-mainstream-consumer-product/"&gt;https://www.unite.ai/how-stable-diffusion-could-develop-as-a-mainstream-consumer-product/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;cool projects using stable diffusion:&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jquesnelle/txt2imghd"&gt;https://github.com/jquesnelle/txt2imghd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lkwq007/stablediffusion-infinity"&gt;https://github.com/lkwq007/stablediffusion-infinity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;data stable diffusion is trained on&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://laion.ai/blog/laion-5b/"&gt;https://laion.ai/blog/laion-5b/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;next&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;2022-10-18&lt;/li&gt;
+&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>virtuelles MLUGS Treffen im September 2022</title><link href="virtuelles-mlugs-treffen-im-september-2022/" rel="alternate"></link><published>2022-09-10T18:01:00+02:00</published><updated>2022-09-10T18:01:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-09-10:virtuelles-mlugs-treffen-im-september-2022/</id><summary type="html">&lt;p&gt;Im September findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
 &lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.
 Ende spätestens um 20 Uhr.&lt;/p&gt;
 &lt;p&gt;Vortrag:&lt;/p&gt;
