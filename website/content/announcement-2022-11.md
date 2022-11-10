@@ -6,7 +6,7 @@ Im November findet wieder ein virtuelles MLUGS-Treffen statt.
 Zu Beginn einen Vortrag, danach Diskussion und Austausch.
 Ende spätestens um 20 Uhr.
 
-Vorträge gesucht!
+Andreas: Data2text Vorschläge erzeugen mit T5-conditional-generation
 
 Wir werden Zoom verwenden.
 
