@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2022-10-31T20:01:00+01:00</updated><subtitle></subtitle><entry><title>virtuelles MLUGS Treffen im November 2022</title><link href="virtuelles-mlugs-treffen-im-november-2022/" rel="alternate"></link><published>2022-10-31T20:01:00+01:00</published><updated>2022-10-31T20:01:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-10-31:virtuelles-mlugs-treffen-im-november-2022/</id><content type="html">&lt;p&gt;Im November findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2022-10-31T20:01:00+01:00</updated><subtitle></subtitle><entry><title>virtuelles MLUGS Treffen im November 2022</title><link href="virtuelles-mlugs-treffen-im-november-2022/" rel="alternate"></link><published>2022-10-31T20:01:00+01:00</published><updated>2022-10-31T20:01:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2022-10-31:virtuelles-mlugs-treffen-im-november-2022/</id><summary type="html">&lt;p&gt;Im November findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
 &lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.
 Ende spätestens um 20 Uhr.&lt;/p&gt;
-&lt;p&gt;Vorträge gesucht!&lt;/p&gt;
+&lt;p&gt;Andreas: Data2text Vorschläge erzeugen mit T5-conditional-generation&lt;/p&gt;
+&lt;p&gt;Wir werden Zoom verwenden.&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;15. November 2022 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;p&gt;virtuell. Zoom.&lt;/p&gt;
+&lt;h3&gt;Bitte meldet euch an unter:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart"&gt;https://www.meetup.com …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Im November findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+&lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.
+Ende spätestens um 20 Uhr.&lt;/p&gt;
+&lt;p&gt;Andreas: Data2text Vorschläge erzeugen mit T5-conditional-generation&lt;/p&gt;
 &lt;p&gt;Wir werden Zoom verwenden.&lt;/p&gt;
 &lt;h3&gt;Wann:&lt;/h3&gt;
 &lt;p&gt;15. November 2022 um 18:30&lt;/p&gt;
