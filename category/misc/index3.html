@@ -46,6 +46,48 @@
 
     <li class="post" >
         <header class="posttitle">
+          <h3><a href="../../bericht-virtuelles-mlugs-treffen-im-november-2021/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht (virtuelles) MLUGS Treffen im November 2021">Bericht (virtuelles) MLUGS Treffen im November 2021</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2021-11-16T18:30:00+01:00"> 16. November 2021 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Teilnehmer</h3>
+<ul>
+<li>Andreas, AX-Semantics</li>
+<li>Hichem, HOOD GmbH</li>
+<li>Paul, Fichtner IT Consulting GmbH</li>
+</ul>
+<p>+1</p>
+<h3>Andreas: Datums-umwandel-seq2seq mit AllenNLP</h3>
+<ul>
+<li>Live-Demo: <a href="https://date2iso-ejn6yf4k4q-ez.a.run.app/?i=30.%20Oktober%201445">https://date2iso-ejn6yf4k4q-ez.a.run.app/?i=30.%20Oktober%201445</a></li>
+<li>Code: <a href="https://github.com/mfa/allennlp-date2iso">https://github.com/mfa/allennlp-date2iso</a></li>
+<li>Trainiert via AllenNLP als composed_seq2seq</li>
+</ul>
+<h3>Paul: Zeitreihenvorhersageproblem beschreiben</h3>
+<ul>
+<li>hat verschiedene Zeitreihen</li>
+<li>will voraussagen mit zusatzdaten und fensterungen</li>
+</ul>
+<h3>misc</h3>
+<ul>
+<li>spacy pipelines vs. huggingface</li>
+<li><a href="https://ai.facebook.com/blog/the-first-ever-multilingual-model-to-win-wmt-beating-out-bilingual-models/">https://ai.facebook.com/blog/the-first-ever-multilingual-model-to-win-wmt-beating-out-bilingual-models/</a></li>
+</ul>
+<h3>next:</h3>
+<ul>
+<li>2022-01-18</li>
+</ul> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
           <h3><a href="../../virtuelles-mlugs-treffen-im-november-2021/"
                   rel="bookmark"
                   class="nodec"
@@ -404,78 +446,6 @@ Es sollte etwas mit machine-learning zu tun haben.</p>
 <p>virtuell. Zoom.</p>
 <h3>Bitte meldet euch an unter:</h3>
 <p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
-    </li>
-    <li class="post" >
-        <header class="posttitle">
-          <h3><a href="../../bericht-virtuelles-mlugs-treffen-im-april-2021/"
-                  rel="bookmark"
-                  class="nodec"
-                  title="Permalink to Bericht (virtuelles) MLUGS Treffen im April 2021">Bericht (virtuelles) MLUGS Treffen im April 2021</a>
-          </h3>
-        </header>
-
-        <div class="postinfo">
-          <p class="published" title="2021-04-20T18:30:00+02:00"> 20. April 2021 </p>
-        </div><!-- /.postinfo -->
-
-        <div class="article"> <h2>Protokoll</h2>
-<h3>Intro</h3>
-<p>Das Ziel der MLUGS ist der Austausch über Machine-Learning-Themen.</p>
-<h3>Teilnehmer</h3>
-<ul>
-<li>Andreas, Software-Entwickler, AX-Semantics, Sprachverarbeitung (NLP, NLG)</li>
-<li>Uwe, ST2C, Laserkommunikation im All</li>
-<li>Till Lorentzen, Software Engineer, autoRetouch</li>
-<li>Jens, Data-Scientist, AKKA</li>
-<li>Paul, Student, HS Esslingen</li>
-<li>Silvana, Data Scientist, autoRetouch</li>
-<li>
-<p>Robert, Biologe &amp; Gründer, Curedatis</p>
-</li>
-<li>
-<p>weitere</p>
-</li>
-</ul>
-<h3>Silvana, Till, Uli: ML in Produktion bei autoretouch</h3>
-<ul>
-<li>produkt macht (u.a.) freistellen von Fotos</li>
-<li>ermöglicht batch-processing von größerer menge fotos</li>
-<li>läuft in der Google Cloud</li>
-<li>businesslogic in spring und mittels camunda BPMN engine für die Retouche Prozesse (java) ... ML components in microservices Python</li>
-<li>semantic segmentation: deeplab v3+ -- encoder-decoder - atrous-separable-convolution-semantic-segmentation</li>
-<li>problem: sehr hohe auflösung (4k); hohe qualitätsanforderungen</li>
-<li>generative modelle sind noch nicht gut genug</li>
-</ul>
-<h3>Robert: Automatisierte Analyse medizinischer Daten z.B. aus Studien mit Hilfe von NLP bei CUREDATIS.</h3>
-<ul>
-<li>heute hat man eher zuviele wissenschaftliche arbeiten -&gt; schwer den überblick zu behalten</li>
-<li>in den publikationen die interessanten dinge annotiert</li>
-<li>proof-of-concept mit bi-lstm + CRF + glove vectoren</li>
-<li><a href="https://en.wikipedia.org/wiki/Named-entity_recognition">https://en.wikipedia.org/wiki/Named-entity_recognition</a></li>
-<li><a href="https://en.wikipedia.org/wiki/SpaCy">https://en.wikipedia.org/wiki/SpaCy</a></li>
-<li><a href="https://allenai.github.io/scispacy/">https://allenai.github.io/scispacy/</a></li>
-</ul>
-<h3>Paul: Anomalieerkennung mit Hilfe eines Komprimierungsalgorithmus am Beispiel von Daten aus dem Schlaflabor</h3>
-<ul>
-<li>context tree weighting (CTW)</li>
-<li>arousal regionen finden mit CTW</li>
-<li>Input: ekg-daten, brustumfang, luftzufuhr, ...</li>
-<li>output: arousal-score</li>
-<li>problem: viele zeitreihen; keine klare trennung der score am ende</li>
-</ul>
-<h3>misc</h3>
-<ul>
-<li><a href="http://faculty.washington.edu/ebender/papers/Stochastic_Parrots.pdf">On the Dangers of Stochastic Parrots:
-Can Language Models Be Too Big?</a></li>
-</ul>
-<h3>next</h3>
-<ul>
-<li>date: 2021-05-18</li>
-<li>talks: <ul>
-<li>Uwe: Adaptive Optik</li>
-</ul>
-</li>
-</ul> </div>
     </li>
 
   </ol><!-- /#post-list -->
