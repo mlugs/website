@@ -122,14 +122,16 @@ optimized for dialogs by adding a reward model&lt;/p&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;No.&lt;/span&gt;
 &lt;span class="err"&gt;The model has no actual concept of the world.&lt;/span&gt;
-&lt;span class="err"&gt;It stitches in a quite good sounding way text chunks together without actual semantics or pragmatics.&lt;/span&gt;
+&lt;span class="err"&gt;It stitches in a quite good sounding way text chunks&lt;/span&gt;
+&lt;span class="err"&gt;together without actual semantics or pragmatics.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Is ChatGPT actually helpful?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="err"&gt;Yes and No.&lt;/span&gt;
-&lt;span class="err"&gt;Yes, if you (the reader) can distinguish correct parts of the text from wrong parts. If you cannot, than the text is a trap!&lt;/span&gt;
+&lt;span class="err"&gt;Yes, if you (the reader) can distinguish correct parts of the text from wrong parts.&lt;/span&gt;
+&lt;span class="err"&gt;If you cannot, than the text is a trap!&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul&gt;
