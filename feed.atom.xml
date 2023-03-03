@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2023-02-21T19:55:00+01:00</updated><subtitle></subtitle><entry><title>Bericht (virtuelles) MLUGS Treffen im Februar 2023</title><link href="bericht-virtuelles-mlugs-treffen-im-februar-2023/" rel="alternate"></link><published>2023-02-21T19:55:00+01:00</published><updated>2023-02-21T19:55:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2023-02-21:bericht-virtuelles-mlugs-treffen-im-februar-2023/</id><summary type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2023-03-03T16:00:00+01:00</updated><subtitle></subtitle><entry><title>hybrides MLUGS Treffen im März 2023</title><link href="hybrides-mlugs-treffen-im-marz-2023/" rel="alternate"></link><published>2023-03-03T16:00:00+01:00</published><updated>2023-03-03T16:00:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2023-03-03:hybrides-mlugs-treffen-im-marz-2023/</id><summary type="html">&lt;p&gt;Im März findet ein MLUGS-Treffen in der Marienstrasse 23 in Stuttgart statt.
+Wir werden zusätzlich den Vortrag auf Zoom streamen.&lt;/p&gt;
+&lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.&lt;/p&gt;
+&lt;p&gt;Tin: video super resolution&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;21. März 2023 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Marienstrasse 23, 2.OG, Stuttgart&lt;/li&gt;
+&lt;li&gt;virtuell Zoom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bitte meldet euch …&lt;/h3&gt;</summary><content type="html">&lt;p&gt;Im März findet ein MLUGS-Treffen in der Marienstrasse 23 in Stuttgart statt.
+Wir werden zusätzlich den Vortrag auf Zoom streamen.&lt;/p&gt;
+&lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.&lt;/p&gt;
+&lt;p&gt;Tin: video super resolution&lt;/p&gt;
+&lt;h3&gt;Wann:&lt;/h3&gt;
+&lt;p&gt;21. März 2023 um 18:30&lt;/p&gt;
+
+&lt;h3&gt;Wo:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Marienstrasse 23, 2.OG, Stuttgart&lt;/li&gt;
+&lt;li&gt;virtuell Zoom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Bitte meldet euch an unter:&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart"&gt;https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart&lt;/a&gt;&lt;/p&gt;</content><category term="misc"></category></entry><entry><title>Bericht (virtuelles) MLUGS Treffen im Februar 2023</title><link href="bericht-virtuelles-mlugs-treffen-im-februar-2023/" rel="alternate"></link><published>2023-02-21T19:55:00+01:00</published><updated>2023-02-21T19:55:00+01:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2023-02-21:bericht-virtuelles-mlugs-treffen-im-februar-2023/</id><summary type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
 &lt;h3&gt;Christian: Wie GPT funktioniert&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
