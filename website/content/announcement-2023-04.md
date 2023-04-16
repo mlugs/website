@@ -6,7 +6,7 @@ Im April findet wieder ein virtuelles MLUGS-Treffen statt.
 Zu Beginn einen Vortrag, danach Diskussion und Austausch.
 Ende spätestens um 20 Uhr.
 
-Wir suchen Vorträge. Bitte meldet euch.
+Andreas: Rechenjobs in die Cloud auslagern
 
 Wir werden Zoom verwenden.
 
