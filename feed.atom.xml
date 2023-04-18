@@ -30,9 +30,11 @@
 &lt;li&gt;daten von S3 holen: s3cmd oder aws-cli-v2&lt;/li&gt;
 &lt;li&gt;script ausführen; am Ende ergebnisse wieder zu S3; danach shutdown ausführen&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html"&gt;EBS Volume&lt;/a&gt;:
-- volume mounten und ergebnisse + daten auf das volume; am ende des scripts trotzdem shutdown
-- server wieder starten, um ergebisse via ssh runterzuladen&lt;/p&gt;
+&lt;h6&gt;&lt;a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html"&gt;EBS Volume&lt;/a&gt;:&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;volume mounten und ergebnisse + daten auf das volume; am ende des scripts trotzdem shutdown&lt;/li&gt;
+&lt;li&gt;server wieder starten, um ergebisse via ssh runterzuladen&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h6&gt;Pro/Cons:&lt;/h6&gt;
 &lt;ul&gt;
 &lt;li&gt;Vorteile: freies konfigurieren von CPU/Disk, GPUs und ARM möglich, S3 traffic kostet nichts wenn in der selben Region&lt;/li&gt;
