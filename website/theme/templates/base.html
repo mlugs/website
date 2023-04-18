@@ -4,8 +4,10 @@
   <head>
     {% block head %}
       <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-      <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/icons.css"/>
       <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/styles.css"/>
+      <link href="{{ SITEURL }}/theme/fa/css/fontawesome.min.css" rel="stylesheet">
+      <link href="{{ SITEURL }}/theme/fa/css/brands.min.css" rel="stylesheet">
+      <link href="{{ SITEURL }}/theme/fa/css/solid.min.css" rel="stylesheet">
       <meta charset="utf-8" />
       {% if FEED_ATOM %}
         <link href="/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
@@ -43,19 +45,14 @@
               {% endfor %}
             {% endif %}
             <!-- services icons -->
-            {% if EMAIL_ADDRESS %}
-              <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
-            {% endif %}
             {% if GITHUB_ADDRESS %}
-              <li><a class="nodec icon-github" href="{{ GITHUB_ADDRESS }}"></a></li>
+              <li><a class="nodec fa-brands fa-github" href="{{ GITHUB_ADDRESS }}"></a></li>
             {% endif %}
             {% if TWITTER_ADDRESS %}
-              <li><a class="nodec icon-twitter" href="{{ TWITTER_ADDRESS }}"></a></li>
+              <li><a class="nodec fa-brands fa-twitter" href="{{ TWITTER_ADDRESS }}"></a></li>
             {% endif %}
-            <li><a class="nodec icon-comments" rel="me" href="https://sueden.social/@mlugs"></a></li>
-            {% if FEED_RSS %}
-              <li><a class="nodec icon-rss" href="/{{ FEED_RSS }}"></a></li>
-            {% endif %}
+            <li><a class="nodec fa-brands fa-mastodon" rel="me" href="https://sueden.social/@mlugs"></a></li>
+            <li><a class="nodec fa-solid fa-rss" href="/feed.atom.xml"></a></li>
           </ul>
         </nav>
       </div> <!-- sitebanner -->
