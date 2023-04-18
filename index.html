@@ -46,6 +46,113 @@
 
     <li class="post" >
         <header class="posttitle">
+          <h3><a href="./bericht-virtuelles-mlugs-treffen-im-april-2023/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht (virtuelles) MLUGS Treffen im April 2023">Bericht (virtuelles) MLUGS Treffen im April 2023</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2023-04-18T22:00:00+02:00"> 18. April 2023 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Andreas M.: Rechenzeit in die Cloud verlegen</h3>
+<h4>Warum?</h4>
+<ul>
+<li>Der eigene PC/Notebook wird für etwas anderes gebraucht</li>
+<li>Es würde einfach zu lange dauern</li>
+</ul>
+<h4>Option 1: Virtual private server</h4>
+<h5>AWS: EC2</h5>
+<ul>
+<li>Instanzarten: <a href="https://instances.vantage.sh/?region=eu-west-1">https://instances.vantage.sh/?region=eu-west-1</a></li>
+<li>von "Hand" starten, AMI auswählen, SSH-Key runterladen; starten</li>
+<li>einloggen mit "ssh -i cert.pem ec2-aa-bb-cc-dd.eu-west-1.compute.amazonaws.com"</li>
+</ul>
+<p>S3:
+- daten von S3 holen: s3cmd oder aws-cli-v2
+- script ausführen; am Ende ergebnisse wieder zu S3; danach shutdown ausführen</p>
+<p><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html">EBS Volume</a>:
+- volume mounten und ergebnisse + daten auf das volume; am ende des scripts trotzdem shutdown
+- server wieder starten, um ergebisse via ssh runterzuladen</p>
+<p>Pro/Cons:
+- Vorteile: freies konfigurieren von CPU/Disk, GPUs und ARM möglich, S3 traffic kostet nichts wenn in der selben Region
+- Nachteile: eher komplex, weil viele Möglichkeiten</p>
+<h5>Hetzner VPS</h5>
+<ul>
+<li><a href="https://www.hetzner.com/cloud">https://www.hetzner.com/cloud</a></li>
+<li>auch von Hand, wie bei AWS</li>
+<li>Storage pro VPS skaliert mit cpus/memory. mglw. also genug für den Job</li>
+<li>auch hier via script am Ende shutdownen</li>
+</ul>
+<p>Pro/Cons:
+- Vorteile: billiger, weniger Enterprisy, sehr aufgeräumt, arm64
+- Nachteile: (noch) keine GPUs</p>
+<h5>andere</h5>
+<ul>
+<li>Google Cloud Compute: relativ ähnlich zu AWS</li>
+<li>Paperspace: primär für GPUs</li>
+<li>Azure</li>
+<li>Digital Ocean</li>
+<li>jeder hoster da draussen</li>
+</ul>
+<h4>Option 2: Compute/Training task als Job laufen lassen</h4>
+<h5>Github Actions</h5>
+<ul>
+<li><a href="https://docs.github.com/en/actions">https://docs.github.com/en/actions</a></li>
+<li>Was: kostenlos wenn public; 2000 freiminuten wenn private; ergebnisse einfach ins repo comitten; gibt auch windows als OS</li>
+<li>Wann: der Job sollte nicht zu lange laufen (max 6h) und cpu/memory ist nicht steuerbar</li>
+<li>Beispiel: <a href="https://github.com/mfa/waterlevel-bw">https://github.com/mfa/waterlevel-bw</a></li>
+</ul>
+<h5>Google Cloud Run Jobs</h5>
+<ul>
+<li><a href="https://codelabs.developers.google.com/codelabs/codelabs/cloud-run-jobs">https://codelabs.developers.google.com/codelabs/codelabs/cloud-run-jobs</a></li>
+<li>Was: einen Container ausführen, darin kann ein Script sein, Umgebung ist definierbar</li>
+<li>Wann: Wenn der Job relativ häufig laufen soll, aber nicht in eine GH Action passt</li>
+<li>Beispiel: --</li>
+</ul>
+<h5>AWS CodeBuild</h5>
+<ul>
+<li><a href="https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html">https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html</a></li>
+<li>Was: eigentlich für build/test-Umgebungen, aber kann natürlich jede Art von Script sein</li>
+<li>Wann: ähnlich GH Actions, viel mehr Konfigurationsmöglichkeiten</li>
+<li>Beispiel: (internes tooling @AX)</li>
+</ul>
+<h5>AWS Sagemaker</h5>
+<ul>
+<li><a href="https://aws.amazon.com/sagemaker/train">https://aws.amazon.com/sagemaker/train</a></li>
+<li>Was: trainieren von models</li>
+<li>Wann: wenn man GPUs braucht; oder sehr viel CPU/Memory</li>
+<li>Beispiel: --</li>
+</ul>
+<h5>fly.io machines</h5>
+<ul>
+<li><a href="https://fly.io/docs/machines/guides-examples/functions-with-machines/">https://fly.io/docs/machines/guides-examples/functions-with-machines/</a></li>
+<li>Was: via Dockerfile konfigurierte Maschine, volle Kontrolle über alles</li>
+<li>Wann: Lust auf bleeding-edge server ohne system maintenance</li>
+<li>Beispiel: <a href="https://madflex.de/run-a-compute-job-on-fly-io/">https://madflex.de/run-a-compute-job-on-fly-io/</a></li>
+</ul>
+<h3>Andreas H. - Satellitenhelligkeit in Frames von Bildern bestimmen</h3>
+<ul>
+<li>die Rechenaufgabe, die der Aufhänger für den ersten Talk war</li>
+<li>viele Minuten Video, 25fps, 1 Minute processing pro Frame</li>
+<li>wahrscheinlich wird es Hetzner um die ca. 10 Tage zu rechnen</li>
+<li><a href="https://mastodon.social/@andreashornig/109321769511881072">https://mastodon.social/@andreashornig/109321769511881072</a></li>
+</ul>
+<h4>next</h4>
+<ul>
+<li>
+<p>2023-05-16</p>
+<ul>
+<li>wir suchen Vorträge</li>
+</ul>
+</li>
+</ul> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
           <h3><a href="./virtuelles-mlugs-treffen-im-april-2023/"
                   rel="bookmark"
                   class="nodec"
@@ -450,39 +557,6 @@ Ende spätestens um 20 Uhr.</p>
 <p>virtuell. Zoom.</p>
 <h3>Bitte meldet euch an unter:</h3>
 <p><a href="https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart">https://www.meetup.com/Machine-Learning-UserGroup-Stuttgart</a></p> </div>
-    </li>
-    <li class="post" >
-        <header class="posttitle">
-          <h3><a href="./bericht-virtuelles-mlugs-treffen-im-september-2022/"
-                  rel="bookmark"
-                  class="nodec"
-                  title="Permalink to Bericht (virtuelles) MLUGS Treffen im September 2022">Bericht (virtuelles) MLUGS Treffen im September 2022</a>
-          </h3>
-        </header>
-
-        <div class="postinfo">
-          <p class="published" title="2022-10-09T18:30:00+02:00"> 09. October 2022 </p>
-        </div><!-- /.postinfo -->
-
-        <div class="article"> <h2>Protokoll</h2>
-<h3>Andreas: Bilder aus Sätzen generieren mit "Stable Diffusion" auf der eigenen GPU.</h3>
-<ul>
-<li>pre-trained stable diffusion model: <a href="https://huggingface.co/CompVis/stable-diffusion-v1-4">https://huggingface.co/CompVis/stable-diffusion-v1-4</a></li>
-<li>verwendetes Codebeispiel: <a href="https://gist.github.com/mfa/821926475beffe3881899247081b9c45">https://gist.github.com/mfa/821926475beffe3881899247081b9c45</a></li>
-<li>Blogposts:</li>
-<li><a href="https://www.paepper.com/blog/posts/how-and-why-stable-diffusion-works-for-text-to-image-generation/">https://www.paepper.com/blog/posts/how-and-why-stable-diffusion-works-for-text-to-image-generation/</a></li>
-<li><a href="https://simonwillison.net/2022/Aug/29/stable-diffusion/">https://simonwillison.net/2022/Aug/29/stable-diffusion/</a></li>
-<li><a href="https://www.unite.ai/how-stable-diffusion-could-develop-as-a-mainstream-consumer-product/">https://www.unite.ai/how-stable-diffusion-could-develop-as-a-mainstream-consumer-product/</a></li>
-<li>cool projects using stable diffusion:</li>
-<li><a href="https://github.com/jquesnelle/txt2imghd">https://github.com/jquesnelle/txt2imghd</a></li>
-<li><a href="https://github.com/lkwq007/stablediffusion-infinity">https://github.com/lkwq007/stablediffusion-infinity</a></li>
-<li>data stable diffusion is trained on</li>
-<li><a href="https://laion.ai/blog/laion-5b/">https://laion.ai/blog/laion-5b/</a></li>
-</ul>
-<h3>next</h3>
-<ul>
-<li>2022-10-18</li>
-</ul> </div>
     </li>
 
   </ol><!-- /#post-list -->

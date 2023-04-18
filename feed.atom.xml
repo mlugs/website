@@ -1,5 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2023-04-11T13:00:00+02:00</updated><subtitle></subtitle><entry><title>virtuelles MLUGS Treffen im April 2023</title><link href="virtuelles-mlugs-treffen-im-april-2023/" rel="alternate"></link><published>2023-04-11T13:00:00+02:00</published><updated>2023-04-11T13:00:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2023-04-11:virtuelles-mlugs-treffen-im-april-2023/</id><summary type="html">&lt;p&gt;Im April findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>MLUGS</title><link href="/" rel="alternate"></link><link href="http://www.mlugs.de/feed.atom.xml" rel="self"></link><id>/</id><updated>2023-04-18T22:00:00+02:00</updated><subtitle></subtitle><entry><title>Bericht (virtuelles) MLUGS Treffen im April 2023</title><link href="bericht-virtuelles-mlugs-treffen-im-april-2023/" rel="alternate"></link><published>2023-04-18T22:00:00+02:00</published><updated>2023-04-18T22:00:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2023-04-18:bericht-virtuelles-mlugs-treffen-im-april-2023/</id><summary type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+&lt;h3&gt;Andreas M.: Rechenzeit in die Cloud verlegen&lt;/h3&gt;
+&lt;h4&gt;Warum?&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Der eigene PC/Notebook wird für etwas anderes gebraucht&lt;/li&gt;
+&lt;li&gt;Es würde einfach zu lange dauern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Option 1: Virtual private server&lt;/h4&gt;
+&lt;h5&gt;AWS: EC2&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Instanzarten: &lt;a href="https://instances.vantage.sh/?region=eu-west-1"&gt;https://instances.vantage.sh/?region=eu-west-1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;von "Hand" starten, AMI auswählen, SSH-Key runterladen; starten&lt;/li&gt;
+&lt;li&gt;einloggen mit "ssh -i …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Protokoll&lt;/h2&gt;
+&lt;h3&gt;Andreas M.: Rechenzeit in die Cloud verlegen&lt;/h3&gt;
+&lt;h4&gt;Warum?&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Der eigene PC/Notebook wird für etwas anderes gebraucht&lt;/li&gt;
+&lt;li&gt;Es würde einfach zu lange dauern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Option 1: Virtual private server&lt;/h4&gt;
+&lt;h5&gt;AWS: EC2&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Instanzarten: &lt;a href="https://instances.vantage.sh/?region=eu-west-1"&gt;https://instances.vantage.sh/?region=eu-west-1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;von "Hand" starten, AMI auswählen, SSH-Key runterladen; starten&lt;/li&gt;
+&lt;li&gt;einloggen mit "ssh -i cert.pem ec2-aa-bb-cc-dd.eu-west-1.compute.amazonaws.com"&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;S3:
+- daten von S3 holen: s3cmd oder aws-cli-v2
+- script ausführen; am Ende ergebnisse wieder zu S3; danach shutdown ausführen&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html"&gt;EBS Volume&lt;/a&gt;:
+- volume mounten und ergebnisse + daten auf das volume; am ende des scripts trotzdem shutdown
+- server wieder starten, um ergebisse via ssh runterzuladen&lt;/p&gt;
+&lt;p&gt;Pro/Cons:
+- Vorteile: freies konfigurieren von CPU/Disk, GPUs und ARM möglich, S3 traffic kostet nichts wenn in der selben Region
+- Nachteile: eher komplex, weil viele Möglichkeiten&lt;/p&gt;
+&lt;h5&gt;Hetzner VPS&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.hetzner.com/cloud"&gt;https://www.hetzner.com/cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;auch von Hand, wie bei AWS&lt;/li&gt;
+&lt;li&gt;Storage pro VPS skaliert mit cpus/memory. mglw. also genug für den Job&lt;/li&gt;
+&lt;li&gt;auch hier via script am Ende shutdownen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pro/Cons:
+- Vorteile: billiger, weniger Enterprisy, sehr aufgeräumt, arm64
+- Nachteile: (noch) keine GPUs&lt;/p&gt;
+&lt;h5&gt;andere&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Cloud Compute: relativ ähnlich zu AWS&lt;/li&gt;
+&lt;li&gt;Paperspace: primär für GPUs&lt;/li&gt;
+&lt;li&gt;Azure&lt;/li&gt;
+&lt;li&gt;Digital Ocean&lt;/li&gt;
+&lt;li&gt;jeder hoster da draussen&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Option 2: Compute/Training task als Job laufen lassen&lt;/h4&gt;
+&lt;h5&gt;Github Actions&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.github.com/en/actions"&gt;https://docs.github.com/en/actions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Was: kostenlos wenn public; 2000 freiminuten wenn private; ergebnisse einfach ins repo comitten; gibt auch windows als OS&lt;/li&gt;
+&lt;li&gt;Wann: der Job sollte nicht zu lange laufen (max 6h) und cpu/memory ist nicht steuerbar&lt;/li&gt;
+&lt;li&gt;Beispiel: &lt;a href="https://github.com/mfa/waterlevel-bw"&gt;https://github.com/mfa/waterlevel-bw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;Google Cloud Run Jobs&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://codelabs.developers.google.com/codelabs/codelabs/cloud-run-jobs"&gt;https://codelabs.developers.google.com/codelabs/codelabs/cloud-run-jobs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Was: einen Container ausführen, darin kann ein Script sein, Umgebung ist definierbar&lt;/li&gt;
+&lt;li&gt;Wann: Wenn der Job relativ häufig laufen soll, aber nicht in eine GH Action passt&lt;/li&gt;
+&lt;li&gt;Beispiel: --&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;AWS CodeBuild&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html"&gt;https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Was: eigentlich für build/test-Umgebungen, aber kann natürlich jede Art von Script sein&lt;/li&gt;
+&lt;li&gt;Wann: ähnlich GH Actions, viel mehr Konfigurationsmöglichkeiten&lt;/li&gt;
+&lt;li&gt;Beispiel: (internes tooling @AX)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;AWS Sagemaker&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://aws.amazon.com/sagemaker/train"&gt;https://aws.amazon.com/sagemaker/train&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Was: trainieren von models&lt;/li&gt;
+&lt;li&gt;Wann: wenn man GPUs braucht; oder sehr viel CPU/Memory&lt;/li&gt;
+&lt;li&gt;Beispiel: --&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;fly.io machines&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://fly.io/docs/machines/guides-examples/functions-with-machines/"&gt;https://fly.io/docs/machines/guides-examples/functions-with-machines/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Was: via Dockerfile konfigurierte Maschine, volle Kontrolle über alles&lt;/li&gt;
+&lt;li&gt;Wann: Lust auf bleeding-edge server ohne system maintenance&lt;/li&gt;
+&lt;li&gt;Beispiel: &lt;a href="https://madflex.de/run-a-compute-job-on-fly-io/"&gt;https://madflex.de/run-a-compute-job-on-fly-io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Andreas H. - Satellitenhelligkeit in Frames von Bildern bestimmen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;die Rechenaufgabe, die der Aufhänger für den ersten Talk war&lt;/li&gt;
+&lt;li&gt;viele Minuten Video, 25fps, 1 Minute processing pro Frame&lt;/li&gt;
+&lt;li&gt;wahrscheinlich wird es Hetzner um die ca. 10 Tage zu rechnen&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mastodon.social/@andreashornig/109321769511881072"&gt;https://mastodon.social/@andreashornig/109321769511881072&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;next&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2023-05-16&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wir suchen Vorträge&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content><category term="misc"></category></entry><entry><title>virtuelles MLUGS Treffen im April 2023</title><link href="virtuelles-mlugs-treffen-im-april-2023/" rel="alternate"></link><published>2023-04-11T13:00:00+02:00</published><updated>2023-04-11T13:00:00+02:00</updated><author><name>machine learning usergroup stuttgart</name></author><id>tag:None,2023-04-11:virtuelles-mlugs-treffen-im-april-2023/</id><summary type="html">&lt;p&gt;Im April findet wieder ein virtuelles MLUGS-Treffen statt.&lt;/p&gt;
 &lt;p&gt;Zu Beginn einen Vortrag, danach Diskussion und Austausch.
 Ende spätestens um 20 Uhr.&lt;/p&gt;
 &lt;p&gt;Andreas: Rechenjobs in die Cloud auslagern&lt;/p&gt;
