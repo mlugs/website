@@ -25,15 +25,19 @@
 &lt;li&gt;von "Hand" starten, AMI auswählen, SSH-Key runterladen; starten&lt;/li&gt;
 &lt;li&gt;einloggen mit "ssh -i cert.pem ec2-aa-bb-cc-dd.eu-west-1.compute.amazonaws.com"&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;S3:
-- daten von S3 holen: s3cmd oder aws-cli-v2
-- script ausführen; am Ende ergebnisse wieder zu S3; danach shutdown ausführen&lt;/p&gt;
+&lt;h6&gt;S3:&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;daten von S3 holen: s3cmd oder aws-cli-v2&lt;/li&gt;
+&lt;li&gt;script ausführen; am Ende ergebnisse wieder zu S3; danach shutdown ausführen&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html"&gt;EBS Volume&lt;/a&gt;:
 - volume mounten und ergebnisse + daten auf das volume; am ende des scripts trotzdem shutdown
 - server wieder starten, um ergebisse via ssh runterzuladen&lt;/p&gt;
-&lt;p&gt;Pro/Cons:
-- Vorteile: freies konfigurieren von CPU/Disk, GPUs und ARM möglich, S3 traffic kostet nichts wenn in der selben Region
-- Nachteile: eher komplex, weil viele Möglichkeiten&lt;/p&gt;
+&lt;h6&gt;Pro/Cons:&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Vorteile: freies konfigurieren von CPU/Disk, GPUs und ARM möglich, S3 traffic kostet nichts wenn in der selben Region&lt;/li&gt;
+&lt;li&gt;Nachteile: eher komplex, weil viele Möglichkeiten&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h5&gt;Hetzner VPS&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.hetzner.com/cloud"&gt;https://www.hetzner.com/cloud&lt;/a&gt;&lt;/li&gt;
@@ -41,9 +45,11 @@
 &lt;li&gt;Storage pro VPS skaliert mit cpus/memory. mglw. also genug für den Job&lt;/li&gt;
 &lt;li&gt;auch hier via script am Ende shutdownen&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Pro/Cons:
-- Vorteile: billiger, weniger Enterprisy, sehr aufgeräumt, arm64
-- Nachteile: (noch) keine GPUs&lt;/p&gt;
+&lt;h6&gt;Pro/Cons:&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Vorteile: billiger, weniger Enterprisy, sehr aufgeräumt, arm64&lt;/li&gt;
+&lt;li&gt;Nachteile: (noch) keine GPUs&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h5&gt;andere&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;Google Cloud Compute: relativ ähnlich zu AWS&lt;/li&gt;

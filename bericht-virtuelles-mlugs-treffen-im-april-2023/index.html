@@ -70,15 +70,19 @@
 <li>von "Hand" starten, AMI auswählen, SSH-Key runterladen; starten</li>
 <li>einloggen mit "ssh -i cert.pem ec2-aa-bb-cc-dd.eu-west-1.compute.amazonaws.com"</li>
 </ul>
-<p>S3:
-- daten von S3 holen: s3cmd oder aws-cli-v2
-- script ausführen; am Ende ergebnisse wieder zu S3; danach shutdown ausführen</p>
+<h6>S3:</h6>
+<ul>
+<li>daten von S3 holen: s3cmd oder aws-cli-v2</li>
+<li>script ausführen; am Ende ergebnisse wieder zu S3; danach shutdown ausführen</li>
+</ul>
 <p><a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html">EBS Volume</a>:
 - volume mounten und ergebnisse + daten auf das volume; am ende des scripts trotzdem shutdown
 - server wieder starten, um ergebisse via ssh runterzuladen</p>
-<p>Pro/Cons:
-- Vorteile: freies konfigurieren von CPU/Disk, GPUs und ARM möglich, S3 traffic kostet nichts wenn in der selben Region
-- Nachteile: eher komplex, weil viele Möglichkeiten</p>
+<h6>Pro/Cons:</h6>
+<ul>
+<li>Vorteile: freies konfigurieren von CPU/Disk, GPUs und ARM möglich, S3 traffic kostet nichts wenn in der selben Region</li>
+<li>Nachteile: eher komplex, weil viele Möglichkeiten</li>
+</ul>
 <h5>Hetzner VPS</h5>
 <ul>
 <li><a href="https://www.hetzner.com/cloud">https://www.hetzner.com/cloud</a></li>
@@ -86,9 +90,11 @@
 <li>Storage pro VPS skaliert mit cpus/memory. mglw. also genug für den Job</li>
 <li>auch hier via script am Ende shutdownen</li>
 </ul>
-<p>Pro/Cons:
-- Vorteile: billiger, weniger Enterprisy, sehr aufgeräumt, arm64
-- Nachteile: (noch) keine GPUs</p>
+<h6>Pro/Cons:</h6>
+<ul>
+<li>Vorteile: billiger, weniger Enterprisy, sehr aufgeräumt, arm64</li>
+<li>Nachteile: (noch) keine GPUs</li>
+</ul>
 <h5>andere</h5>
 <ul>
 <li>Google Cloud Compute: relativ ähnlich zu AWS</li>
