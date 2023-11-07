@@ -49,6 +49,103 @@
 
     <li class="post" >
         <header class="posttitle">
+          <h3><a href="../bericht-mlugs-treffen-im-oktober-2016/"
+                  rel="bookmark"
+                  class="nodec"
+                  title="Permalink to Bericht MLUGS Treffen im Oktober 2016">Bericht MLUGS Treffen im Oktober 2016</a>
+          </h3>
+        </header>
+
+        <div class="postinfo">
+          <p class="published" title="2016-10-20T18:30:00+02:00"> 20. October 2016 </p>
+        </div><!-- /.postinfo -->
+
+        <div class="article"> <h2>Protokoll</h2>
+<h3>Vorstellungsrunde</h3>
+<ul>
+<li>Andreas; Software-Entwickler; aexea</li>
+<li>Sebastian; arbeitet für 5Analytics</li>
+<li>Stefan; interessiert sich für ML; hat eine Firma</li>
+<li>Robin; techn. Biologe; interessiert, weil Bio</li>
+<li>Michael; Software-Entwickler</li>
+<li>Wilhelm; Software-Entwickler, privat ML</li>
+<li>Alexander; Software-Architect; sucht Anwendungsbereiche für ML</li>
+<li>@frankgerhardt ; selbständig; sucht die große BigData-Anwendung</li>
+<li>Götz; Qualtätskontrolle mit ML</li>
+<li>Uwe; R-Nutzer</li>
+<li>Phillip;</li>
+<li>Markus;</li>
+<li>?</li>
+</ul>
+<h3>Meta</h3>
+<p>Neues Pad bei hackmd.io. Slide mode ist cool. </p>
+<p>PSA bei Twitter @mlugs_de folgen!</p>
+<h3>R in Produktivumgebungen</h3>
+<h4>Allgemeines</h4>
+<p>Vortrag von 5Analytics</p>
+<p>Dr. Sebastian Klenk ist einer der Gründer von 5Analytics</p>
+<p>Ziel: aus Daten Vorhersagen zu treffen.</p>
+<p>Ziel seiner Plattform: Statistiker. Vereinfachung für den Statistiker</p>
+<p>Produkt: Softwareplatform für KI-Anwendungen</p>
+<p>In ihrem Umfeld ist der standard <em>R</em>.</p>
+<h4>Abgrenzung</h4>
+<p>(von oben nach unten: Action up, Insights down)</p>
+<ul>
+<li>Analytics</li>
+<li>pure Daten, Erkenntnisgewinn durch Mensch</li>
+<li>Advanced Analytics</li>
+<li>Clustering</li>
+<li>Teilinterpretation der Daten</li>
+<li>Predictive Analytics</li>
+<li>Model schon vorhanden. Ergebnis ist Handlungsempfehlung</li>
+<li>Artificial Intelligence</li>
+<li>wichtig ist hier vor allem die Handlung. autonome Handlung</li>
+<li>nicht unbedingt nachvollziehbar was die AI denkt oder warum sie etwas macht</li>
+</ul>
+<h4>Eine Art Application Server für R</h4>
+<p>Demo ist ein Schuh-Shop mit Recommendation Engine, dynamic pricing, Rabattempfehlungen, ….</p>
+<p>Berechnung in dem Beispiel ist in 300ms in R für die Produktempfehlungen.</p>
+<p>Code: recommenderlab und reshape2 als Libraries.  UBCF (user based) für den Recommender.
+Die Webseite macht RPC-calls gegen die Recomender-Engine und bekommt die Prediction in JSON zurück.</p>
+<p>Plus für R aus Sicht von Sebastian ist, dass man leicht neue Methoden in R schreiben kann.</p>
+<p>Ziel in Unternehmen ist robuste Software. Deshalb Event-Based-Servermodel mit 1 Prozess und 3 Threads (Reader, Worker, Writer).  Im Hintergrund R-Prozesse die vom Worker-Thread aus aufgerufen werden. Prediction ist super schnell. Deshalb geht das in diesem Model ohne Timeouts.</p>
+<p>Architektur:
+- Streams eingehend und ausgehend
+- Pool von R Worker-Prozessen (Python ist in Arbeit)
+- Storage Worker mit Abstraktion der Daten (SQL, Elastic Search, MongoDB)</p>
+<p>Aktuell wird wöchtentlich das ganze Model neu berechnet.</p>
+<p>Mathematiker machen eher R. Informatiker eher Python. Deshalb kommt Python zur Plattform dazu.</p>
+<p>5analytics macht auch die Modelle für die meisten Kunden dazu.
+Sie verkaufen also nicht nur den Server mit der Software as a Service.</p>
+<p>Für das dynamic Pricing aus der Demo-Anwendung wird ein <em>Cox Proportional Hazard Model</em> verwendet.  Die Baseline-Hazard-Function betrachtet Preis (x) und Wahrscheinlichkeit des Kaufs (y).  Durch Änderung des Preises (Empfehlung für Rabatte oder auch für grundsätzlich höhere Preise) lässt sich die Kaufwahrscheinlichkeit beeinflussen ohne unnötige Rabatte zu geben.</p>
+<p>harte Echtzeit: Antwort nach garantierter Zeit
+weiche Echtzeit: Antwort im vertretbaren Rahmen.</p>
+<p>Verwenden keine Neuronalen Netze. Allerdings SVMs.  SVMs haben eine schöne Theorie, bringen aber keinen Vorteil bzgl. der Performanz.  Die zahlreichen Parameter erschweren das Tuning.</p>
+<h3>R</h3>
+<p>Uwe Sterr</p>
+<p>Aufgabe eines Datascientist: Hole die Essenz aus dem Datenwust</p>
+<p>Uwe zeigt Beispiele mit R.</p>
+<p>Er verwendet <a href="http://shiny.rstudio.com/">shiny</a> als Webserver.</p>
+<p>Visualisierung für Kunden, in Python mit <a href="http://bokeh.pydata.org/en/latest/docs/gallery.html">Bokeh</a>, zum Selbstexplorieren. </p>
+<h3>Take Away</h3>
+<p>https://www.youtube.com/watch?v=6S9r_YbqHy8</p>
+<p>GOTO 2012 • The R Language The Good The Bad &amp; The Ugly • John Cook</p>
+<h3>A most completly chart of Neural Networks</h3>
+<p><img alt="" src="http://www.coolinfographics.com/storage/post-images/Neural-Networks-Chart.png"></p>
+<h3>Kaggle</h3>
+<p>interessante Aufgaben:</p>
+<ul>
+<li>
+<p>https://www.kaggle.com/c/melbourne-university-seizure-prediction</p>
+</li>
+<li>
+<p>https://www.kaggle.com/c/leaf-classification</p>
+</li>
+</ul>
+<p>wer bei einer Aufgabe in einem mlugs-Team mitmachen möchte: schreibt bitte auf Twitter an @mlugs_de</p> </div>
+    </li>
+    <li class="post" >
+        <header class="posttitle">
           <h3><a href="../mlugs-treffen-im-oktober-2016/"
                   rel="bookmark"
                   class="nodec"
