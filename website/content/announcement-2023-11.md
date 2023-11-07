@@ -6,6 +6,7 @@ Im November findet endlich wieder eine MLUGS statt.
 Diesmal mit Thundertalks (max 10-15 Minuten pro Talk).
 
 Aktuell geplante Talks:
+
 - Andreas: Longest Common Sequence
 - Christian: tbd
 - (gerne weitere - meldet euch)
