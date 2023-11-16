@@ -7,8 +7,8 @@ Diesmal mit Thundertalks (max 10-15 Minuten pro Talk).
 
 Aktuell geplante Talks:
 
-- Andreas: Longest Common Sequence
-- Christian: tbd
+- Andreas: "Longest Common Sequence"
+- Christian: "Room Inpainting: Add furniture to pictures of empty flats"
 - (gerne weitere - meldet euch)
 
 Wir planen die Talks auch via Zoom zu streamen.
